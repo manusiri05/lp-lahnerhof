@@ -1,1 +1,1231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PTVT9TMK');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>Golfhotel Südtirol – Golfurlaub Sterzing | Hotel Lahnerhof 4★</title>
+  <meta name="description" content="Golfurlaub Südtirol im 4-Sterne Golfhotel Lahnerhof bei Sterzing. Direkt am Golfclub Sterzing – Golf Südtirol mit Panoramapool, Halbpension &amp; kostenlosem Golfzugang. Jetzt anfragen!" />
+  <meta name="keywords" content="golf südtirol, golf urlaub sterzing, golf urlaub südtirol, golfhotel südtirol, golfurlaub südtirol, golfwoche südtirol, golf hotel sterzing, golf sterzing, golfreisen südtirol" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Golfhotel Südtirol – Golfurlaub Sterzing | Hotel Lahnerhof" />
+  <meta property="og:description" content="Golfurlaub Südtirol direkt beim Golfclub Sterzing. Panoramapool, Halbpension &amp; kostenloser Golfzugang im 4-Sterne Hotel Lahnerhof." />
+  <meta property="og:type" content="website" />
+
+  <!-- Flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/de.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:        #F5F2EB;
+      --cream-dark:   #EAE4D6;
+      --stone:        #A68A56;
+      --stone-dark:   #8E7545;
+      --forest:       #283527;
+      --forest-mid:   #374B34;
+      --charcoal:     #1C221A;
+      --warm-gray:    #6B6960;
+      --golf-green:   #4A6B3F;
+      --white:        #FFFFFF;
+      --font-serif:   'Cormorant Garamond', Georgia, serif;
+      --font-sans:    'Jost', system-ui, sans-serif;
+      --header-h:     72px;
+      --pad:          90px;
+      --max-w:        1180px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); color: var(--charcoal); background: var(--cream); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    img  { display: block; max-width: 100%; }
+    a    { color: inherit; text-decoration: none; }
+    .container { max-width: var(--max-w); margin-inline: auto; padding-inline: 24px; }
+
+    /* Animations */
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* Buttons */
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; background: var(--stone); color: var(--white); font-family: var(--font-sans); font-size: 0.80rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border: none; cursor: pointer; transition: background 0.25s, transform 0.2s; }
+    .btn-primary:hover { background: var(--stone-dark); transform: translateY(-2px); }
+    .btn-outline { display: inline-flex; align-items: center; gap: 10px; padding: 13px 32px; background: transparent; color: var(--white); font-family: var(--font-sans); font-size: 0.80rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.55); cursor: pointer; transition: border-color 0.25s, background 0.25s; }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+
+    /* Section helpers */
+    .section-label { font-size: 0.64rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--stone); margin-bottom: 14px; display: block; }
+    .section-h2 { font-family: var(--font-serif); font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 300; line-height: 1.22; color: var(--forest); margin-bottom: 18px; }
+    .section-text { font-size: 0.90rem; color: var(--warm-gray); line-height: 1.8; }
+    .section-header { text-align: center; max-width: 640px; margin-inline: auto; margin-bottom: 56px; }
+
+    /* ── HEADER ── */
+    #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--header-h); display: flex; align-items: center; background: rgba(255,255,255,0); transition: background 0.4s, box-shadow 0.4s; }
+    #site-header.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .header-inner { max-width: var(--max-w); width: 100%; margin-inline: auto; padding-inline: 24px; display: flex; align-items: center; justify-content: space-between; }
+    .header-logo { display: flex; flex-direction: column; line-height: 1; }
+    .logo-name { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 500; color: rgba(255,255,255,0.95); letter-spacing: 0.04em; transition: color 0.4s; }
+    .logo-sub { font-family: var(--font-sans); font-size: 0.54rem; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--stone); margin-top: 2px; }
+    #site-header.scrolled .logo-name { color: var(--forest); }
+    .header-nav { display: flex; align-items: center; gap: 28px; }
+    .header-tel { font-size: 0.82rem; font-weight: 400; letter-spacing: 0.04em; color: rgba(255,255,255,0.9); transition: color 0.4s; }
+    #site-header.scrolled .header-tel { color: var(--warm-gray); }
+    .btn-avail { display: inline-flex; align-items: center; gap: 8px; padding: 11px 24px; background: var(--stone); color: var(--white); font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border: none; cursor: pointer; transition: background 0.25s, transform 0.2s; }
+    .btn-avail:hover { background: var(--stone-dark); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    #hero { position: relative; height: 100vh; min-height: 620px; max-height: 1000px; overflow: hidden; display: flex; align-items: flex-end; }
+    .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(20,30,20,0.10) 0%, rgba(20,30,20,0.25) 35%, rgba(20,30,20,0.75) 100%); }
+    .hero-content { position: relative; z-index: 2; width: 100%; max-width: var(--max-w); margin-inline: auto; padding: 0 24px 80px; }
+    .hero-badge { display: inline-block; font-size: 0.66rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--stone); border: 1px solid var(--stone); padding: 5px 14px; margin-bottom: 22px; }
+    .hero-h1 { font-family: var(--font-serif); font-size: clamp(2.6rem, 6vw, 5.2rem); font-weight: 300; line-height: 1.08; color: var(--white); max-width: 820px; margin-bottom: 20px; }
+    .hero-sub { display: block; font-family: var(--font-sans); font-size: 0.92rem; font-weight: 300; letter-spacing: 0.03em; color: rgba(255,255,255,0.78); max-width: 580px; margin-bottom: 38px; }
+    .hero-cta-wrap { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-scroll { position: absolute; bottom: 28px; right: 40px; display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(255,255,255,0.55); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; z-index: 2; }
+    .hero-scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent); animation: scrollLine 2s ease-in-out infinite; }
+    @keyframes scrollLine { 0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(0.5);opacity:0.4} }
+
+    /* ── TRUST BAR ── */
+    #trustbar { background: var(--forest); padding: 18px 24px; }
+    .trust-inner { max-width: var(--max-w); margin-inline: auto; display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; }
+    .trust-score { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 300; color: var(--stone); line-height: 1; }
+    .trust-info { display: flex; flex-direction: column; }
+    .trust-platform { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.40); }
+    .trust-label { font-size: 0.78rem; font-weight: 400; color: rgba(255,255,255,0.75); }
+    .trust-divider { width: 1px; height: 32px; background: rgba(255,255,255,0.15); }
+
+    /* ── INTRO ── */
+    #intro { background: var(--white); padding: var(--pad) 24px; }
+    .intro-inner { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .intro-h2 { font-family: var(--font-serif); font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 300; line-height: 1.18; color: var(--forest); margin-bottom: 24px; }
+    .intro-text { font-size: 0.92rem; color: var(--warm-gray); line-height: 1.85; margin-bottom: 14px; }
+    .intro-highlight { font-family: var(--font-serif); font-size: 1.05rem; font-style: italic; color: var(--golf-green); line-height: 1.6; padding: 18px 20px; border-left: 3px solid var(--stone); background: var(--cream); margin: 22px 0; }
+    .intro-meta { display: flex; gap: 36px; margin-top: 36px; padding-top: 36px; border-top: 1px solid var(--cream-dark); }
+    .meta-num { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 300; color: var(--stone); line-height: 1; display: block; }
+    .meta-label { font-size: 0.70rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--warm-gray); }
+    .intro-image-wrap { position: relative; }
+    .intro-image-main { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .intro-image-badge { position: absolute; bottom: -24px; left: -24px; background: var(--forest); color: var(--white); padding: 18px 22px; max-width: 230px; }
+    .badge-text { font-size: 0.72rem; font-weight: 300; letter-spacing: 0.08em; line-height: 1.55; }
+    .badge-text strong { font-weight: 600; color: var(--stone); }
+
+    /* ── USPS ── */
+    #usps { background: var(--cream); padding: 52px 24px; }
+    .usps-inner { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; }
+    .usp-item { background: var(--white); padding: 30px 22px; display: flex; flex-direction: column; gap: 12px; border-bottom: 3px solid transparent; transition: border-color 0.3s, transform 0.3s; }
+    .usp-item:hover { border-color: var(--stone); transform: translateY(-3px); }
+    .usp-icon { width: 34px; height: 34px; flex-shrink: 0; }
+    .usp-icon path, .usp-icon rect, .usp-icon circle, .usp-icon polyline, .usp-icon line, .usp-icon ellipse { stroke: var(--stone); fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+    .usp-name { font-family: var(--font-serif); font-size: 1.05rem; font-weight: 400; color: var(--forest); }
+    .usp-desc { font-size: 0.82rem; color: var(--warm-gray); line-height: 1.65; }
+    .usp-highlight { background: var(--forest); }
+    .usp-highlight .usp-name { color: var(--white); }
+    .usp-highlight .usp-desc { color: rgba(255,255,255,0.65); }
+    .usp-highlight .usp-icon path, .usp-highlight .usp-icon rect, .usp-highlight .usp-icon circle, .usp-highlight .usp-icon polyline, .usp-highlight .usp-icon line, .usp-highlight .usp-icon ellipse { stroke: var(--stone); }
+    .usp-highlight:hover { border-color: var(--stone); transform: translateY(-3px); }
+
+    /* ── GOLF SECTION ── */
+    #golf { background: var(--cream-dark); padding: var(--pad) 24px; }
+    .accordion-grid { display: grid; grid-template-columns: repeat(3, 1fr); max-width: var(--max-w); margin-inline: auto; overflow: hidden; }
+    .acc-tile { position: relative; overflow: hidden; cursor: pointer; height: 540px; }
+    .acc-tile:hover .acc-bg { transform: scale(1.05); }
+    .acc-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.7s ease; }
+    .acc-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,28,18,0.88) 0%, rgba(18,28,18,0.15) 60%); transition: background 0.4s; }
+    .acc-tile:hover .acc-overlay { background: linear-gradient(to top, rgba(18,28,18,0.95) 0%, rgba(18,28,18,0.30) 60%); }
+    .acc-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 36px 28px; color: var(--white); }
+    .acc-num { font-family: var(--font-serif); font-size: 3rem; font-weight: 300; color: var(--stone); opacity: 0.7; line-height: 1; margin-bottom: 8px; }
+    .acc-title { font-family: var(--font-serif); font-size: 1.45rem; font-weight: 400; line-height: 1.25; margin-bottom: 14px; }
+    .acc-body { font-size: 0.84rem; font-weight: 300; line-height: 1.72; color: rgba(255,255,255,0.82); max-height: 0; overflow: hidden; transition: max-height 0.5s ease, opacity 0.4s; opacity: 0; }
+    .acc-tile:hover .acc-body, .acc-tile.active .acc-body { max-height: 180px; opacity: 1; }
+    .acc-tag { display: inline-block; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stone); border: 1px solid rgba(166,138,86,0.5); padding: 4px 10px; margin-bottom: 16px; }
+
+    /* ── OFFER BANNER ── */
+    #angebot { background: var(--golf-green); padding: 52px 24px; }
+    .angebot-inner { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
+    .angebot-label { font-size: 0.64rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 12px; display: block; }
+    .angebot-h2 { font-family: var(--font-serif); font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 300; color: var(--white); line-height: 1.25; margin-bottom: 14px; }
+    .angebot-text { font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.75; }
+    .angebot-list { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+    .angebot-list li { font-size: 0.84rem; color: rgba(255,255,255,0.82); display: flex; align-items: flex-start; gap: 10px; }
+    .angebot-list li::before { content: "✓"; color: var(--stone); font-weight: 600; flex-shrink: 0; margin-top: 2px; }
+    .btn-angebot { display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; background: var(--white); color: var(--forest); font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; border: none; cursor: pointer; transition: background 0.25s, transform 0.2s; white-space: nowrap; }
+    .btn-angebot:hover { background: var(--cream); transform: translateY(-2px); }
+
+    /* ── PHILOSOPHY ── */
+    #philosophy { position: relative; padding: 110px 24px; overflow: hidden; }
+    .philosophy-bg { position: absolute; inset: 0; background-image: url('https://hotel.lahnerhof.it/images/801/22075146/sterzing-rosskopf-99tales2-rFS95_SnpQ24t0cdmMxsIg.jpg'); background-size: cover; background-position: center; filter: brightness(0.28); }
+    .philosophy-inner { position: relative; z-index: 2; max-width: 780px; margin-inline: auto; text-align: center; }
+    .quote-mark { font-family: var(--font-serif); font-size: 5rem; color: var(--stone); line-height: 0.6; display: block; margin-bottom: 24px; opacity: 0.7; }
+    .philosophy-quote { font-family: var(--font-serif); font-size: clamp(1.45rem, 2.8vw, 2.15rem); font-weight: 300; font-style: italic; line-height: 1.5; color: var(--white); margin-bottom: 32px; }
+    .philosophy-attr { font-size: 0.72rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stone); }
+
+    /* ── ROOMS SLIDER ── */
+    #zimmer { background: var(--forest); padding: var(--pad) 0 0; }
+    #zimmer .section-header { padding-inline: 24px; }
+    #zimmer .section-h2 { color: var(--white); }
+    #zimmer .section-label { color: var(--stone); }
+    #zimmer .section-text { color: rgba(255,255,255,0.60); }
+    .slider-wrap { position: relative; overflow: hidden; margin-top: 52px; }
+    .slider-track { display: flex; transition: transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .slide { flex: 0 0 100%; display: grid; grid-template-columns: 55% 45%; min-height: 480px; }
+    .slide-img { overflow: hidden; position: relative; }
+    .slide-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+    .slide-img:hover img { transform: scale(1.04); }
+    .slide-body { background: var(--forest-mid); padding: 52px 52px 52px 48px; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+    .slide-tag { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone); }
+    .slide-name { font-family: var(--font-serif); font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 400; color: var(--white); line-height: 1.2; }
+    .slide-desc { font-size: 0.88rem; font-weight: 300; color: rgba(255,255,255,0.70); line-height: 1.75; }
+    .slide-meta { display: flex; gap: 24px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.10); }
+    .slide-meta-item { display: flex; flex-direction: column; gap: 3px; }
+    .meta-val { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 300; color: var(--stone); line-height: 1; }
+    .meta-lbl { font-size: 0.68rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.40); }
+    .slide-cta { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border: 1px solid rgba(166,138,86,0.5); color: var(--stone); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; align-self: flex-start; transition: background 0.25s, border-color 0.25s, color 0.25s; }
+    .slide-cta:hover { background: var(--stone); border-color: var(--stone); color: var(--white); }
+    .slider-nav { display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; background: rgba(0,0,0,0.18); }
+    .slider-dots { display: flex; gap: 10px; }
+    .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.25); border: none; cursor: pointer; transition: background 0.3s, transform 0.3s; padding: 0; }
+    .slider-dot.active { background: var(--stone); transform: scale(1.25); }
+    .slider-arrows { display: flex; gap: 8px; }
+    .slider-btn { width: 44px; height: 44px; background: transparent; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: border-color 0.25s, color 0.25s, background 0.25s; }
+    .slider-btn:hover { border-color: var(--stone); color: var(--stone); background: rgba(166,138,86,0.1); }
+    .slider-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+    .slider-counter { font-family: var(--font-serif); font-size: 0.90rem; color: rgba(255,255,255,0.40); letter-spacing: 0.08em; }
+    .slider-counter span { color: var(--stone); }
+
+    /* ── EXPERIENCES ── */
+    #erlebnisse { background: var(--white); padding: var(--pad) 24px; }
+    .exp-grid { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
+    .exp-item { display: flex; flex-direction: column; gap: 14px; padding: 32px 26px; background: var(--cream); border-left: 3px solid var(--stone); transition: transform 0.3s, border-color 0.3s; }
+    .exp-item:hover { transform: translateY(-4px); border-color: var(--golf-green); }
+    .exp-item.featured { background: var(--forest); border-left-color: var(--stone); }
+    .exp-item.featured .exp-name { color: var(--white); }
+    .exp-item.featured .exp-desc { color: rgba(255,255,255,0.65); }
+    .exp-icon-wrap { width: 36px; height: 36px; }
+    .exp-icon-wrap path, .exp-icon-wrap circle, .exp-icon-wrap polyline, .exp-icon-wrap line, .exp-icon-wrap rect, .exp-icon-wrap ellipse { stroke: var(--stone); fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+    .exp-name { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 400; color: var(--forest); }
+    .exp-desc { font-size: 0.83rem; color: var(--warm-gray); line-height: 1.7; }
+
+    /* ── REVIEWS ── */
+    #reviews { background: var(--cream); padding: var(--pad) 24px; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
+    .review-card { background: var(--white); padding: 32px 28px; display: flex; flex-direction: column; gap: 16px; border-bottom: 3px solid transparent; transition: border-color 0.3s, transform 0.3s; }
+    .review-card:hover { border-color: var(--stone); transform: translateY(-4px); }
+    .review-stars { display: flex; gap: 3px; color: var(--stone); font-size: 0.85rem; }
+    .review-text { font-family: var(--font-serif); font-size: 1.02rem; font-style: italic; line-height: 1.65; color: var(--forest); flex: 1; }
+    .review-author { display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid var(--cream-dark); }
+    .review-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--forest); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 0.75rem; font-weight: 500; flex-shrink: 0; }
+    .review-name { font-size: 0.80rem; font-weight: 500; color: var(--charcoal); }
+    .review-meta { font-size: 0.70rem; color: var(--warm-gray); }
+
+    /* ── GALLERY ── */
+    #impressionen { background: var(--cream-dark); padding: var(--pad) 24px; }
+    .gallery-grid { max-width: var(--max-w); margin-inline: auto; margin-top: 52px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; }
+    .gal-item { overflow: hidden; position: relative; }
+    .gal-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .gal-item:hover img { transform: scale(1.05); }
+    .gal-item:nth-child(1) { grid-column: span 7; aspect-ratio: 16/9; }
+    .gal-item:nth-child(2) { grid-column: span 5; aspect-ratio: 16/9; }
+    .gal-item:nth-child(3) { grid-column: span 4; aspect-ratio: 4/3; }
+    .gal-item:nth-child(4) { grid-column: span 4; aspect-ratio: 4/3; }
+    .gal-item:nth-child(5) { grid-column: span 4; aspect-ratio: 4/3; }
+    .gal-item:nth-child(6) { grid-column: span 6; aspect-ratio: 16/9; }
+    .gal-item:nth-child(7) { grid-column: span 6; aspect-ratio: 16/9; }
+
+    /* ── FORM SECTION ── */
+    #anfrage { background: var(--cream); padding: var(--pad) 24px; }
+    .cta-inner { max-width: 860px; margin-inline: auto; text-align: center; }
+    .cta-h2 { font-family: var(--font-serif); font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 300; color: var(--forest); margin-bottom: 16px; line-height: 1.2; }
+    .cta-text { font-size: 0.92rem; color: var(--warm-gray); line-height: 1.8; margin-bottom: 40px; }
+    .cta-contact-bar { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 28px; align-items: center; background: var(--white); padding: 28px 36px; margin-bottom: 32px; }
+    .cta-divider { background: var(--cream-dark); height: 100%; min-height: 40px; }
+    .contact-method { text-align: center; }
+    .contact-icon-svg { width: 22px; height: 22px; margin: 0 auto 8px; }
+    .contact-icon-svg path, .contact-icon-svg circle, .contact-icon-svg polyline { stroke: var(--stone); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .contact-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stone); margin-bottom: 6px; display: block; }
+    .contact-value { font-family: var(--font-serif); font-size: 1.15rem; color: var(--forest); }
+    .contact-note { font-size: 0.75rem; color: var(--warm-gray); margin-top: 4px; }
+
+    /* Override form styles to match LP design */
+    .form-container { background-color: var(--white); padding: 40px 44px; border-radius: 0; box-shadow: 0 4px 40px rgba(0,0,0,0.06); max-width: 100%; margin: auto; font-family: var(--font-sans); }
+    .custom-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .full-width { grid-column: span 2; }
+    .custom-form label { display: block; margin-bottom: 5px; font-weight: 500; color: var(--charcoal); font-size: 0.82rem; letter-spacing: 0.03em; }
+    .req::after { content: " *"; color: var(--stone-dark); }
+    .custom-form input, .custom-form select, .custom-form textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--cream-dark); border-radius: 0; font-size: 0.92rem; font-family: var(--font-sans); background: var(--white); color: var(--charcoal); box-sizing: border-box; transition: border-color 0.2s, box-shadow 0.2s; }
+    .custom-form input:focus, .custom-form select:focus, .custom-form textarea:focus { border-color: var(--stone); outline: none; box-shadow: 0 0 0 2px rgba(166,138,86,0.12); }
+    .custom-form input.error, .custom-form select.error { border-color: #c0392b !important; }
+    .phone-row { display: flex; gap: 6px; }
+    .phone-row select { flex: 0 0 auto; width: 118px; font-size: 0.88rem; padding: 10px 6px; }
+    .phone-row input { flex: 1; }
+    .child-age-field { display: none; }
+    .privacy-row { grid-column: span 2; display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px; background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 0; }
+    .privacy-row input[type="checkbox"] { width: 18px; min-width: 18px; height: 18px; margin-top: 2px; cursor: pointer; accent-color: var(--stone); }
+    .privacy-row label { font-size: 0.80rem; color: var(--warm-gray); font-weight: 400; margin: 0; cursor: pointer; line-height: 1.5; }
+    .privacy-row label a { color: var(--stone); text-decoration: underline; }
+    .field-error { font-size: 0.76rem; color: #c0392b; margin-top: 3px; display: none; }
+    .submit-btn { grid-column: span 2; background: var(--stone); color: var(--white); padding: 15px; border: none; cursor: pointer; font-family: var(--font-sans); font-size: 0.88rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 6px; transition: background 0.2s, transform 0.2s; border-radius: 0; }
+    .submit-btn:hover { background: var(--stone-dark); transform: translateY(-1px); }
+    .submit-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+    .success-msg { display: none; grid-column: span 2; background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 0; padding: 16px; color: #2e7d32; font-size: 0.92rem; font-weight: 500; text-align: center; line-height: 1.5; }
+
+    /* ── INKLUSIVLEISTUNGEN ── */
+    #inklusive { background: var(--white); padding: var(--pad) 24px; }
+    .inklusive-inner { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .inklusive-list { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+    .inklusive-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 16px; background: var(--cream); border-left: 3px solid transparent; transition: border-color 0.3s; }
+    .inklusive-item:hover { border-color: var(--stone); }
+    .inklusive-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--stone); flex-shrink: 0; margin-top: 7px; }
+    .inklusive-text { font-size: 0.87rem; color: var(--charcoal); line-height: 1.6; }
+    .inklusive-text strong { font-weight: 600; color: var(--forest); }
+    .inklusive-img-wrap { position: relative; }
+    .inklusive-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+    .inklusive-img-tag { position: absolute; top: 24px; right: -16px; background: var(--forest); color: var(--white); padding: 12px 18px; }
+    .inklusive-tag-label { font-size: 0.60rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.5); display: block; margin-bottom: 4px; }
+    .inklusive-tag-val { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 400; color: var(--stone); }
+
+    /* ── FOOTER ── */
+    #footer { background: var(--charcoal); padding: 56px 24px 32px; }
+    .footer-inner { max-width: var(--max-w); margin-inline: auto; }
+    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.10); }
+    .footer-logo-name { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 500; color: var(--white); }
+    .footer-logo-sub { font-size: 0.60rem; font-weight: 300; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.40); margin-top: 3px; }
+    .footer-tagline { font-size: 0.80rem; color: rgba(255,255,255,0.32); line-height: 1.7; margin-top: 14px; margin-bottom: 20px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 6px; }
+    .footer-contact a { font-size: 0.82rem; color: rgba(255,255,255,0.50); transition: color 0.2s; }
+    .footer-contact a:hover { color: var(--stone); }
+    .footer-col-title { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone); margin-bottom: 18px; }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 0.82rem; color: rgba(255,255,255,0.40); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .seo-keywords { font-size: 0.72rem; color: rgba(255,255,255,0.14); line-height: 1.9; margin-top: 16px; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 28px; font-size: 0.72rem; color: rgba(255,255,255,0.22); }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { color: rgba(255,255,255,0.22); transition: color 0.2s; }
+    .footer-legal a:hover { color: rgba(255,255,255,0.55); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .usps-inner { grid-template-columns: repeat(3, 1fr); }
+      .intro-inner { grid-template-columns: 1fr; gap: 40px; }
+      .intro-image-wrap { display: none; }
+      .accordion-grid { grid-template-columns: 1fr; }
+      .acc-tile { height: 360px; }
+      .acc-body { max-height: 140px !important; opacity: 1 !important; }
+      .exp-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: 1fr 1fr; }
+      .slide { grid-template-columns: 1fr; min-height: auto; }
+      .slide-img { aspect-ratio: 16/9; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gal-item { grid-column: span 1 !important; aspect-ratio: 1/1 !important; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .inklusive-inner { grid-template-columns: 1fr; }
+      .inklusive-img-wrap { display: none; }
+      .angebot-inner { grid-template-columns: 1fr; gap: 28px; }
+      .trust-inner { gap: 24px; }
+    }
+    @media (max-width: 768px) {
+      :root { --pad: 60px; }
+      .header-tel { display: none; }
+      .hero-h1 { font-size: 2.3rem; }
+      .usps-inner { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .slide-body { padding: 32px 24px; }
+      .slider-nav { padding: 20px 24px; }
+      .exp-grid { grid-template-columns: 1fr; }
+      .cta-contact-bar { grid-template-columns: 1fr; gap: 20px; padding: 24px; }
+      .cta-divider { display: none; }
+      .form-container { padding: 28px 20px; }
+      .custom-form { grid-template-columns: 1fr; }
+      .full-width, .privacy-row, .submit-btn, .success-msg { grid-column: span 1; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .trust-divider { display: none; }
+    }
+    @media (max-width: 480px) {
+      .hero-cta-wrap { flex-direction: column; }
+      .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+      .btn-avail { padding: 10px 14px; font-size: 0.72rem; }
+      .usps-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTVT9TMK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ── HEADER ── -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="header-logo" aria-label="Hotel Lahnerhof – Golfhotel Südtirol">
+      <span class="logo-name">Hotel Lahnerhof</span>
+      <span class="logo-sub">Golfhotel Sterzing · Südtirol</span>
+    </a>
+    <nav class="header-nav">
+      <a href="tel:+390472764777" class="header-tel">+39 0472 764 777</a>
+      <a href="#anfrage" class="btn-avail">Jetzt anfragen</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <img class="hero-img"
+    src="https://hotel.lahnerhof.it/images/1200/22075159/cHannesNiederkofler_WEB_032_DSC2347-OCewUkowqVKuOMWuuz_9EQ.jpg"
+    alt="Golfhotel Südtirol – Hotel Lahnerhof Sterzing mit Panoramablick" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Golfhotel Südtirol · 4-Sterne · Sterzing</span>
+    <h1 class="hero-h1">Golfurlaub Südtirol –<br>Ihr Golfhotel in Sterzing</h1>
+    <span class="hero-sub">Golf Südtirol am Golfclub Sterzing – direkt um die Ecke. Panoramapool, Halbpension &amp; kostenloser Golfzugang für alle Gäste inklusive.</span>
+    <div class="hero-cta-wrap">
+      <a href="#anfrage" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+        Golfurlaub anfragen
+      </a>
+      <a href="tel:+390472764777" class="btn-outline">+39 0472 764 777</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Entdecken</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── TRUST BAR ── -->
+<div id="trustbar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-score">8.8</div>
+      <div class="trust-info">
+        <span class="trust-platform">Booking.com</span>
+        <span class="trust-label">Fabelhaft</span>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-score">4.3</div>
+      <div class="trust-info">
+        <span class="trust-platform">TripAdvisor</span>
+        <span class="trust-label">Hervorragend</span>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-score">4.4</div>
+      <div class="trust-info">
+        <span class="trust-platform">Google</span>
+        <span class="trust-label">Sehr gut</span>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-score">4★</div>
+      <div class="trust-info">
+        <span class="trust-platform">Hotel</span>
+        <span class="trust-label">Sterzing · Südtirol</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── INTRO ── -->
+<section id="intro" class="fade-up">
+  <div class="intro-inner">
+    <div>
+      <span class="section-label">Golf Urlaub Südtirol</span>
+      <h2 class="intro-h2">Golf in Südtirol erleben –<br>Natur, Genuss &amp; grüne Fairways</h2>
+      <p class="intro-text">Der <strong>Hotel Lahnerhof</strong> in Thuins bei Sterzing ist Ihr perfektes Basecamp für einen unvergesslichen <strong>Golfurlaub in Südtirol</strong>. Eingebettet in die atemberaubende Südtiroler Bergwelt, auf rund 1.000 m Seehöhe, verbindet unser 4-Sterne-Hotel alles, was Golfer lieben: Natur, Erholung und die Leidenschaft für das Spiel.</p>
+      <div class="intro-highlight">„Der Golfclub Sterzing liegt direkt vor der Tür – Golfurlaub Südtirol at its best: Fairways mit Alpenblick, frische Bergluft und abends ein verwöhnendes 4-Gänge-Menü."</div>
+      <p class="intro-text">Ob Sie täglich auf dem Course stehen oder Golf mit Wandern, E-Biken und Wellness kombinieren möchten – Ihr <strong>Golf Urlaub in Sterzing</strong> wird hier zum Gesamterlebnis. Unser Gastgeber Gerhard und sein Team begleiten Sie persönlich und sorgen für unvergessliche Momente.</p>
+      <div class="intro-meta">
+        <div>
+          <span class="meta-num">250 m</span>
+          <span class="meta-label">Driving Range</span>
+        </div>
+        <div>
+          <span class="meta-num">7</span>
+          <span class="meta-label">Übungslöcher</span>
+        </div>
+        <div>
+          <span class="meta-num">4★</span>
+          <span class="meta-label">Hotelkategorie</span>
+        </div>
+        <div>
+          <span class="meta-num">1.000 m</span>
+          <span class="meta-label">Seehöhe</span>
+        </div>
+      </div>
+    </div>
+    <div class="intro-image-wrap">
+      <img class="intro-image-main"
+        src="https://hotel.lahnerhof.it/images/676/22075126/Pool_3-8EwGCwO5Gm7ePosDrt7C_A.jpg"
+        alt="Panoramapool Hotel Lahnerhof – Golfhotel Südtirol Sterzing" />
+      <div class="intro-image-badge">
+        <p class="badge-text"><strong>NEU inklusive:</strong> Freier Zugang zum Golfclub Sterzing für alle Hotelgäste – Golf Südtirol ohne Extrakosten!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── USPS ── -->
+<section id="usps">
+  <div class="usps-inner fade-up">
+
+    <div class="usp-item usp-highlight">
+      <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="17" r="4"/>
+        <path d="M17 13V5M17 29v-8M13 17H5M29 17h-8"/>
+        <circle cx="17" cy="17" r="12" stroke-dasharray="3 4"/>
+      </svg>
+      <span class="usp-name">Golf inklusive</span>
+      <p class="usp-desc">Alle Gäste nutzen den Golfclub Sterzing kostenlos – 250 m Driving Range &amp; 7 Übungslöcher ohne Aufpreis.</p>
+    </div>
+
+    <div class="usp-item">
+      <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 28l8-12 6 7 4-5 6 10H5z"/>
+        <path d="M7 10c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/>
+      </svg>
+      <span class="usp-name">Golfclub Sterzing</span>
+      <p class="usp-desc">Der Golfclub Sterzing liegt direkt in der Nähe – Golf Südtirol mit einzigartigem Alpenpanorama.</p>
+    </div>
+
+    <div class="usp-item">
+      <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="17" cy="22" rx="10" ry="5"/>
+        <path d="M7 22c0-5.5 4.5-10 10-10s10 4.5 10 10"/>
+        <path d="M17 12V7"/>
+        <path d="M12 8l5-4 5 4"/>
+      </svg>
+      <span class="usp-name">Panorama-Pool</span>
+      <p class="usp-desc">Beheizter Außenpool mit traumhaftem Bergblick über Sterzing – Entspannung nach dem Golf.</p>
+    </div>
+
+    <div class="usp-item">
+      <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 5c0 0-8 5-8 13a8 8 0 0016 0C25 10 17 5 17 5z"/>
+        <path d="M17 13v6M14 16h6"/>
+      </svg>
+      <span class="usp-name">Wellness &amp; Sauna</span>
+      <p class="usp-desc">Finnische Sauna, Bio-Sauna und eleganter Ruheraum – perfekte Erholung nach der Golfrunde.</p>
+    </div>
+
+    <div class="usp-item">
+      <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 26V14l11-9 11 9v12H6z"/>
+        <rect x="13" y="18" width="8" height="8"/>
+        <path d="M10 14v12M24 14v12"/>
+      </svg>
+      <span class="usp-name">Halbpension</span>
+      <p class="usp-desc">Reichhaltiges Frühstück und 4-Gänge-Genussmenü am Abend – Energie für die Golfrunde inklusive.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── GOLF SECTION ── -->
+<section id="golf">
+  <div class="section-header fade-up">
+    <span class="section-label">Golf Südtirol · Golfclub Sterzing</span>
+    <h2 class="section-h2">Golfurlaub Südtirol –<br>Drei starke Gründe für den Lahnerhof</h2>
+    <p class="section-text">Als Ihr <strong>Golfhotel in Südtirol</strong> bieten wir Ihnen alles für einen perfekten <strong>Golf Urlaub Sterzing</strong>: direkten Zugang zum Golfclub, traumhafte Bergkulisse und Erholung auf höchstem Niveau.</p>
+  </div>
+  <div class="accordion-grid">
+    <div class="acc-tile">
+      <div class="acc-bg" style="background-image: url('https://hotel.lahnerhof.it/images/801/22075144/sterzing-rosskopf-99tales38-W1OK5AwW-wOufWr_UbwzBA.jpg');"></div>
+      <div class="acc-overlay"></div>
+      <div class="acc-content">
+        <span class="acc-tag">Golf Südtirol</span>
+        <div class="acc-num">01</div>
+        <h3 class="acc-title">Golfclub Sterzing – Direkt nebenan</h3>
+        <p class="acc-body">Der Golfclub Sterzing liegt nur wenige Minuten vom Hotel Lahnerhof entfernt. Mit einer 250 m langen Driving Range und 7 Übungslöchern bietet er ideale Bedingungen für Ihren <strong>Golfurlaub Südtirol</strong> – für Einsteiger wie erfahrene Golfer. Als Hotelgast nutzen Sie den Club kostenlos.</p>
+      </div>
+    </div>
+    <div class="acc-tile">
+      <div class="acc-bg" style="background-image: url('https://hotel.lahnerhof.it/images/1200/22075139/Penserjoch_lowres-50-PVJYNOYjMq-Gmukm1j_C2g.jpg');"></div>
+      <div class="acc-overlay"></div>
+      <div class="acc-content">
+        <span class="acc-tag">Panorama &amp; Natur</span>
+        <div class="acc-num">02</div>
+        <h3 class="acc-title">Golf mit Alpenpanorama</h3>
+        <p class="acc-body">Ein <strong>Golf Urlaub in Südtirol</strong> ist einzigartig: Fairways mit Blick auf die Südtiroler Alpen, frische Bergluft und eine Natur, die ihresgleichen sucht. Erleben Sie Golf Sterzing in einer der schönsten Bergregionen Europas – das ist <strong>Golfurlaub Südtirol</strong> vom Feinsten.</p>
+      </div>
+    </div>
+    <div class="acc-tile">
+      <div class="acc-bg" style="background-image: url('https://hotel.lahnerhof.it/images/1200/22075129/_99Tales66-wdbR3IxSbp9aLEvN_Ht7_A.jpg');"></div>
+      <div class="acc-overlay"></div>
+      <div class="acc-content">
+        <span class="acc-tag">Golfhotel Südtirol</span>
+        <div class="acc-num">03</div>
+        <h3 class="acc-title">Golf &amp; Verwöhnpension</h3>
+        <p class="acc-body">Nach der Golfrunde wartet Ihr 4-Sterne <strong>Golfhotel Südtirol</strong>: Wellness, beheizter Panoramapool und ein 4-Gänge-Menü im Panoramarestaurant. Das ist <strong>Golf Urlaub Sterzing</strong> als Gesamterlebnis – Sport, Natur und Genuss in perfekter Balance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ANGEBOT BANNER ── -->
+<section id="angebot" class="fade-up">
+  <div class="angebot-inner">
+    <div>
+      <span class="angebot-label">Sommerangebot · Golfurlaub Südtirol</span>
+      <h2 class="angebot-h2">Sommermomente im Lahnerhof –<br>Golf inklusive ab 590 € pro Person</h2>
+      <p class="angebot-text">Erleben Sie Ihren <strong>Golfurlaub in Südtirol</strong> mit allem, was dazugehört. Ab 5 Nächten von Juni bis September stehen Ihnen alle Inklusivleistungen offen:</p>
+      <ul class="angebot-list">
+        <li>Halbpension: reichhaltiges Frühstück &amp; 4-Gänge-Genussmenü am Abend</li>
+        <li>Kostenloser Zugang zum Golfclub Sterzing (Driving Range &amp; Übungslöcher)</li>
+        <li>Beheizter Außenpool mit Panoramablick über die Südtiroler Alpen</li>
+        <li>Nutzung Wellnessbereich mit finnischer &amp; Bio-Sauna</li>
+        <li>activeCard Sterzing – kostenlose Nutzung aller Südtiroler Verkehrsmittel</li>
+        <li>Geführte E-Bike-Touren mit Gastgeber Gerhard (auf Anfrage)</li>
+      </ul>
+    </div>
+    <a href="#anfrage" class="btn-angebot">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+      Jetzt Golf-Urlaub anfragen
+    </a>
+  </div>
+</section>
+
+<!-- ── PHILOSOPHY ── -->
+<section id="philosophy">
+  <div class="philosophy-bg"></div>
+  <div class="philosophy-inner fade-up">
+    <span class="quote-mark">&ldquo;</span>
+    <p class="philosophy-quote">Golf Südtirol – wo Fairways auf Alpengipfel treffen und jede Runde ein Erlebnis für alle Sinne wird. Willkommen im schönsten Golfhotel Südtirols.</p>
+    <span class="philosophy-attr">Hotel Lahnerhof · Golfhotel Sterzing · Südtirol</span>
+  </div>
+</section>
+
+<!-- ── ROOMS ── -->
+<section id="zimmer">
+  <div class="section-header fade-up">
+    <span class="section-label">Zimmer &amp; Suiten</span>
+    <h2 class="section-h2">Erholen wie ein Golfprofi</h2>
+    <p class="section-text">Nach der Golfrunde in Ihr Refugium: Unsere Zimmer und Suiten verbinden Südtiroler Gemütlichkeit mit modernem Komfort – viele mit Panoramablick über Sterzing und die Alpen.</p>
+  </div>
+  <div class="slider-wrap">
+    <div class="slider-track" id="sliderTrack">
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/1200/22074964/8-DSC06695-MuXrRfRhznwGteOWmJRU9A.jpg" alt="Familiensuite Adrian – Hotel Lahnerhof Golfhotel Südtirol" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Suite · Golfhotel Südtirol</span>
+          <h3 class="slide-name">Familiensuite Adrian</h3>
+          <p class="slide-desc">Großzügige Suite für 2–5 Personen mit allem Komfort für Ihren Golfurlaub Südtirol. Ideal für Golfer-Familien oder Paare, die Platz und Stil schätzen.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–5</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 148 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/1200_-90/19992926/5-TUhvMIFqxfbpg4VP3dAdVA.jpeg" alt="Familiensuite Juri – Golfhotel Sterzing Südtirol" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Suite · Golf Sterzing</span>
+          <h3 class="slide-name">Familiensuite Juri</h3>
+          <p class="slide-desc">Komfortabler Rückzugsort für Golfer und Familien. Die Suite Juri bietet viel Raum zum Entspannen nach einer aktiven Golfrunde in Südtirol.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–5</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 148 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/1200/19992927/6-PFGrQiQJlqjfkMWWbVzxAw.jpg" alt="Doppelzimmer Deluxe – Golfhotel Südtirol Lahnerhof" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Zimmer · Golfurlaub Südtirol</span>
+          <h3 class="slide-name">Doppelzimmer Deluxe</h3>
+          <p class="slide-desc">Elegantes Deluxe-Zimmer für Golfer-Paare. Mit Balkon und Bergblick – der perfekte Start in einen neuen Golftag in Sterzing.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">26 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 122 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/800/19992925/4-ahO6Rw36UBbJoAq71qwZRA.jpg" alt="Doppelzimmer Komfort – Hotel Lahnerhof Golfhotel" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Zimmer · Golf Hotel Sterzing</span>
+          <h3 class="slide-name">Doppelzimmer Komfort</h3>
+          <p class="slide-desc">Behagliches Komfortzimmer für Golfer, die das Wesentliche schätzen: erholsamer Schlaf, gutes Frühstück und los geht's auf die Driving Range.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">22 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">1–2</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 110 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/1200/19254600/72-oeRF3-u0xVkDE1SWzD05-A.jpg" alt="Familiensuite Lahnerhof – Golfhotel Südtirol" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Suite · Golfreisen Südtirol</span>
+          <h3 class="slide-name">Familiensuite Lahnerhof</h3>
+          <p class="slide-desc">Unsere Namesuite – großzügig, stilvoll und mit allem ausgestattet, was ein unvergesslicher Golfurlaub in Südtirol braucht. Inklusive Panoramablick.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 148 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/1200_-90/19992973/13-SWRKDmAaafSqFL4gfg9efw.jpeg" alt="Familienzimmer Komfort – Golf Urlaub Sterzing Südtirol" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Zimmer · Golf Urlaub Südtirol</span>
+          <h3 class="slide-name">Familienzimmer Komfort</h3>
+          <p class="slide-desc">Ideal für Familien, die Golf Südtirol gemeinsam erleben möchten. Viel Platz, viel Licht und der Golfclub Sterzing nur wenige Minuten entfernt.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">32 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 128 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="slider-nav">
+    <div class="slider-dots" id="sliderDots"></div>
+    <span class="slider-counter" id="sliderCounter"><span>1</span> / 6</span>
+    <div class="slider-arrows">
+      <button class="slider-btn" id="sliderPrev" aria-label="Zurück">
+        <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 14l-5-5 5-5"/></svg>
+      </button>
+      <button class="slider-btn" id="sliderNext" aria-label="Weiter">
+        <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M7 4l5 5-5 5"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── INKLUSIVLEISTUNGEN ── -->
+<section id="inklusive" class="fade-up">
+  <div class="inklusive-inner">
+    <div>
+      <span class="section-label">Inklusivleistungen · Golfhotel Südtirol</span>
+      <h2 class="section-h2">Alles inklusive –<br>Ihr Golfurlaub ohne Überraschungen</h2>
+      <p class="section-text">Im Lahnerhof ist Golf Urlaub Südtirol ein Rundum-Sorglos-Paket. Diese Leistungen sind in jedem Aufenthalt enthalten:</p>
+      <div class="inklusive-list">
+        <div class="inklusive-item">
+          <div class="inklusive-dot"></div>
+          <p class="inklusive-text"><strong>Kostenloser Golfclub Sterzing</strong> – Driving Range (250 m) &amp; 7 Übungslöcher für alle Gäste frei nutzbar</p>
+        </div>
+        <div class="inklusive-item">
+          <div class="inklusive-dot"></div>
+          <p class="inklusive-text"><strong>Halbpension</strong> – Reichhaltiges Frühstück &amp; 4-Gänge-Genussmenü im Panoramarestaurant</p>
+        </div>
+        <div class="inklusive-item">
+          <div class="inklusive-dot"></div>
+          <p class="inklusive-text"><strong>Beheizter Außenpool</strong> mit atemberaubendem Panoramablick über die Südtiroler Berge</p>
+        </div>
+        <div class="inklusive-item">
+          <div class="inklusive-dot"></div>
+          <p class="inklusive-text"><strong>Wellness &amp; Sauna</strong> – Finnische Sauna, Bio-Sauna und Ruheraum mit Bergblick</p>
+        </div>
+        <div class="inklusive-item">
+          <div class="inklusive-dot"></div>
+          <p class="inklusive-text"><strong>activeCard Sterzing</strong> – kostenlose Nutzung aller Südtiroler Verkehrsmittel &amp; Ermäßigungen</p>
+        </div>
+        <div class="inklusive-item">
+          <div class="inklusive-dot"></div>
+          <p class="inklusive-text"><strong>Geführte E-Bike-Touren</strong> mit Gastgeber Gerhard (Sommer) – Südtirol aktiv erleben</p>
+        </div>
+        <div class="inklusive-item">
+          <div class="inklusive-dot"></div>
+          <p class="inklusive-text"><strong>Wöchentliches Grillfest</strong> am Hausberg mit Gastgeber (Sommer, bei guter Witterung)</p>
+        </div>
+      </div>
+    </div>
+    <div class="inklusive-img-wrap">
+      <img class="inklusive-img"
+        src="https://hotel.lahnerhof.it/images/1200/22075159/cHannesNiederkofler_WEB_032_DSC2347-OCewUkowqVKuOMWuuz_9EQ.jpg"
+        alt="Hotel Lahnerhof Golfhotel Südtirol Sterzing – Inklusivleistungen" />
+      <div class="inklusive-img-tag">
+        <span class="inklusive-tag-label">Golf inklusive</span>
+        <span class="inklusive-tag-val">Golfclub Sterzing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCES ── -->
+<section id="erlebnisse" class="fade-up">
+  <div class="section-header">
+    <span class="section-label">Erlebnisse · Golf Urlaub Sterzing</span>
+    <h2 class="section-h2">Golf &amp; mehr –<br>Ihr Sommerurlaub in Südtirol</h2>
+    <p class="section-text">Golfurlaub Südtirol ist mehr als nur Golf. Kombinieren Sie Ihr Spiel mit den besten Erlebnissen der Region Sterzing.</p>
+  </div>
+  <div class="exp-grid">
+
+    <div class="exp-item featured">
+      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="5"/>
+        <path d="M18 13V7M18 29v-6M13 18H7M29 18h-6"/>
+        <circle cx="18" cy="18" r="13" stroke-dasharray="4 5"/>
+      </svg>
+      <span class="exp-name">Golf Südtirol</span>
+      <p class="exp-desc">Golfclub Sterzing – Driving Range &amp; Übungslöcher direkt beim Hotel. Golfurlaub Südtirol mit Alpenpanorama – kostenlos für alle Hotelgäste.</p>
+    </div>
+
+    <div class="exp-item">
+      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 28l8-14 7 9 5-6 4 11H6z"/>
+        <circle cx="22" cy="9" r="3"/>
+      </svg>
+      <span class="exp-name">Wandern am Rosskopf</span>
+      <p class="exp-desc">Aussichtsreiche Wanderungen rund um Sterzing, Rosskopf und Ratschings – direkt ab Hotel, mit geführten Touren in der Hochsaison.</p>
+    </div>
+
+    <div class="exp-item">
+      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="28" r="4"/>
+        <circle cx="25" cy="28" r="4"/>
+        <path d="M15 28h6M11 24l2-10h10l2 10"/>
+        <path d="M13 14h10M18 10v4"/>
+        <path d="M25 20l2-2 2 1"/>
+      </svg>
+      <span class="exp-name">E-Bike-Touren</span>
+      <p class="exp-desc">Geführte E-Bike-Touren mit Gastgeber Gerhard durch die schönsten Täler Südtirols – Bikeverleih im Hotel verfügbar.</p>
+    </div>
+
+    <div class="exp-item">
+      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6c0 0-9 6-9 14a9 9 0 0018 0C27 12 18 6 18 6z"/>
+        <path d="M18 14v8M14 18h8"/>
+      </svg>
+      <span class="exp-name">Wellness &amp; Spa</span>
+      <p class="exp-desc">Finnische Sauna, Bio-Sauna, Ruheraum und beheizter Außenpool – nach dem Golf Südtirol-Tag einfach loslassen und regenerieren.</p>
+    </div>
+
+    <div class="exp-item">
+      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 28V16l11-9 11 9v12H7z"/>
+        <path d="M13 28v-8h10v8"/>
+        <path d="M18 10v3"/>
+      </svg>
+      <span class="exp-name">Panoramarestaurant</span>
+      <p class="exp-desc">Authentische Südtiroler Spezialitäten &amp; ein 4-Gänge-Genussmenü mit Blick über die Berge – der perfekte Abschluss nach dem Golftag.</p>
+    </div>
+
+    <div class="exp-item">
+      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="8" width="26" height="20" rx="2"/>
+        <path d="M5 14h26"/>
+        <circle cx="14" cy="22" r="2"/>
+        <circle cx="22" cy="22" r="2"/>
+      </svg>
+      <span class="exp-name">activeCard Sterzing</span>
+      <p class="exp-desc">Kostenlose Nutzung aller Südtiroler Verkehrsmittel, freier Eintritt in 90+ Museen &amp; zahlreiche Ermäßigungen – inklusive für alle Gäste.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section id="reviews" class="fade-up">
+  <div class="section-header">
+    <span class="section-label">Gästestimmen · Golfurlaub Südtirol</span>
+    <h2 class="section-h2">Was Golfer über den Lahnerhof sagen</h2>
+    <p class="section-text">Tausende begeisterte Gäste kommen jedes Jahr für ihren Golf Urlaub in Sterzing zum Lahnerhof – das sagen unsere Golfer:</p>
+  </div>
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Perfekter Golfurlaub in Südtirol! Der Golfclub Sterzing ist wirklich nur wenige Minuten entfernt, das Panorama beim Spielen ist unbeschreiblich. Und nach der Runde wartet der Pool mit Bergblick. Wir kommen garantiert wieder!"</p>
+      <div class="review-author">
+        <div class="review-avatar">MK</div>
+        <div>
+          <p class="review-name">Markus K.</p>
+          <p class="review-meta">Google · Golfurlaub Südtirol</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Als Golf-Fan ist der Lahnerhof mein absolutes Lieblingshotel in Südtirol. Kostenloser Golfzugang, tolles Essen, freundliches Team. Golf Sterzing ist ein echtes Highlight – ich habe den Kurs jetzt dreimal gespielt und lerne jedes Mal Neues."</p>
+      <div class="review-author">
+        <div class="review-avatar">SR</div>
+        <div>
+          <p class="review-name">Sabine R.</p>
+          <p class="review-meta">Booking.com · Golfhotel Südtirol</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Wir haben die Golfwoche Südtirol im Lahnerhof gebucht und sind absolut begeistert. Frühstück, Abendessen, Wellness – alles auf Top-Niveau. Gastgeber Gerhard ist ein echter Mehrwert. Ein Golfhotel Südtirol wie aus dem Bilderbuch!"</p>
+      <div class="review-author">
+        <div class="review-avatar">TH</div>
+        <div>
+          <p class="review-name">Thomas H.</p>
+          <p class="review-meta">TripAdvisor · Golf Urlaub Sterzing</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section id="impressionen" class="fade-up">
+  <div class="section-header">
+    <span class="section-label">Einblicke · Golfhotel Sterzing</span>
+    <h2 class="section-h2">Impressionen aus dem Lahnerhof</h2>
+    <p class="section-text">Ihr Golfurlaub Südtirol in Bildern – Hotel, Natur und das Leben am Golfclub Sterzing.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gal-item">
+      <img src="https://hotel.lahnerhof.it/images/1200/22075159/cHannesNiederkofler_WEB_032_DSC2347-OCewUkowqVKuOMWuuz_9EQ.jpg" alt="Hotel Lahnerhof Golfhotel Südtirol Sterzing" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://hotel.lahnerhof.it/images/676/22075126/Pool_3-8EwGCwO5Gm7ePosDrt7C_A.jpg" alt="Panoramapool Golfhotel Lahnerhof Südtirol" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://hotel.lahnerhof.it/images/801/22075146/sterzing-rosskopf-99tales2-rFS95_SnpQ24t0cdmMxsIg.jpg" alt="Sterzing Südtirol Bergpanorama Golf Urlaub" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://hotel.lahnerhof.it/images/1200/22075139/Penserjoch_lowres-50-PVJYNOYjMq-Gmukm1j_C2g.jpg" alt="Penserjoch Panorama Golf Südtirol" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://hotel.lahnerhof.it/images/1200/22075129/_99Tales66-wdbR3IxSbp9aLEvN_Ht7_A.jpg" alt="Gäste Hotel Lahnerhof Golf Urlaub Sterzing" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://hotel.lahnerhof.it/images/800/22075160/135-DSC06732-fENtTWgANiV0U8WkyAV0bw.jpg" alt="Restaurant Hotel Lahnerhof Golfhotel Südtirol" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://hotel.lahnerhof.it/images/801/22075144/sterzing-rosskopf-99tales38-W1OK5AwW-wOufWr_UbwzBA.jpg" alt="Naturlandschaft Sterzing Golf Urlaub Südtirol" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ── FORM / ANFRAGE ── -->
+<section id="anfrage">
+  <div class="cta-inner fade-up">
+    <span class="section-label">Golfurlaub Südtirol anfragen</span>
+    <h2 class="cta-h2">Jetzt Ihren Golfurlaub in Sterzing anfragen</h2>
+    <p class="cta-text">Bereit für Ihren <strong>Golf Urlaub Südtirol</strong> am Golfclub Sterzing? Senden Sie uns Ihre unverbindliche Anfrage – wir melden uns innerhalb von 24 Stunden mit einem persönlichen Angebot für Ihren <strong>Golfurlaub Südtirol</strong>.</p>
+    <div class="cta-contact-bar">
+      <div class="contact-method">
+        <svg class="contact-icon-svg" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4h14c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="2,6 11,13 20,6"/>
+        </svg>
+        <span class="contact-label">E-Mail</span>
+        <a href="mailto:info@lahnerhof.it" class="contact-value">info@lahnerhof.it</a>
+        <p class="contact-note">Antwort innerhalb von 24 h</p>
+      </div>
+      <div class="cta-divider"></div>
+      <div class="contact-method">
+        <svg class="contact-icon-svg" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        <span class="contact-label">Telefon</span>
+        <a href="tel:+390472764777" class="contact-value">+39 0472 764 777</a>
+        <p class="contact-note">Mo – Sa, 8:00 – 20:00 Uhr</p>
+      </div>
+    </div>
+
+    <!-- BOOKING FORM (original code, LP-styled) -->
+    <div class="form-container">
+      <form id="bookingForm" class="custom-form" novalidate="">
+        <div class="m-side">
+          <label class="req" for="ankunft">Ankunft</label>
+          <input type="text" id="ankunft" placeholder="tt.mm.jjjj" required="">
+          <div class="field-error" id="errAnkunft">Bitte Ankunftsdatum wählen.</div>
+        </div>
+        <div class="m-side">
+          <label class="req" for="abreise">Abreise</label>
+          <input type="text" id="abreise" placeholder="tt.mm.jjjj" required="">
+          <div class="field-error" id="errAbreise">Bitte Abreisedatum wählen.</div>
+        </div>
+        <div class="full-width">
+          <label for="zimmer">Wunsch-Zimmer (optional)</label>
+          <select id="zimmer">
+            <option value="">-- Bitte wählen --</option>
+            <option value="Familiensuite Adrian">Familiensuite Adrian</option>
+            <option value="Familiensuite Juri">Familiensuite Juri</option>
+            <option value="Doppelzimmer Komfort">Doppelzimmer Komfort</option>
+            <option value="Doppelzimmer Deluxe">Doppelzimmer Deluxe</option>
+            <option value="Familienzimmer Komfort ohne Balkon">Familienzimmer Komfort ohne Balkon</option>
+            <option value="Familiensuite Lahnerhof">Familiensuite Lahnerhof</option>
+          </select>
+        </div>
+        <div class="m-side">
+          <label for="erwachsene">Erwachsene</label>
+          <select id="erwachsene">
+            <option value="1">1</option>
+            <option value="2" selected="">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="m-side">
+          <label for="kCount">Kinder</label>
+          <select id="kCount">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div id="k1" class="child-age-field m-side"><label class="req">Alter Kind 1</label><input type="number" name="alter_k1" min="0" max="17"></div>
+        <div id="k2" class="child-age-field m-side"><label class="req">Alter Kind 2</label><input type="number" name="alter_k2" min="0" max="17"></div>
+        <div id="k3" class="child-age-field m-side"><label class="req">Alter Kind 3</label><input type="number" name="alter_k3" min="0" max="17"></div>
+        <div id="k4" class="child-age-field m-side"><label class="req">Alter Kind 4</label><input type="number" name="alter_k4" min="0" max="17"></div>
+        <div id="k5" class="child-age-field m-side"><label class="req">Alter Kind 5</label><input type="number" name="alter_k5" min="0" max="17"></div>
+        <div class="m-side">
+          <label class="req" for="vorname">Vorname</label>
+          <input type="text" id="vorname" required="">
+          <div class="field-error" id="errVorname">Bitte Vorname eingeben.</div>
+        </div>
+        <div class="m-side">
+          <label class="req" for="nachname">Nachname</label>
+          <input type="text" id="nachname" required="">
+          <div class="field-error" id="errNachname">Bitte Nachname eingeben.</div>
+        </div>
+        <div class="full-width">
+          <label class="req" for="email">E-Mail</label>
+          <input type="email" id="email" required="">
+          <div class="field-error" id="errEmail">Bitte gültige E-Mail-Adresse eingeben.</div>
+        </div>
+        <div class="full-width">
+          <label class="req">Telefon</label>
+          <div class="phone-row">
+            <select id="phonePrefix">
+              <option value="0039" selected="">🇮🇹 +39</option>
+              <option value="0043">🇦🇹 +43</option>
+              <option value="0049">🇩🇪 +49</option>
+              <option value="0041">🇨🇭 +41</option>
+              <option value="0031">🇳🇱 +31</option>
+              <option value="0032">🇧🇪 +32</option>
+              <option value="0033">🇫🇷 +33</option>
+              <option value="0044">🇬🇧 +44</option>
+              <option value="0048">🇵🇱 +48</option>
+              <option value="0045">🇩🇰 +45</option>
+              <option value="0046">🇸🇪 +46</option>
+              <option value="0047">🇳🇴 +47</option>
+              <option value="00420">🇨🇿 +420</option>
+              <option value="001">🇺🇸 +1</option>
+            </select>
+            <input type="tel" id="phoneNumber" placeholder="331 123 4567" inputmode="numeric" pattern="[0-9 ]*">
+          </div>
+          <div class="field-error" id="errTelefon">Bitte Telefonnummer eingeben.</div>
+        </div>
+        <div class="full-width">
+          <label for="nachricht">Nachricht (optional)</label>
+          <textarea id="nachricht" rows="3" placeholder="Z.B. gewünschter Zimmerwunsch, Golfpaket-Fragen, besondere Anlässe..."></textarea>
+        </div>
+        <div class="privacy-row">
+          <input type="checkbox" id="privacy" required="">
+          <label for="privacy">Ich habe die <a href="https://www.lahnerhof.it/datenschutz" target="_blank">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
+        </div>
+        <div class="field-error full-width" id="errPrivacy" style="margin-top:-8px;">Bitte Datenschutzbestimmungen akzeptieren.</div>
+        <div class="success-msg" id="successMsg">✅ Vielen Dank! Ihre Golfurlaub-Anfrage wurde erfolgreich gesendet.<br>Wir melden uns so schnell wie möglich bei Ihnen – Ihr Team vom Hotel Lahnerhof.</div>
+        <button type="submit" class="submit-btn" id="sBtn">Unverbindliche Anfrage senden</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-name">Hotel Lahnerhof</div>
+        <div class="footer-logo-sub">Golfhotel Südtirol · 4 Sterne · Sterzing</div>
+        <p class="footer-tagline">Ihr Golfhotel Südtirol für unvergesslichen Golf Urlaub Sterzing. Direkt am Golfclub Sterzing – Golfurlaub Südtirol mit Panoramablick, Halbpension und Wellness.</p>
+        <div class="footer-contact">
+          <a href="tel:+390472764777">+39 0472 764 777</a>
+          <a href="mailto:info@lahnerhof.it">info@lahnerhof.it</a>
+          <span style="font-size:0.78rem;color:rgba(255,255,255,0.30)">Thuins Nr. 49 · 39049 Sterzing · Südtirol, Italien</span>
+        </div>
+        <p class="seo-keywords">Golf Südtirol · Golfurlaub Südtirol · Golfhotel Südtirol · Golf Urlaub Sterzing · Golf Urlaub Südtirol · Golfclub Sterzing · Golfwoche Südtirol · Golf Hotel Sterzing · Golfreisen Südtirol · Golf Sterzing</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Golfhotel Lahnerhof</p>
+        <div class="footer-links">
+          <a href="https://www.lahnerhof.it" target="_blank">Hotel Website</a>
+          <a href="https://www.lahnerhof.it/hotel-sterzing/lage-anreise/" target="_blank">Anreise &amp; Lage</a>
+          <a href="#anfrage">Golfurlaub anfragen</a>
+          <a href="https://www.lahnerhof.it" target="_blank">Zimmer &amp; Preise</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Rechtliches</p>
+        <div class="footer-links">
+          <a href="https://www.lahnerhof.it/datenschutz" target="_blank">Datenschutz</a>
+          <a href="https://www.lahnerhof.it/impressum" target="_blank">Impressum</a>
+          <a href="https://www.lahnerhof.it/datenschutz" target="_blank">Cookie-Richtlinie</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Hotel Lahnerhof · IT01715160212 · CIN: IT021115A1EV8RC52N</span>
+      <div class="footer-legal">
+        <a href="https://www.lahnerhof.it/datenschutz" target="_blank">Datenschutz</a>
+        <a href="https://www.lahnerhof.it/impressum" target="_blank">Impressum</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── HEADER SCROLL ──
+(function(){
+  var h = document.getElementById('site-header');
+  window.addEventListener('scroll', function(){
+    h.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+})();
+
+// ── FADE UP OBSERVER ──
+(function(){
+  var els = document.querySelectorAll('.fade-up');
+  if (!window.IntersectionObserver) { els.forEach(function(e){ e.classList.add('visible'); }); return; }
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('visible'); obs.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(function(e){ obs.observe(e); });
+})();
+
+// ── ROOM SLIDER ──
+(function(){
+  var track = document.getElementById('sliderTrack');
+  var dotsC = document.getElementById('sliderDots');
+  var counterEl = document.getElementById('sliderCounter');
+  var total = track ? track.children.length : 0;
+  var cur = 0;
+  if (!total) return;
+  for (var i = 0; i < total; i++) {
+    var d = document.createElement('button');
+    d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i+1));
+    (function(idx){ d.addEventListener('click', function(){ go(idx); }); })(i);
+    dotsC.appendChild(d);
+  }
+  function go(n){
+    cur = (n + total) % total;
+    track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+    var dots = dotsC.querySelectorAll('.slider-dot');
+    dots.forEach(function(d, i){ d.classList.toggle('active', i === cur); });
+    counterEl.innerHTML = '<span>' + (cur+1) + '</span> / ' + total;
+  }
+  document.getElementById('sliderPrev').addEventListener('click', function(){ go(cur - 1); });
+  document.getElementById('sliderNext').addEventListener('click', function(){ go(cur + 1); });
+  // touch/swipe
+  var sx = 0;
+  track.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', function(e){ var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 44) go(dx < 0 ? cur+1 : cur-1); }, { passive: true });
+  go(0);
+})();
+
+// ── BOOKING FORM ──
+document.addEventListener("DOMContentLoaded", function () {
+  var API_URL    = "https://dashboard.outofthebox-media.com/api/lead";
+  var HOTEL_SLUG = "hotel-lahnerhof";
+  var UTM_KEY    = "guestflow_utm";
+  (function captureUtm() {
+    var p=new URLSearchParams(window.location.search),src=p.get("utm_source")||"",med=p.get("utm_medium")||"",gcl=p.get("gclid")||"";
+    if(src||med||gcl){
+      var content=p.get("utm_content")||"",device="";
+      if(content.indexOf("_")!==-1) device=content.substring(content.lastIndexOf("_")+1);
+      try{localStorage.setItem(UTM_KEY,JSON.stringify({utm_source:src,utm_medium:med,utm_campaign:p.get("utm_campaign")||"",utm_term:p.get("utm_term")||"",utm_content:content,device:device,gclid:gcl,gad_source:p.get("gad_source")||"",gad_campaignid:p.get("gad_campaignid")||""}));}catch(e){}
+    }
+  })();
+  function getUtm(){try{return JSON.parse(localStorage.getItem(UTM_KEY)||"{}");}catch(e){return{};}}
+  var aP=flatpickr("#ankunft",{locale:"de",dateFormat:"d.m.Y",minDate:"today",onChange:function(d){if(!d[0])return;var next=new Date(d[0]);next.setDate(next.getDate()+1);bP.set("minDate",next);if(!bP.selectedDates[0]||bP.selectedDates[0]<=d[0])bP.setDate(next);}});
+  var bP=flatpickr("#abreise",{locale:"de",dateFormat:"d.m.Y",minDate:"today"});
+  document.getElementById("kCount").addEventListener("change",function(){var n=parseInt(this.value);for(var i=1;i<=5;i++){var f=document.getElementById("k"+i),inp=f.querySelector("input");if(i<=n){f.style.display="block";inp.required=true;}else{f.style.display="none";inp.required=false;inp.value="";}}});
+  document.getElementById("phoneNumber").addEventListener("input",function(){this.value=this.value.replace(/[^0-9 ]/g,"");});
+  function buildPhone(){var prefix=document.getElementById("phonePrefix").value,number=document.getElementById("phoneNumber").value;number=number.replace(/\s/g,"").replace(/^0+/,"");return prefix+number;}
+  function toIsoDate(raw){if(!raw)return"";var m=raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);if(m)return m[3]+"-"+m[2].padStart(2,"0")+"-"+m[1].padStart(2,"0");return raw;}
+  function showError(id,show){var el=document.getElementById(id);if(el)el.style.display=show?"block":"none";}
+  function markField(id,error){var el=document.getElementById(id);if(el){if(error)el.classList.add("error");else el.classList.remove("error");}}
+  function validate(){
+    var ok=true;
+    var ankunft=document.getElementById("ankunft").value;showError("errAnkunft",!ankunft);markField("ankunft",!ankunft);if(!ankunft)ok=false;
+    var abreise=document.getElementById("abreise").value;showError("errAbreise",!abreise);markField("abreise",!abreise);if(!abreise)ok=false;
+    var vorname=document.getElementById("vorname").value.trim();showError("errVorname",!vorname);markField("vorname",!vorname);if(!vorname)ok=false;
+    var nachname=document.getElementById("nachname").value.trim();showError("errNachname",!nachname);markField("nachname",!nachname);if(!nachname)ok=false;
+    var email=document.getElementById("email").value.trim();var emailOk=email&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);showError("errEmail",!emailOk);markField("email",!emailOk);if(!emailOk)ok=false;
+    var phoneNum=document.getElementById("phoneNumber").value.replace(/\s/g,"");showError("errTelefon",!phoneNum);document.getElementById("phoneNumber").classList.toggle("error",!phoneNum);if(!phoneNum)ok=false;
+    var kinder=parseInt(document.getElementById("kCount").value)||0;
+    for(var i=1;i<=kinder;i++){var ageInp=document.querySelector("[name='alter_k"+i+"']");var ageOk=ageInp&&ageInp.value!==""&&parseInt(ageInp.value)>=0;if(ageInp){if(!ageOk)ageInp.classList.add("error");else ageInp.classList.remove("error");}if(!ageOk)ok=false;}
+    var privacy=document.getElementById("privacy").checked;showError("errPrivacy",!privacy);if(!privacy)ok=false;
+    return ok;
+  }
+  document.getElementById("bookingForm").addEventListener("submit",function(e){
+    e.preventDefault();if(!validate())return;
+    var btn=document.getElementById("sBtn");btn.innerText="Sende…";btn.disabled=true;
+    var kinder=parseInt(document.getElementById("kCount").value)||0,ages=[];
+    for(var i=1;i<=kinder;i++){var v=document.querySelector("[name='alter_k"+i+"']");if(v&&v.value!=="")ages.push(v.value);}
+    var utm=getUtm();
+    var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmer").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
+    fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
+    .then(function(r){return r.json();})
+    .then(function(data){
+      if(data&&data.success){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"form_lead_success",form_data:{room:payload.room_type,guests:payload.adults,lead_id:data.id,device:payload.device}});document.getElementById("successMsg").style.display="block";btn.style.display="none";try{localStorage.removeItem(UTM_KEY);}catch(e){}}
+      else{alert("Fehler beim Senden. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
+    })
+    .catch(function(){alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
+  });
+});
+</script>
+
+</body>
+</html>
