@@ -182,21 +182,21 @@
     #zimmer .section-text { color: rgba(255,255,255,0.60); }
     .slider-wrap { position: relative; overflow: hidden; margin-top: 52px; }
     .slider-track { display: flex; transition: transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94); }
-    .slide { flex: 0 0 100%; display: grid; grid-template-columns: 55% 45%; min-height: 480px; }
+    .slide { flex: 0 0 100%; display: grid; grid-template-columns: 48% 52%; min-height: 300px; }
     .slide-img { overflow: hidden; position: relative; }
     .slide-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
     .slide-img:hover img { transform: scale(1.04); }
-    .slide-body { background: var(--forest-mid); padding: 52px 52px 52px 48px; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
-    .slide-tag { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone); }
-    .slide-name { font-family: var(--font-serif); font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 400; color: var(--white); line-height: 1.2; }
-    .slide-desc { font-size: 0.88rem; font-weight: 300; color: rgba(255,255,255,0.70); line-height: 1.75; }
-    .slide-meta { display: flex; gap: 24px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.10); }
-    .slide-meta-item { display: flex; flex-direction: column; gap: 3px; }
-    .meta-val { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 300; color: var(--stone); line-height: 1; }
-    .meta-lbl { font-size: 0.68rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.40); }
-    .slide-cta { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border: 1px solid rgba(166,138,86,0.5); color: var(--stone); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; align-self: flex-start; transition: background 0.25s, border-color 0.25s, color 0.25s; }
+    .slide-body { background: var(--forest-mid); padding: 28px 32px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+    .slide-tag { font-size: 0.60rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone); }
+    .slide-name { font-family: var(--font-serif); font-size: clamp(1.25rem, 1.8vw, 1.65rem); font-weight: 400; color: var(--white); line-height: 1.2; }
+    .slide-desc { font-size: 0.83rem; font-weight: 300; color: rgba(255,255,255,0.68); line-height: 1.65; }
+    .slide-meta { display: flex; gap: 20px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.10); }
+    .slide-meta-item { display: flex; flex-direction: column; gap: 2px; }
+    .meta-val { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 300; color: var(--stone); line-height: 1; }
+    .meta-lbl { font-size: 0.64rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.38); }
+    .slide-cta { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border: 1px solid rgba(191,179,156,0.5); color: var(--stone); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; align-self: flex-start; transition: background 0.25s, border-color 0.25s, color 0.25s; }
     .slide-cta:hover { background: var(--stone); border-color: var(--stone); color: var(--white); }
-    .slider-nav { display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; background: rgba(0,0,0,0.18); }
+    .slider-nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 32px; background: rgba(0,0,0,0.18); }
     .slider-dots { display: flex; gap: 10px; }
     .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.25); border: none; cursor: pointer; transition: background 0.3s, transform 0.3s; padding: 0; }
     .slider-dot.active { background: var(--stone); transform: scale(1.25); }
@@ -266,7 +266,8 @@
     .full-width { grid-column: span 2; }
     .custom-form label { display: block; margin-bottom: 5px; font-weight: 500; color: var(--charcoal); font-size: 0.82rem; letter-spacing: 0.03em; }
     .req::after { content: " *"; color: var(--stone-dark); }
-    .custom-form input, .custom-form select, .custom-form textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--cream-dark); border-radius: 0; font-size: 0.92rem; font-family: var(--font-sans); background: var(--white); color: var(--charcoal); box-sizing: border-box; transition: border-color 0.2s, box-shadow 0.2s; }
+    .custom-form input, .custom-form select, .custom-form textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--cream-dark); border-radius: 0; font-size: 0.92rem; font-family: var(--font-sans); background-color: #ffffff !important; color: var(--charcoal); box-sizing: border-box; transition: border-color 0.2s, box-shadow 0.2s; -webkit-appearance: none; appearance: none; }
+    .custom-form select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23797979' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
     .custom-form input:focus, .custom-form select:focus, .custom-form textarea:focus { border-color: var(--stone); outline: none; box-shadow: 0 0 0 2px rgba(166,138,86,0.12); }
     .custom-form input.error, .custom-form select.error { border-color: #c0392b !important; }
     .phone-row { display: flex; gap: 6px; }
@@ -388,8 +389,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── HERO ── -->
 <section id="hero">
   <img class="hero-img"
-    src="Loch%204%20mit%20Reifenstein.jpg"
-    alt="Golfhotel Südtirol – Golfclub Sterzing mit Schloss Reifenstein und Alpenpanorama" />
+    src="Golfen_Lahnerhof.png"
+    alt="Golfhotel Südtirol – Golfen am Golfclub Sterzing Vipiteno" style="object-position: center 20%;" />
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <span class="hero-badge">Golfhotel Südtirol · 4-Sterne · Sterzing</span>
@@ -570,7 +571,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="acc-tile">
-      <div class="acc-bg" style="background-image: url('golf-ge6fc39e54_l920.jpg'); background-position: center 60%;"></div>
+      <div class="acc-bg" style="background-image: url('https://hotel.lahnerhof.it/images/576_4672x4672_1168_0/19254600/72-oeRF3-u0xVkDE1SWzD05-A.jpg'); background-position: center 60%;"></div>
       <div class="acc-overlay"></div>
       <div class="acc-content">
         <span class="acc-tag">Golfhotel Südtirol</span>
@@ -627,12 +628,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1200/22074964/8-DSC06695-MuXrRfRhznwGteOWmJRU9A.jpg" alt="Familiensuite Adrian – Hotel Lahnerhof Golfhotel Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075519/cHannesNiederkofler_WEB_017_DSC2246-TixZHHP0qPlSFzXjQyY0wQ.jpg" alt="Familiensuite Adrian – Hotel Lahnerhof Golfhotel Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Golfhotel Südtirol</span>
           <h3 class="slide-name">Familiensuite Adrian</h3>
-          <p class="slide-desc">Großzügige Suite für 2–5 Personen mit allem Komfort für Ihren Golfurlaub Südtirol. Ideal für Golfer-Familien oder Paare, die Platz und Stil schätzen.</p>
+          <p class="slide-desc">Großzügige Suite für 2–5 Personen – ideal für Golfer-Familien, die nach der Runde am Golfclub Sterzing Platz und Komfort schätzen.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–5</span><span class="meta-lbl">Personen</span></div>
@@ -644,12 +645,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1200_-90/19992926/5-TUhvMIFqxfbpg4VP3dAdVA.jpeg" alt="Familiensuite Juri – Golfhotel Sterzing Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075522/cHannesNiederkofler_WEB_069_DSC2683-7OreEXsTrCDAhDVupB_EJw.jpg" alt="Familiensuite Juri – Golfhotel Sterzing Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Golf Sterzing</span>
           <h3 class="slide-name">Familiensuite Juri</h3>
-          <p class="slide-desc">Komfortabler Rückzugsort für Golfer und Familien. Die Suite Juri bietet viel Raum zum Entspannen nach einer aktiven Golfrunde in Südtirol.</p>
+          <p class="slide-desc">Komfortabler Rückzugsort für Golfer und Familien. Viel Raum zum Entspannen nach einer aktiven Golfrunde in Südtirol.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–5</span><span class="meta-lbl">Personen</span></div>
@@ -661,29 +662,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1200/19992927/6-PFGrQiQJlqjfkMWWbVzxAw.jpg" alt="Doppelzimmer Deluxe – Golfhotel Südtirol Lahnerhof" />
-        </div>
-        <div class="slide-body">
-          <span class="slide-tag">Zimmer · Golfurlaub Südtirol</span>
-          <h3 class="slide-name">Doppelzimmer Deluxe</h3>
-          <p class="slide-desc">Elegantes Deluxe-Zimmer für Golfer-Paare. Mit Balkon und Bergblick – der perfekte Start in einen neuen Golftag in Sterzing.</p>
-          <div class="slide-meta">
-            <div class="slide-meta-item"><span class="meta-val">26 m²</span><span class="meta-lbl">Fläche</span></div>
-            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
-            <div class="slide-meta-item"><span class="meta-val">ab 122 €</span><span class="meta-lbl">pro Person / HP</span></div>
-          </div>
-          <a href="#anfrage" class="slide-cta">Anfragen</a>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/800/19992925/4-ahO6Rw36UBbJoAq71qwZRA.jpg" alt="Doppelzimmer Komfort – Hotel Lahnerhof Golfhotel" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075531/cHannesNiederkofler_WEB_052_DSC2554-iuawA33MmFatDT-4Wy2LDA.jpg" alt="Doppelzimmer Komfort – Hotel Lahnerhof Golfhotel" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer · Golf Hotel Sterzing</span>
           <h3 class="slide-name">Doppelzimmer Komfort</h3>
-          <p class="slide-desc">Behagliches Komfortzimmer für Golfer, die das Wesentliche schätzen: erholsamer Schlaf, gutes Frühstück und los geht's auf die Driving Range.</p>
+          <p class="slide-desc">Behagliches Komfortzimmer für Golfer: erholsamer Schlaf, reichhaltiges Frühstück – und dann direkt auf die Driving Range des Golfclubs.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">22 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">1–2</span><span class="meta-lbl">Personen</span></div>
@@ -695,12 +679,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1200/19254600/72-oeRF3-u0xVkDE1SWzD05-A.jpg" alt="Familiensuite Lahnerhof – Golfhotel Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075533/cHannesNiederkofler_WEB_071_DSC2730-DIp8PZkrEH4hii74EOPtQw.jpg" alt="Doppelzimmer Deluxe – Golfhotel Südtirol Lahnerhof" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Zimmer · Golfurlaub Südtirol</span>
+          <h3 class="slide-name">Doppelzimmer Deluxe</h3>
+          <p class="slide-desc">Elegantes Deluxe-Zimmer für Golfer-Paare – mit Bergblick und allem, was der perfekte Start in einen neuen Golftag braucht.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">26 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 122 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/576/22074814/cHannesNiederkofler_WEB_073_DSC2761-FKGHjMeIIWuKZ4pQl5Fxmg.jpg" alt="Familienzimmer Komfort ohne Balkon – Golf Urlaub Sterzing" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Zimmer · Golf Urlaub Südtirol</span>
+          <h3 class="slide-name">Familienzimmer Komfort</h3>
+          <p class="slide-desc">Ideal für Familien beim Golfurlaub Südtirol. Viel Platz, viel Licht – der Golfclub Sterzing nur wenige Minuten entfernt.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">32 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 128 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/576/22075421/cHannesNiederkofler_WEB_049_DSC2518-zFJJIpk9sdGMEysp91CVHQ.jpg" alt="Familiensuite Lahnerhof – Golfhotel Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Golfreisen Südtirol</span>
           <h3 class="slide-name">Familiensuite Lahnerhof</h3>
-          <p class="slide-desc">Unsere Namesuite – großzügig, stilvoll und mit allem ausgestattet, was ein unvergesslicher Golfurlaub in Südtirol braucht. Inklusive Panoramablick.</p>
+          <p class="slide-desc">Unsere Namesuite – großzügig, stilvoll, mit Panoramablick. Alles, was ein unvergesslicher Golfurlaub Südtirol braucht.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
@@ -712,16 +730,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1200_-90/19992973/13-SWRKDmAaafSqFL4gfg9efw.jpeg" alt="Familienzimmer Komfort – Golf Urlaub Sterzing Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/1066/22614469/cHannesNiederkofler_WEB_037_DSC2386-7TrqcLe28_jVMCtx3rt0jg.jpg" alt="Familiensuite Anna – Golfhotel Lahnerhof Südtirol" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Zimmer · Golf Urlaub Südtirol</span>
-          <h3 class="slide-name">Familienzimmer Komfort</h3>
-          <p class="slide-desc">Ideal für Familien, die Golf Südtirol gemeinsam erleben möchten. Viel Platz, viel Licht und der Golfclub Sterzing nur wenige Minuten entfernt.</p>
+          <span class="slide-tag">Suite · Golfhotel Südtirol</span>
+          <h3 class="slide-name">Familiensuite Anna</h3>
+          <p class="slide-desc">Helle, großzügige Suite für Familien – der perfekte Rückzugsort nach einer Golfrunde am Golfclub Sterzing mit Bergblick inklusive.</p>
           <div class="slide-meta">
-            <div class="slide-meta-item"><span class="meta-val">32 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
-            <div class="slide-meta-item"><span class="meta-val">ab 128 €</span><span class="meta-lbl">pro Person / HP</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 148 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/1066/22614687/cHannesNiederkofler_WEB_032_DSC2347-3R43jH6dC2VtDYlKYJZaag.jpg" alt="Familienzimmer Deluxe – Golf Urlaub Sterzing Südtirol" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Zimmer · Golf Urlaub Sterzing</span>
+          <h3 class="slide-name">Familienzimmer Deluxe</h3>
+          <p class="slide-desc">Geräumiges Deluxe-Zimmer für Familien beim Golf Urlaub Südtirol – modern eingerichtet, mit viel Platz für entspannte Abende nach dem Golf.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">38 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 135 €</span><span class="meta-lbl">pro Person / HP</span></div>
+          </div>
+          <a href="#anfrage" class="slide-cta">Anfragen</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-img">
+          <img src="https://hotel.lahnerhof.it/images/1066/22614777/cHannesNiederkofler_WEB_046_DSC2477-z5oAM08cpMyS3sKgxkNBMg.jpg" alt="Familiensuite Superior – Golfhotel Lahnerhof Südtirol" />
+        </div>
+        <div class="slide-body">
+          <span class="slide-tag">Suite · Golfurlaub Südtirol</span>
+          <h3 class="slide-name">Familiensuite Superior</h3>
+          <p class="slide-desc">Stilvolle Superior-Suite ohne Balkon – geräumig und komfortabel, ideal für Golfer-Familien beim Golfurlaub in Sterzing.</p>
+          <div class="slide-meta">
+            <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
+            <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
+            <div class="slide-meta-item"><span class="meta-val">ab 138 €</span><span class="meta-lbl">pro Person / HP</span></div>
           </div>
           <a href="#anfrage" class="slide-cta">Anfragen</a>
         </div>
@@ -731,7 +783,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="slider-nav">
     <div class="slider-dots" id="sliderDots"></div>
-    <span class="slider-counter" id="sliderCounter"><span>1</span> / 6</span>
+    <span class="slider-counter" id="sliderCounter"><span>1</span> / 9</span>
     <div class="slider-arrows">
       <button class="slider-btn" id="sliderPrev" aria-label="Zurück">
         <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 14l-5-5 5-5"/></svg>
@@ -935,7 +987,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <img src="Loch%202.jpg" alt="Golfclub Sterzing – Loch 2 Panorama Golf Südtirol" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="golf-ge6fc39e54_l920.jpg" alt="Golf Callaway Ball – Golf Urlaub Sterzing Südtirol" loading="lazy" />
+      <img src="https://hotel.lahnerhof.it/images/576_4672x4672_1168_0/19254600/72-oeRF3-u0xVkDE1SWzD05-A.jpg" alt="Golf Callaway Ball – Golf Urlaub Sterzing Südtirol" loading="lazy" />
     </div>
     <div class="gal-item">
       <img src="https://hotel.lahnerhof.it/images/676/22075126/Pool_3-8EwGCwO5Gm7ePosDrt7C_A.jpg" alt="Panoramapool Hotel Lahnerhof Golfhotel Südtirol" loading="lazy" />
@@ -994,8 +1046,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <option value="Familiensuite Juri">Familiensuite Juri</option>
             <option value="Doppelzimmer Komfort">Doppelzimmer Komfort</option>
             <option value="Doppelzimmer Deluxe">Doppelzimmer Deluxe</option>
-            <option value="Familienzimmer Komfort ohne Balkon">Familienzimmer Komfort ohne Balkon</option>
+            <option value="Familienzimmer Komfort">Familienzimmer Komfort</option>
             <option value="Familiensuite Lahnerhof">Familiensuite Lahnerhof</option>
+            <option value="Familiensuite Anna">Familiensuite Anna</option>
+            <option value="Familienzimmer Deluxe">Familienzimmer Deluxe</option>
+            <option value="Familiensuite Superior">Familiensuite Superior</option>
           </select>
         </div>
         <div class="m-side">
