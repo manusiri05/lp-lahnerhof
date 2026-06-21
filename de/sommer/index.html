@@ -1293,12 +1293,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var utm=getUtm();
     var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmer").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
     fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
-    .then(function(r){return r.json();})
-    .then(function(data){
+    .then(function(r){return r.json().then(function(data){return{ok:r.ok,status:r.status,data:data};});})
+    .then(function(res){
+      var data=res.data||{};
       if(data&&data.success){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"form_lead_success",form_data:{room:payload.room_type,guests:payload.adults,lead_id:data.id,device:payload.device}});document.getElementById("successMsg").style.display="block";btn.style.display="none";try{localStorage.removeItem(UTM_KEY);}catch(e){}}
-      else{alert("Fehler beim Senden. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
+      else{console.error("Lead API error",res);alert((data.error||data.message)||("Fehler beim Senden. Status: "+res.status));btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
     })
-    .catch(function(){alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
+    .catch(function(err){console.error("Lead network error",err);alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
   });
 });
 </script>
