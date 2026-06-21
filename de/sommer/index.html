@@ -77,9 +77,9 @@
     #site-header.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
     .header-inner { max-width: var(--max-w); width: 100%; margin-inline: auto; padding-inline: 24px; display: flex; align-items: center; justify-content: space-between; }
     .header-logo { display: flex; align-items: center; }
-    .header-logo svg { height: 75px; width: auto; display: block; }
-    .header-logo svg .st0 { fill: rgba(255,255,255,0.95); transition: fill 0.4s; }
-    #site-header.scrolled .header-logo svg .st0 { fill: #4A4A49; }
+    .header-logo img { height: 75px; width: auto; display: block; filter: brightness(0) invert(1); transition: filter 0.4s; }
+    .header-logo svg { display: none; }
+    #site-header.scrolled .header-logo img { filter: none; }
     .header-nav { display: flex; align-items: center; gap: 28px; }
     .header-tel { font-size: 0.82rem; font-weight: 400; letter-spacing: 0.04em; color: rgba(255,255,255,0.9); transition: color 0.4s; }
     #site-header.scrolled .header-tel { color: var(--warm-gray); }
@@ -168,7 +168,7 @@
 
     /* ── PHILOSOPHY ── */
     #philosophy { position: relative; padding: 110px 24px; overflow: hidden; }
-    .philosophy-bg { position: absolute; inset: 0; background-image: url('pool_aussicht.jpg'); background-size: cover; background-position: center; filter: brightness(0.32); }
+    .philosophy-bg { position: absolute; inset: 0; background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/pool_aussicht.jpg'); background-size: cover; background-position: center; filter: brightness(0.32); }
     .philosophy-inner { position: relative; z-index: 2; max-width: 780px; margin-inline: auto; text-align: center; }
     .quote-mark { font-family: var(--font-serif); font-size: 5rem; color: var(--stone); line-height: 0.6; display: block; margin-bottom: 24px; opacity: 0.7; }
     .philosophy-quote { font-family: var(--font-serif); font-size: clamp(1.45rem, 2.8vw, 2.15rem); font-weight: 300; font-style: italic; line-height: 1.5; color: var(--white); margin-bottom: 32px; }
@@ -376,6 +376,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header id="site-header">
   <div class="header-inner">
     <a href="#hero" class="header-logo" aria-label="Hotel Lahnerhof – Hotel Sterzing">
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/logo_lahnerhof.svg" alt="Hotel Lahnerhof" />
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.5 134.5" aria-hidden="true" focusable="false">
         <g>
           <path class="st0" d="M16.7,20.7h250.1V119H16.7V20.7z M16.2,119.5h251.1V20.2H16.2V119.5z"/>
@@ -405,7 +406,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── HERO ── -->
 <section id="hero">
   <img class="hero-img"
-    src="hero_hotel_außen.jpg"
+    src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hero_hotel_au%C3%9Fen.jpg"
     alt="Hotel Sterzing Lahnerhof – 4 Sterne Hotel mit Panoramablick" style="object-position: center 42%;" />
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -492,7 +493,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="intro-image-wrap">
       <img class="intro-image-main"
-        src="hotel_vorderansicht.jpg"
+        src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hotel_vorderansicht.jpg"
         alt="Hotel Lahnerhof in Sterzing – 4 Sterne Hotel Südtirol" />
       <div class="intro-image-badge">
         <p class="badge-text"><strong>Panoramalage:</strong> Hotel in Sterzing oberhalb der Stadt – mit Blick auf Berge, Täler und den Sommer in Südtirol.</p>
@@ -566,7 +567,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="accordion-grid">
     <div class="acc-tile">
-      <div class="acc-bg" style="background-image: url('Penserjoch_lowres-27-6c--JuggP-QU8I_k05j-sA.jpg');"></div>
+      <div class="acc-bg" style="background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/Penserjoch_lowres-27-6c--JuggP-QU8I_k05j-sA.jpg');"></div>
       <div class="acc-overlay"></div>
       <div class="acc-content">
         <span class="acc-tag">Panorama &amp; Lage</span>
@@ -576,7 +577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="acc-tile">
-      <div class="acc-bg" style="background-image: url('außenpool.jpg'); background-position: center 60%;"></div>
+      <div class="acc-bg" style="background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/au%C3%9Fenpool.jpg'); background-position: center 60%;"></div>
       <div class="acc-overlay"></div>
       <div class="acc-content">
         <span class="acc-tag">Pool &amp; Wellness</span>
@@ -586,7 +587,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="acc-tile">
-      <div class="acc-bg" style="background-image: url('romantischespaar.jpeg'); background-position: center 55%;"></div>
+      <div class="acc-bg" style="background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/romantischespaar.jpeg'); background-position: center 55%;"></div>
       <div class="acc-overlay"></div>
       <div class="acc-content">
         <span class="acc-tag">Sommer aktiv</span>
@@ -850,7 +851,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="inklusive-img-wrap">
       <img class="inklusive-img"
-        src="essen.jpg"
+        src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/essen.jpg"
         alt="Halbpension und Südtiroler Küche im Hotel Lahnerhof Sterzing" />
       <div class="inklusive-img-tag">
         <span class="inklusive-tag-label">Genuss inklusive</span>
@@ -990,31 +991,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="gallery-grid">
     <div class="gal-item">
-      <img src="hero_hotel_außen.jpg" alt="Hotel Lahnerhof außen – Hotel Sterzing mit Panoramalage" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hero_hotel_au%C3%9Fen.jpg" alt="Hotel Lahnerhof außen – Hotel Sterzing mit Panoramalage" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="Pool_3-8EwGCwO5Gm7ePosDrt7C_A.jpg" alt="Pool im Hotel Lahnerhof – Hotel mit Pool Sterzing" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/pool_aussicht.jpg" alt="Pool im Hotel Lahnerhof – Hotel mit Pool Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="hotel_vorderansicht.jpg" alt="Hotel Vorderansicht Lahnerhof – 4 Sterne Hotel Sterzing" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hotel_vorderansicht.jpg" alt="Hotel Vorderansicht Lahnerhof – 4 Sterne Hotel Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="Penserjoch_lowres-27-6c--JuggP-QU8I_k05j-sA.jpg" alt="Sommerurlaub Sterzing – Südtiroler Berglandschaft nahe Lahnerhof" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/Penserjoch_lowres-27-6c--JuggP-QU8I_k05j-sA.jpg" alt="Sommerurlaub Sterzing – Südtiroler Berglandschaft nahe Lahnerhof" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="essen.jpg" alt="Südtiroler Küche und Halbpension im Hotel Lahnerhof Sterzing" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/essen.jpg" alt="Südtiroler Küche und Halbpension im Hotel Lahnerhof Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="ruheraumkojen.jpg" alt="Ruheraum im Wellnesshotel Sterzing Lahnerhof" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/ruheraumkojen.jpg" alt="Ruheraum im Wellnesshotel Sterzing Lahnerhof" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="sauna_lahner.jpg" alt="Sauna im Wellnesshotel Lahnerhof Sterzing" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/sauna_lahner.jpg" alt="Sauna im Wellnesshotel Lahnerhof Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="außenpool.jpg" alt="Außenpool Hotel Lahnerhof – Hotel mit Pool in Sterzing" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/au%C3%9Fenpool.jpg" alt="Außenpool Hotel Lahnerhof – Hotel mit Pool in Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="pool_aussicht.jpg" alt="Pool mit Aussicht im Hotel Sterzing Lahnerhof" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/pool_aussicht.jpg" alt="Pool mit Aussicht im Hotel Sterzing Lahnerhof" loading="lazy" />
     </div>
   </div>
 </section>
