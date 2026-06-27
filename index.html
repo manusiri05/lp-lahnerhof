@@ -12,12 +12,12 @@
   })(window,document,'script','dataLayer','GTM-PTVT9TMK');</script>
   <!-- End Google Tag Manager -->
 
-  <title>Golfhotel Südtirol – Golfurlaub Sterzing | Hotel Lahnerhof 4★</title>
-  <meta name="description" content="Golfurlaub Südtirol im 4-Sterne Golfhotel Lahnerhof bei Sterzing. Direkt am Golfclub Sterzing – Golf Südtirol mit Panoramapool, Halbpension &amp; kostenlosem Golfzugang. Jetzt anfragen!" />
-  <meta name="keywords" content="golf südtirol, golf urlaub sterzing, golf urlaub südtirol, golfhotel südtirol, golfurlaub südtirol, golfwoche südtirol, golf hotel sterzing, golf sterzing, golfreisen südtirol" />
+  <title>Hotel Sterzing Urlaub – 4 Sterne Hotel Lahnerhof in Südtirol</title>
+  <meta name="description" content="Hotel Sterzing Urlaub im 4-Sterne Hotel Lahnerhof: Panoramalage über Sterzing, beheizter Außenpool, Wellness, Sauna, Halbpension und Sommeraktivitäten. Jetzt unverbindlich anfragen!" />
+  <meta name="keywords" content="hotel sterzing, sterzing hotel, sterzing urlaub, hotel in sterzing, hotels in sterzing, hotel sterzing urlaub, 4 sterne hotel sterzing, wellnesshotel sterzing, sterzing hotel mit wellness, hotel mit pool sterzing, kleines Wellnesshotel Südtirol, wellnesshotel Südtirol, sommerurlaub sterzing, urlaub sterzing, hotel lahnerhof" />
   <meta name="robots" content="noindex, nofollow" />
-  <meta property="og:title" content="Golfhotel Südtirol – Golfurlaub Sterzing | Hotel Lahnerhof" />
-  <meta property="og:description" content="Golfurlaub Südtirol direkt beim Golfclub Sterzing. Panoramapool, Halbpension &amp; kostenloser Golfzugang im 4-Sterne Hotel Lahnerhof." />
+  <meta property="og:title" content="Hotel Sterzing Urlaub – 4 Sterne Hotel Lahnerhof" />
+  <meta property="og:description" content="Sommerurlaub im Lahnerhof: Ihr 4 Sterne Hotel in Sterzing mit Panoramapool, Wellness, Südtiroler Küche und Bergblick." />
   <meta property="og:type" content="website" />
 
   <!-- Flatpickr -->
@@ -77,14 +77,18 @@
     #site-header.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
     .header-inner { max-width: var(--max-w); width: 100%; margin-inline: auto; padding-inline: 24px; display: flex; align-items: center; justify-content: space-between; }
     .header-logo { display: flex; align-items: center; }
-    .header-logo svg { height: 75px; width: auto; display: block; }
-    .header-logo svg .st0 { fill: rgba(255,255,255,0.95); transition: fill 0.4s; }
-    #site-header.scrolled .header-logo svg .st0 { fill: #4A4A49; }
+    .header-logo img { height: 75px; width: auto; display: block; filter: brightness(0) invert(1); transition: filter 0.4s; }
+    .header-logo svg { display: none; }
+    #site-header.scrolled .header-logo img { filter: none; }
     .header-nav { display: flex; align-items: center; gap: 28px; }
     .header-tel { font-size: 0.82rem; font-weight: 400; letter-spacing: 0.04em; color: rgba(255,255,255,0.9); transition: color 0.4s; }
     #site-header.scrolled .header-tel { color: var(--warm-gray); }
     .btn-avail { display: inline-flex; align-items: center; gap: 8px; padding: 11px 24px; background: var(--stone); color: var(--white); font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border: none; cursor: pointer; transition: background 0.25s, transform 0.2s; }
     .btn-avail:hover { background: var(--stone-dark); transform: translateY(-1px); }
+    .btn-direct-booking { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 22px; background: rgba(255,255,255,0.08); color: var(--white); font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.65); cursor: pointer; transition: background 0.25s, border-color 0.25s, color 0.25s, transform 0.2s; white-space: nowrap; }
+    .btn-direct-booking:hover { background: var(--white); border-color: var(--white); color: var(--forest); transform: translateY(-1px); }
+    #site-header.scrolled .btn-direct-booking { background: transparent; border-color: var(--stone); color: var(--forest); }
+    #site-header.scrolled .btn-direct-booking:hover { background: var(--stone); color: var(--white); }
 
     /* ── HERO ── */
     #hero { position: relative; height: 100vh; min-height: 620px; max-height: 1000px; overflow: hidden; display: flex; align-items: flex-end; }
@@ -139,8 +143,8 @@
     .usp-highlight .usp-icon path, .usp-highlight .usp-icon rect, .usp-highlight .usp-icon circle, .usp-highlight .usp-icon polyline, .usp-highlight .usp-icon line, .usp-highlight .usp-icon ellipse { stroke: var(--stone); }
     .usp-highlight:hover { border-color: var(--stone); transform: translateY(-3px); }
 
-    /* ── GOLF SECTION ── */
-    #golf { background: var(--cream-dark); padding: var(--pad) 24px; }
+    /* ── SOMMER SECTION ── */
+    #sommer { background: var(--cream-dark); padding: var(--pad) 24px; }
     .accordion-grid { display: grid; grid-template-columns: repeat(3, 1fr); max-width: var(--max-w); margin-inline: auto; overflow: hidden; }
     .acc-tile { position: relative; overflow: hidden; cursor: pointer; height: 540px; }
     .acc-tile:hover .acc-bg { transform: scale(1.05); }
@@ -168,18 +172,18 @@
 
     /* ── PHILOSOPHY ── */
     #philosophy { position: relative; padding: 110px 24px; overflow: hidden; }
-    .philosophy-bg { position: absolute; inset: 0; background-image: url('Teich%20Loch%206.jpg'); background-size: cover; background-position: center; filter: brightness(0.28); }
+    .philosophy-bg { position: absolute; inset: 0; background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/pool_aussicht.jpg'); background-size: cover; background-position: center; filter: brightness(0.32); }
     .philosophy-inner { position: relative; z-index: 2; max-width: 780px; margin-inline: auto; text-align: center; }
     .quote-mark { font-family: var(--font-serif); font-size: 5rem; color: var(--stone); line-height: 0.6; display: block; margin-bottom: 24px; opacity: 0.7; }
     .philosophy-quote { font-family: var(--font-serif); font-size: clamp(1.45rem, 2.8vw, 2.15rem); font-weight: 300; font-style: italic; line-height: 1.5; color: var(--white); margin-bottom: 32px; }
     .philosophy-attr { font-size: 0.72rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stone); }
 
     /* ── ROOMS SLIDER ── */
-    #zimmer { background: var(--forest); padding: var(--pad) 0 0; }
-    #zimmer .section-header { padding-inline: 24px; }
-    #zimmer .section-h2 { color: var(--white); }
-    #zimmer .section-label { color: var(--stone); }
-    #zimmer .section-text { color: rgba(255,255,255,0.60); }
+    #zimmer-section { background: var(--forest); padding: var(--pad) 0 0; }
+    #zimmer-section .section-header { padding-inline: 24px; }
+    #zimmer-section .section-h2 { color: var(--white); }
+    #zimmer-section .section-label { color: var(--stone); }
+    #zimmer-section .section-text { color: rgba(255,255,255,0.60); }
     .slider-wrap { position: relative; overflow: hidden; margin-top: 52px; }
     .slider-track { display: flex; transition: transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94); }
     .slide { flex: 0 0 100%; display: grid; grid-template-columns: 48% 52%; min-height: 300px; }
@@ -260,6 +264,13 @@
     .contact-value { font-family: var(--font-serif); font-size: 1.15rem; color: var(--forest); }
     .contact-note { font-size: 0.75rem; color: var(--warm-gray); margin-top: 4px; }
 
+    /* Direct booking widget */
+    .booking-widget-section { margin-top: 56px; padding-top: 56px; border-top: 1px solid var(--cream-dark); scroll-margin-top: calc(var(--header-h) + 24px); }
+    .booking-widget-title { font-family: var(--font-serif); font-size: clamp(1.65rem, 3vw, 2.35rem); font-weight: 300; line-height: 1.2; color: var(--forest); margin-bottom: 12px; }
+    .booking-widget-text { max-width: 650px; margin: 0 auto 28px; font-size: 0.88rem; color: var(--warm-gray); line-height: 1.75; }
+    .booking-widget-shell { width: 100%; min-height: 140px; padding: 32px 24px; background: var(--white); box-shadow: 0 4px 40px rgba(0,0,0,0.06); text-align: left; }
+    #Bs-BookingWidget { width: 100%; }
+
     /* Override form styles to match LP design */
     .form-container { background-color: var(--white); padding: 40px 44px; border-radius: 0; box-shadow: 0 4px 40px rgba(0,0,0,0.06); max-width: 100%; margin: auto; font-family: var(--font-sans); }
     .custom-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -275,7 +286,7 @@
     .phone-row input { flex: 1; }
     .child-age-field { display: none; }
     .privacy-row { grid-column: span 2; display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px; background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 0; }
-    .privacy-row input[type="checkbox"] { width: 18px; min-width: 18px; height: 18px; margin-top: 2px; cursor: pointer; accent-color: var(--stone); }
+    .privacy-row input[type="checkbox"] { appearance: auto; -webkit-appearance: checkbox; width: 18px; min-width: 18px; height: 18px; margin-top: 2px; cursor: pointer; accent-color: var(--stone); background: var(--white); }
     .privacy-row label { font-size: 0.80rem; color: var(--warm-gray); font-weight: 400; margin: 0; cursor: pointer; line-height: 1.5; }
     .privacy-row label a { color: var(--stone); text-decoration: underline; }
     .field-error { font-size: 0.76rem; color: #c0392b; margin-top: 3px; display: none; }
@@ -341,7 +352,7 @@
     }
     @media (max-width: 768px) {
       :root { --pad: 60px; }
-      .header-tel { display: none; }
+      .header-tel, .btn-direct-booking { display: none; }
       .hero-h1 { font-size: 2.3rem; }
       .usps-inner { grid-template-columns: repeat(2, 1fr); }
       .reviews-grid { grid-template-columns: 1fr; }
@@ -375,7 +386,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── HEADER ── -->
 <header id="site-header">
   <div class="header-inner">
-    <a href="#hero" class="header-logo" aria-label="Hotel Lahnerhof – Golfhotel Südtirol">
+    <a href="#hero" class="header-logo" aria-label="Hotel Lahnerhof – Hotel Sterzing">
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/logo_lahnerhof.svg" alt="Hotel Lahnerhof" />
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.5 134.5" aria-hidden="true" focusable="false">
         <g>
           <path class="st0" d="M16.7,20.7h250.1V119H16.7V20.7z M16.2,119.5h251.1V20.2H16.2V119.5z"/>
@@ -398,6 +410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="header-nav">
       <a href="tel:+390472764777" class="header-tel">+39 0472 764 777</a>
       <a href="#anfrage" class="btn-avail">Verfügbarkeit prüfen</a>
+      <a href="#direkt-buchen" class="btn-direct-booking">Direkt buchen</a>
     </nav>
   </div>
 </header>
@@ -405,17 +418,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── HERO ── -->
 <section id="hero">
   <img class="hero-img"
-    src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/Loch%204%20mit%20Reifenstein.jpg"
-    alt="Golfhotel Südtirol – Golfen am Golfclub Sterzing Vipiteno" style="object-position: center 40%;" />
+    src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hero_hotel_au%C3%9Fen.jpg"
+    alt="Hotel Sterzing Lahnerhof – 4 Sterne Hotel mit Panoramablick" style="object-position: center 42%;" />
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <span class="hero-badge">Golfhotel Südtirol · 4-Sterne · Sterzing</span>
-    <h1 class="hero-h1">Golfurlaub Südtirol –<br>Ihr Golfhotel in Sterzing</h1>
-    <span class="hero-sub">Golfen in Südtirol, ganz nah am Lahnerhof: Der Golfclub Sterzing liegt nur wenige Minuten entfernt und bietet ideale Bedingungen für genussvolle Golfrunden mit Blick auf die Berge. Im Lahnerhof erwarten Sie dazu Panoramapool, Halbpension und kostenloser Golfzugang für unsere Gäste.</span>
+    <span class="hero-badge">Sommerurlaub in Sterzing · Wellness · Pool</span>
+    <h1 class="hero-h1">Sommerurlaub im Lahnerhof<br>bei Sterzing</h1>
+    <span class="hero-sub">Hoch über Sterzing liegt der Lahnerhof sonnig in Thuins: ein 4-Sterne-Hotel mit Panoramablick, beheiztem Außenpool, feinem Wellnessbereich und Südtiroler Halbpension. Ideal für alle, die Urlaub in Sterzing mit Ruhe, Natur und Genuss verbinden möchten.</span>
     <div class="hero-cta-wrap">
       <a href="#anfrage" class="btn-primary">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
-        Golfurlaub anfragen
+        Urlaub anfragen
       </a>
     </div>
   </div>
@@ -466,20 +479,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="intro" class="fade-up">
   <div class="intro-inner">
     <div>
-      <span class="section-label">Golf Urlaub Südtirol</span>
-      <h2 class="intro-h2">Golf in Südtirol erleben –<br>Natur, Genuss &amp; grüne Fairways</h2>
-      <p class="intro-text">Das <strong>Hotel Lahnerhof</strong> in Thuins bei Sterzing ist Ihr perfektes Basecamp für einen unvergesslichen <strong>Golfurlaub in Südtirol</strong>. Eingebettet in die atemberaubende Südtiroler Bergwelt, auf rund 1.000 m Seehöhe, verbindet unser 4-Sterne-Hotel alles, was Golfer lieben: Natur, Erholung und die Leidenschaft für das Spiel.</p>
-      <div class="intro-highlight">„Der Golfclub Sterzing liegt direkt vor der Tür – Golfurlaub Südtirol at its best: Fairways mit Alpenblick, frische Bergluft und abends ein verwöhnendes 4-Gänge-Menü."</div>
-      <p class="intro-text">Ob Sie täglich auf dem Course stehen oder Golf mit Wandern, E-Biken und Wellness kombinieren möchten – Ihr <strong>Golf Urlaub in Sterzing</strong> wird hier zum Gesamterlebnis. Unser Gastgeber Gerhard kennt jeden Winkel der Region und sorgt mit seinem Team dafür, dass Ihr Aufenthalt unvergesslich wird.</p>
+      <span class="section-label">Lahnerhof bei Sterzing</span>
+      <h2 class="intro-h2">Ihr 4-Sterne-Hotel<br>oberhalb von Sterzing</h2>
+      <p class="intro-text">Im Hotel Lahnerhof in Thuins verbinden sich Aktivurlaub, Romantik und Erholung zu einem entspannten Sommer in Südtirol. Eingebettet in die Bergwelt genießen Sie den Blick über Sterzing und Ratschings, starten direkt in Wander- und Bike-Erlebnisse und lassen den Tag im Wellnessbereich ausklingen.</p>
+      <div class="intro-highlight">„Ein Rückzugsort mit Wellness, Pool und Panoramablick: persönlich geführt, ruhig gelegen und gemacht für Gäste, die ihren Urlaub in Sterzing mit Natur, Genuss und Erholung füllen möchten."</div>
+      <p class="intro-text">Im Panoramarestaurant servieren wir regionale Spezialitäten und ausgewählte Weine. Ob Genussurlaub, romantische Auszeit oder aktive Tage am Rosskopf und in Ratschings: Der Lahnerhof ist ein Hotel in Sterzing, das Sommer, Wellness und Südtiroler Gastlichkeit angenehm unaufgeregt verbindet.</p>
       <div class="intro-meta">
-        <div>
-          <span class="meta-num">250 m</span>
-          <span class="meta-label">Driving Range</span>
-        </div>
-        <div>
-          <span class="meta-num">7</span>
-          <span class="meta-label">Übungslöcher</span>
-        </div>
         <div>
           <span class="meta-num">4★</span>
           <span class="meta-label">Hotelkategorie</span>
@@ -488,14 +493,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="meta-num">1.000 m</span>
           <span class="meta-label">Seehöhe</span>
         </div>
+        <div>
+          <span class="meta-num">Pool</span>
+          <span class="meta-label">Beheizt</span>
+        </div>
+        <div>
+          <span class="meta-num">HP</span>
+          <span class="meta-label">Halbpension</span>
+        </div>
       </div>
     </div>
     <div class="intro-image-wrap">
       <img class="intro-image-main"
-        src="Loch%202.jpg"
-        alt="Golfclub Sterzing – Golfurlaub Südtirol mit Panoramablick auf die Alpen" />
+        src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hotel_vorderansicht.jpg"
+        alt="Hotel Lahnerhof in Sterzing – 4 Sterne Hotel Südtirol" />
       <div class="intro-image-badge">
-        <p class="badge-text"><strong>NEU inklusive:</strong> Freier Zugang zum Golfclub Sterzing für alle Hotelgäste – Golf Südtirol ohne Extrakosten!</p>
+        <p class="badge-text">Oben in Thuins: ruhige Lage über Sterzing – mit Blick auf Berge, Täler und den Sommer in Südtirol.</p>
       </div>
     </div>
   </div>
@@ -507,21 +520,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="usp-item usp-highlight">
       <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="17" cy="17" r="4"/>
-        <path d="M17 13V5M17 29v-8M13 17H5M29 17h-8"/>
-        <circle cx="17" cy="17" r="12" stroke-dasharray="3 4"/>
-      </svg>
-      <span class="usp-name">Golf inklusive</span>
-      <p class="usp-desc">Alle Gäste nutzen den Golfclub Sterzing kostenlos – 250 m Driving Range &amp; 7 Übungslöcher ohne Aufpreis.</p>
-    </div>
-
-    <div class="usp-item">
-      <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
         <path d="M5 28l8-12 6 7 4-5 6 10H5z"/>
         <path d="M7 10c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/>
       </svg>
-      <span class="usp-name">Golfclub Sterzing</span>
-      <p class="usp-desc">Der Golfclub Sterzing liegt direkt in der Nähe – Golf in Südtirol mit einzigartigem Alpenpanorama.</p>
+      <span class="usp-name">Panoramalage</span>
+      <p class="usp-desc">Ruhige Lage über der Stadt, mit Blick nach Sterzing, Ratschings und in die Südtiroler Bergwelt.</p>
     </div>
 
     <div class="usp-item">
@@ -531,8 +534,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M17 12V7"/>
         <path d="M12 8l5-4 5 4"/>
       </svg>
-      <span class="usp-name">Panorama-Pool</span>
-      <p class="usp-desc">Beheizter Infinity Außenpool mit traumhaftem Bergblick über Sterzing – Entspannung nach dem Golf.</p>
+      <span class="usp-name">Hotel mit Pool</span>
+      <p class="usp-desc">Beheizter Außenpool mit Bergblick – ideal für Sommerurlaub und entspannte Tage in Sterzing.</p>
     </div>
 
     <div class="usp-item">
@@ -541,7 +544,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M17 13v6M14 16h6"/>
       </svg>
       <span class="usp-name">Wellness &amp; Sauna</span>
-      <p class="usp-desc">Finnische Sauna, Bio-Sauna und eleganter Ruheraum – perfekte Erholung nach der Golfrunde.</p>
+      <p class="usp-desc">Finnische Sauna, Bio-Sauna, Ruheraum und kleine Wellnessmomente mit Alpenblick.</p>
     </div>
 
     <div class="usp-item">
@@ -551,48 +554,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M10 14v12M24 14v12"/>
       </svg>
       <span class="usp-name">Halbpension</span>
-      <p class="usp-desc">Reichhaltiges Frühstück und 4-Gänge-Genussmenü am Abend – Energie für die Golfrunde inklusive.</p>
+      <p class="usp-desc">Reichhaltiges Frühstück und 4-Gänge-Genussmenü im Panoramarestaurant.</p>
+    </div>
+
+    <div class="usp-item">
+      <svg class="usp-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="26" r="4"/>
+        <circle cx="25" cy="26" r="4"/>
+        <path d="M15 26h6M11 22l2-10h10l2 10M13 12h10M18 8v4"/>
+      </svg>
+      <span class="usp-name">Sommer aktiv</span>
+      <p class="usp-desc">Wandern, E-Biken, Rosskopf, Ratschings und activeCard Sterzing inklusive.</p>
     </div>
 
   </div>
 </section>
 
-<!-- ── GOLF SECTION ── -->
-<section id="golf">
+<!-- ── SOMMER SECTION ── -->
+<section id="sommer">
   <div class="section-header fade-up">
-    <span class="section-label">Golf Südtirol · Golfclub Sterzing</span>
-    <h2 class="section-h2">Golfurlaub Südtirol –<br>Drei starke Gründe für den Lahnerhof</h2>
-    <p class="section-text">Als Ihr <strong>Golfhotel in Südtirol</strong> bieten wir Ihnen alles für einen perfekten <strong>Golfurlaub in Sterzing</strong>: direkten Zugang zum Golfclub, traumhafte Bergkulisse und Erholung auf höchstem Niveau.</p>
+    <span class="section-label">Sommer in Südtirol</span>
+    <h2 class="section-h2">Sommer im Lahnerhof –<br>Drei gute Gründe für Ihre Auszeit</h2>
+    <p class="section-text">Der Lahnerhof verbindet die Vorzüge eines 4-Sterne-Hotels in Sterzing mit viel Ruhe, einem starken Blick in die Berge, feiner Küche und kurzen Wegen zu Wanderungen, Bike-Touren und Ausflugszielen.</p>
   </div>
   <div class="accordion-grid">
     <div class="acc-tile">
-      <div class="acc-bg" style="background-image: url('Golfen_Lahnerhof.png');"></div>
+      <div class="acc-bg" style="background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/Penserjoch_lowres-27-6c--JuggP-QU8I_k05j-sA.jpg');"></div>
       <div class="acc-overlay"></div>
       <div class="acc-content">
-        <span class="acc-tag">Golf Südtirol</span>
+        <span class="acc-tag">Panorama &amp; Lage</span>
         <div class="acc-num">01</div>
-        <h3 class="acc-title">Golfclub Sterzing – Direkt nebenan</h3>
-        <p class="acc-body">Der Golfclub Sterzing liegt nur wenige Minuten vom Hotel Lahnerhof entfernt. Mit einer 250 m langen Driving Range und 7 Übungslöchern bietet er ideale Bedingungen für Ihren <strong>Golfurlaub Südtirol</strong> – für Einsteiger wie erfahrene Golfer. Als Hotelgast nutzen Sie den Club kostenlos.</p>
+        <h3 class="acc-title">Wohnen mit Bergblick</h3>
+        <p class="acc-body">Der Lahnerhof liegt oberhalb von Sterzing auf rund 1.000 m Seehöhe. Von hier blicken Sie über die Stadt, Ratschings und die Südtiroler Alpen – ideal für ruhige Tage mit viel Natur.</p>
       </div>
     </div>
     <div class="acc-tile">
-      <div class="acc-bg" style="background-image: url('Loch%204%20mit%20Reifenstein.jpg');"></div>
+      <div class="acc-bg" style="background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/au%C3%9Fenpool.jpg'); background-position: center 60%;"></div>
       <div class="acc-overlay"></div>
       <div class="acc-content">
-        <span class="acc-tag">Panorama &amp; Natur</span>
+        <span class="acc-tag">Pool &amp; Wellness</span>
         <div class="acc-num">02</div>
-        <h3 class="acc-title">Golf mit Alpenpanorama</h3>
-        <p class="acc-body">Ein <strong>Golf Urlaub in Südtirol</strong> ist einzigartig: Fairways mit Blick auf die Südtiroler Alpen, frische Bergluft und eine Natur, die ihresgleichen sucht. Erleben Sie Golf Sterzing in einer der schönsten Bergregionen Europas – das ist <strong>Golfurlaub Südtirol</strong> vom Feinsten.</p>
+        <h3 class="acc-title">Pool &amp; Wellness</h3>
+        <p class="acc-body">Im beheizten Außenpool schwimmen Sie mit Blick auf die Berggipfel. Dazu warten finnische Sauna, Bio-Sauna und Ruheraum – genau richtig, wenn Sie ein Hotel mit Pool in Sterzing suchen.</p>
       </div>
     </div>
     <div class="acc-tile">
-      <div class="acc-bg" style="background-image: url('https://hotel.lahnerhof.it/images/576_4672x4672_1168_0/19254600/72-oeRF3-u0xVkDE1SWzD05-A.jpg'); background-position: center 60%;"></div>
+      <div class="acc-bg" style="background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/romantischespaar.jpeg'); background-position: center 55%;"></div>
       <div class="acc-overlay"></div>
       <div class="acc-content">
-        <span class="acc-tag">Golfhotel Südtirol</span>
+        <span class="acc-tag">Sommer aktiv</span>
         <div class="acc-num">03</div>
-        <h3 class="acc-title">Golf &amp; Verwöhnpension</h3>
-        <p class="acc-body">Nach der Golfrunde wartet Ihr 4-Sterne <strong>Golfhotel Südtirol</strong>: Wellness, beheizter Infinity Außenpool und ein 4-Gänge-Menü im Panoramarestaurant. Das ist <strong>Golf Urlaub Sterzing</strong> als Gesamterlebnis – Sport, Natur und Genuss in perfekter Balance.</p>
+        <h3 class="acc-title">Wandern, E-Bike &amp; Genuss</h3>
+        <p class="acc-body">Rosskopf und Ratschings sind nur wenige Minuten entfernt. Freuen Sie sich auf Wanderungen, geführte E-Bike-Touren, die activeCard Sterzing und Südtiroler Küche im Panoramarestaurant.</p>
       </div>
     </div>
   </div>
@@ -602,21 +615,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="angebot" class="fade-up">
   <div class="angebot-inner">
     <div>
-      <span class="angebot-label">Sommerangebot · Golfurlaub Südtirol</span>
-      <h2 class="angebot-h2">Sommermomente im Lahnerhof –<br>Golf inklusive ab 590 € pro Person</h2>
-      <p class="angebot-text">Erleben Sie Ihren <strong>Golfurlaub in Südtirol</strong> mit allem, was dazugehört. Ab 5 Nächten von Juni bis September stehen Ihnen alle Inklusivleistungen offen:</p>
+      <span class="angebot-label">Sommerangebot</span>
+      <h2 class="angebot-h2">Sommermomente im Lahnerhof –<br>ab 590 € pro Person</h2>
+      <p class="angebot-text">Ab 5 Nächten im Zeitraum 13.06. - 06.09.2026 genießen Sie im Lahnerhof alles, was einen Sommerurlaub bei Sterzing besonders macht: Wellness, Kulinarik, Bergblick und aktive Tage in Südtirol.</p>
       <ul class="angebot-list">
-        <li>Halbpension: reichhaltiges Frühstück &amp; 4-Gänge-Genussmenü am Abend</li>
-        <li>Kostenloser Zugang zum Golfclub Sterzing (Driving Range &amp; Übungslöcher)</li>
-        <li>Beheizter Infinity Außenpool mit Panoramablick über die Südtiroler Alpen</li>
-        <li>Nutzung Wellnessbereich mit Finnischer &amp; Bio-Sauna</li>
-        <li>activeCard Sterzing – kostenlose Nutzung aller Südtiroler Verkehrsmittel</li>
-        <li>Geführte E-Bike-Touren mit Gastgeber Gerhard (auf Anfrage)</li>
+        <li>Halbpension mit reichhaltigem Frühstück &amp; 4-Gänge-Genussmenü am Abend</li>
+        <li>1 Willkommensgetränk an unserer Hausbar</li>
+        <li>Beheizter Außenpool mit Panoramablick über Sterzing</li>
+        <li>Nutzung Wellnessbereich mit Finnischer Sauna, Bio-Sauna &amp; Ruheraum</li>
+        <li>Geführte Wanderungen und E-Bike-Touren mit Gastgeber Gerhard</li>
+        <li>activeCard Sterzing mit öffentlichen Verkehrsmitteln, Museen &amp; Vorteilen</li>
       </ul>
     </div>
     <a href="#anfrage" class="btn-angebot">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
-      Jetzt Golfurlaub anfragen
+      Sommerurlaub anfragen
     </a>
   </div>
 </section>
@@ -626,29 +639,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="philosophy-bg"></div>
   <div class="philosophy-inner fade-up">
     <span class="quote-mark">&ldquo;</span>
-    <p class="philosophy-quote">Golf Südtirol – wo Fairways auf Alpengipfel treffen und jede Runde ein Erlebnis für alle Sinne wird. Willkommen im schönsten Golfhotel Südtirols.</p>
-    <span class="philosophy-attr">Hotel Lahnerhof · Golfhotel Sterzing · Südtirol</span>
+    <p class="philosophy-quote">Sommer in Sterzing bedeutet klare Bergluft, warme Poolmomente, regionale Küche und diese besondere Ruhe, die man im Lahnerhof sofort spürt.</p>
+    <span class="philosophy-attr">Hotel Lahnerhof · 4 Sterne · Sterzing · Südtirol</span>
   </div>
 </section>
 
 <!-- ── ROOMS ── -->
-<section id="zimmer">
+<section id="zimmer-section">
   <div class="section-header fade-up">
     <span class="section-label">Zimmer &amp; Suiten</span>
-    <h2 class="section-h2">Erholen wie ein Golfprofi</h2>
-    <p class="section-text">Nach der Golfrunde in Ihr Refugium: Unsere Zimmer und Suiten verbinden Südtiroler Gemütlichkeit mit modernem Komfort – mit Panoramablick über Sterzing und die Alpen.</p>
+    <h2 class="section-h2">Zimmer &amp; Suiten im Lahnerhof</h2>
+    <p class="section-text">Ihr Rückzugsort im Hotel Lahnerhof: Zimmer und Suiten mit Südtiroler Gemütlichkeit, modernem Komfort und Panoramablick über Sterzing und die Alpen.</p>
   </div>
   <div class="slider-wrap">
     <div class="slider-track" id="sliderTrack">
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075519/cHannesNiederkofler_WEB_017_DSC2246-TixZHHP0qPlSFzXjQyY0wQ.jpg" alt="Familiensuite Adrian – Hotel Lahnerhof Golfhotel Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075519/cHannesNiederkofler_WEB_017_DSC2246-TixZHHP0qPlSFzXjQyY0wQ.jpg" alt="Familiensuite Adrian – Hotel Lahnerhof Sterzing Südtirol" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Suite · Golfhotel Südtirol</span>
+          <span class="slide-tag">Suite · Lahnerhof</span>
           <h3 class="slide-name">Familiensuite Adrian</h3>
-          <p class="slide-desc">Großzügige Suite für 2–5 Personen – ideal für Golfer-Familien, die nach der Runde am Golfclub Sterzing Platz und Komfort schätzen.</p>
+          <p class="slide-desc">Großzügige Suite für 2–5 Personen – ideal für Familien, die Platz, Komfort und Panoramablick schätzen.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–5</span><span class="meta-lbl">Personen</span></div>
@@ -660,12 +673,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075522/cHannesNiederkofler_WEB_069_DSC2683-7OreEXsTrCDAhDVupB_EJw.jpg" alt="Familiensuite Juri – Golfhotel Sterzing Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075522/cHannesNiederkofler_WEB_069_DSC2683-7OreEXsTrCDAhDVupB_EJw.jpg" alt="Familiensuite Juri – Hotel Sterzing Südtirol" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Suite · Golf Sterzing</span>
+          <span class="slide-tag">Suite · Familienzeit</span>
           <h3 class="slide-name">Familiensuite Juri</h3>
-          <p class="slide-desc">Komfortabler Rückzugsort für Golfer und Familien. Viel Raum zum Entspannen nach einer aktiven Golfrunde in Südtirol.</p>
+          <p class="slide-desc">Komfortabler Rückzugsort für Paare und Familien. Viel Raum zum Entspannen nach aktiven Sommertagen in Südtirol.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–5</span><span class="meta-lbl">Personen</span></div>
@@ -677,12 +690,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075531/cHannesNiederkofler_WEB_052_DSC2554-iuawA33MmFatDT-4Wy2LDA.jpg" alt="Doppelzimmer Komfort – Hotel Lahnerhof Golfhotel" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075531/cHannesNiederkofler_WEB_052_DSC2554-iuawA33MmFatDT-4Wy2LDA.jpg" alt="Doppelzimmer Komfort – Hotel Lahnerhof Sterzing" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Zimmer · Golf Hotel Sterzing</span>
+          <span class="slide-tag">Zimmer · Lahnerhof</span>
           <h3 class="slide-name">Doppelzimmer Komfort</h3>
-          <p class="slide-desc">Behagliches Komfortzimmer für Golfer: erholsamer Schlaf, reichhaltiges Frühstück – und dann direkt auf die Driving Range des Golfclubs.</p>
+          <p class="slide-desc">Behagliches Komfortzimmer für erholsamen Schlaf, reichhaltiges Frühstück und entspannte Urlaubstage rund um Sterzing.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">22 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">1–2</span><span class="meta-lbl">Personen</span></div>
@@ -694,12 +707,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075533/cHannesNiederkofler_WEB_071_DSC2730-DIp8PZkrEH4hii74EOPtQw.jpg" alt="Doppelzimmer Deluxe – Golfhotel Südtirol Lahnerhof" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075533/cHannesNiederkofler_WEB_071_DSC2730-DIp8PZkrEH4hii74EOPtQw.jpg" alt="Doppelzimmer Deluxe – Hotel Lahnerhof Südtirol" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Zimmer · Golfurlaub Südtirol</span>
+          <span class="slide-tag">Zimmer · Urlaub Südtirol</span>
           <h3 class="slide-name">Doppelzimmer Deluxe</h3>
-          <p class="slide-desc">Elegantes Deluxe-Zimmer für Golfer-Paare – mit Bergblick und allem, was der perfekte Start in einen neuen Golftag braucht.</p>
+          <p class="slide-desc">Elegantes Deluxe-Zimmer für Paare – mit Bergblick und allem, was ein entspannter Urlaubstag im Lahnerhof braucht.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">26 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
@@ -711,12 +724,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22074814/cHannesNiederkofler_WEB_073_DSC2761-FKGHjMeIIWuKZ4pQl5Fxmg.jpg" alt="Familienzimmer Komfort ohne Balkon – Golf Urlaub Sterzing" />
+          <img src="https://hotel.lahnerhof.it/images/576/22074814/cHannesNiederkofler_WEB_073_DSC2761-FKGHjMeIIWuKZ4pQl5Fxmg.jpg" alt="Familienzimmer Komfort ohne Balkon – Hotel Sterzing Urlaub" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Zimmer · Golf Urlaub Südtirol</span>
+          <span class="slide-tag">Zimmer · Familienurlaub</span>
           <h3 class="slide-name">Familienzimmer Komfort</h3>
-          <p class="slide-desc">Ideal für Familien beim Golfurlaub Südtirol. Viel Platz, viel Licht – der Golfclub Sterzing nur wenige Minuten entfernt.</p>
+          <p class="slide-desc">Ideal für Familien im Urlaub in Sterzing. Viel Platz, viel Licht und die schönsten Sommerziele der Region nur wenige Minuten entfernt.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">32 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
@@ -728,12 +741,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075421/cHannesNiederkofler_WEB_049_DSC2518-zFJJIpk9sdGMEysp91CVHQ.jpg" alt="Familiensuite Lahnerhof – Golfhotel Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/576/22075421/cHannesNiederkofler_WEB_049_DSC2518-zFJJIpk9sdGMEysp91CVHQ.jpg" alt="Familiensuite Lahnerhof – 4 Sterne Hotel Sterzing" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Suite · Golfreisen Südtirol</span>
+          <span class="slide-tag">Suite · Panoramablick</span>
           <h3 class="slide-name">Familiensuite Lahnerhof</h3>
-          <p class="slide-desc">Unsere Namesuite – großzügig, stilvoll, mit Panoramablick. Alles, was ein unvergesslicher Golfurlaub Südtirol braucht.</p>
+          <p class="slide-desc">Unsere Namesuite – großzügig, stilvoll und mit Panoramablick. Ein ruhiger Rückzugsort für entspannte Urlaubstage.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
@@ -745,12 +758,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1066/22614469/cHannesNiederkofler_WEB_037_DSC2386-7TrqcLe28_jVMCtx3rt0jg.jpg" alt="Familiensuite Anna – Golfhotel Lahnerhof Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/1066/22614469/cHannesNiederkofler_WEB_037_DSC2386-7TrqcLe28_jVMCtx3rt0jg.jpg" alt="Familiensuite Anna – Hotel Lahnerhof Südtirol" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Suite · Golfhotel Südtirol</span>
+          <span class="slide-tag">Suite · Lahnerhof</span>
           <h3 class="slide-name">Familiensuite Anna</h3>
-          <p class="slide-desc">Helle, großzügige Suite für Familien – der perfekte Rückzugsort nach einer Golfrunde am Golfclub Sterzing mit Bergblick inklusive.</p>
+          <p class="slide-desc">Helle, großzügige Suite für Familien – der perfekte Rückzugsort nach Wandertagen, Poolmomenten und Ausflügen rund um Sterzing.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
@@ -762,12 +775,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1066/22614687/cHannesNiederkofler_WEB_032_DSC2347-3R43jH6dC2VtDYlKYJZaag.jpg" alt="Familienzimmer Deluxe – Golf Urlaub Sterzing Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/1066/22614687/cHannesNiederkofler_WEB_032_DSC2347-3R43jH6dC2VtDYlKYJZaag.jpg" alt="Familienzimmer Deluxe – Sterzing Hotel Südtirol" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Zimmer · Golf Urlaub Sterzing</span>
+          <span class="slide-tag">Zimmer · Familienzeit</span>
           <h3 class="slide-name">Familienzimmer Deluxe</h3>
-          <p class="slide-desc">Geräumiges Deluxe-Zimmer für Familien beim Golf Urlaub Südtirol – modern eingerichtet, mit viel Platz für entspannte Abende nach dem Golf.</p>
+          <p class="slide-desc">Geräumiges Deluxe-Zimmer für Familien – modern eingerichtet, mit viel Platz für entspannte Abende nach einem Sommertag in Südtirol.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">38 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
@@ -779,12 +792,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1066/22614777/cHannesNiederkofler_WEB_046_DSC2477-z5oAM08cpMyS3sKgxkNBMg.jpg" alt="Familiensuite Superior – Golfhotel Lahnerhof Südtirol" />
+          <img src="https://hotel.lahnerhof.it/images/1066/22614777/cHannesNiederkofler_WEB_046_DSC2477-z5oAM08cpMyS3sKgxkNBMg.jpg" alt="Familiensuite Superior – Lahnerhof Hotel Sterzing" />
         </div>
         <div class="slide-body">
-          <span class="slide-tag">Suite · Golfurlaub Südtirol</span>
+          <span class="slide-tag">Suite · Rückzugsort</span>
           <h3 class="slide-name">Familiensuite Superior</h3>
-          <p class="slide-desc">Stilvolle Superior-Suite ohne Balkon – geräumig und komfortabel, ideal für Golfer-Familien beim Golfurlaub in Sterzing.</p>
+          <p class="slide-desc">Stilvolle Superior-Suite ohne Balkon – geräumig und komfortabel, ideal für Familien beim Urlaub in Sterzing.</p>
           <div class="slide-meta">
             <div class="slide-meta-item"><span class="meta-val">40 m²</span><span class="meta-lbl">Fläche</span></div>
             <div class="slide-meta-item"><span class="meta-val">2–4</span><span class="meta-lbl">Personen</span></div>
@@ -814,47 +827,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="inklusive" class="fade-up">
   <div class="inklusive-inner">
     <div>
-      <span class="section-label">Inklusivleistungen · Golfhotel Südtirol</span>
-      <h2 class="section-h2">Alles inklusive –<br>Ihr Golfurlaub ohne Überraschungen</h2>
-      <p class="section-text">Im Lahnerhof ist Golf Urlaub Südtirol ein Rundum-Sorglos-Paket. Diese Leistungen sind in jedem Aufenthalt enthalten:</p>
+      <span class="section-label">Inklusivleistungen</span>
+      <h2 class="section-h2">Alles dabei –<br>für entspannte Tage im Lahnerhof</h2>
+      <p class="section-text">Im Lahnerhof genießen Sie viele Leistungen, die Ihren Aufenthalt angenehm, unkompliziert und rundum erholsam machen:</p>
       <div class="inklusive-list">
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text"><strong>Kostenlose Gästenutzung für den Golfclub Sterzing</strong> – Driving Range (250 m) &amp; 7 Übungslöcher für alle Gäste frei nutzbar</p>
+          <p class="inklusive-text">Halbpension mit reichhaltigem Frühstück und 4-Gänge-Genussmenü am Abend im Panoramarestaurant</p>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text"><strong>Halbpension</strong> – Reichhaltiges Frühstück &amp; 4-Gänge-Genussmenü am Abend im Panoramarestaurant</p>
+          <p class="inklusive-text">Beheizter Außenpool mit Panoramablick über Sterzing und die Südtiroler Berge</p>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text"><strong>Beheizter Infinity Außenpool</strong> mit atemberaubendem Panoramablick über die Südtiroler Berge</p>
+          <p class="inklusive-text">Wellnessbereich mit Finnischer Sauna, Bio-Sauna, Ruheraum und Vitalecke mit Tee und Früchten</p>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text"><strong>Wellness &amp; Sauna</strong> – Finnische Sauna, Bio-Sauna und Ruheraum mit Bergblick</p>
+          <p class="inklusive-text">activeCard Sterzing mit öffentlichen Verkehrsmitteln, ausgewählten Seilbahnen, Museen und Ermäßigungen inklusive</p>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text"><strong>activeCard Sterzing</strong> – kostenlose Nutzung aller Südtiroler Verkehrsmittel &amp; Ermäßigungen</p>
+          <p class="inklusive-text">Sommerprogramm mit geführten E-Bike-Touren, Wanderungen und Genussmomenten mit Gastgeber Gerhard</p>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text"><strong>Geführte E-Bike-Touren</strong> mit Gastgeber Gerhard (Sommer) – Südtirol aktiv erleben</p>
+          <p class="inklusive-text">Bikeraum und E-Bike-Verleih für aktive Tage rund um Rosskopf, Ratschings und Sterzing</p>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text"><strong>Wöchentliches Grillfest</strong> am Hausberg mit Gastgeber (Sommer, bei guter Witterung)</p>
+          <p class="inklusive-text">Wöchentliches Grill-Erlebnis am Hausberg mit Gastgeber Gerhard im Sommer, bei guter Witterung</p>
         </div>
       </div>
     </div>
     <div class="inklusive-img-wrap">
       <img class="inklusive-img"
-        src="https://hotel.lahnerhof.it/images/1200/22075159/cHannesNiederkofler_WEB_032_DSC2347-OCewUkowqVKuOMWuuz_9EQ.jpg"
-        alt="Hotel Lahnerhof Golfhotel Südtirol Sterzing – Inklusivleistungen" />
+        src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/essen.jpg"
+        alt="Halbpension und Südtiroler Küche im Hotel Lahnerhof Sterzing" />
       <div class="inklusive-img-tag">
-        <span class="inklusive-tag-label">Golf inklusive</span>
-        <span class="inklusive-tag-val">Golfclub Sterzing</span>
+        <span class="inklusive-tag-label">Genuss inklusive</span>
+        <span class="inklusive-tag-val">Halbpension</span>
       </div>
     </div>
   </div>
@@ -863,29 +876,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── EXPERIENCES ── -->
 <section id="erlebnisse" class="fade-up">
   <div class="section-header">
-    <span class="section-label">Erlebnisse · Golf Urlaub Sterzing</span>
-    <h2 class="section-h2">Golf &amp; mehr –<br>Ihr Sommerurlaub in Südtirol</h2>
-    <p class="section-text">Golfurlaub Südtirol ist mehr als nur Golf. Kombinieren Sie Ihr Spiel mit den besten Erlebnissen der Region Sterzing.</p>
+    <span class="section-label">Erlebnisse · Sterzing Urlaub</span>
+    <h2 class="section-h2">Sommerurlaub in Sterzing –<br>Natur, Wellness &amp; Genuss</h2>
+    <p class="section-text">Ein Urlaub im Lahnerhof verbindet die schönsten Seiten Südtirols: Berge, Pool, Sauna, Küche und die Nähe zu Sterzing, Rosskopf und Ratschings.</p>
   </div>
   <div class="exp-grid">
 
     <div class="exp-item featured">
       <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="18" cy="18" r="5"/>
-        <path d="M18 13V7M18 29v-6M13 18H7M29 18h-6"/>
-        <circle cx="18" cy="18" r="13" stroke-dasharray="4 5"/>
-      </svg>
-      <span class="exp-name">Golf Südtirol</span>
-      <p class="exp-desc">Golfclub Sterzing – Driving Range &amp; Übungslöcher direkt beim Hotel. Golfurlaub Südtirol mit Alpenpanorama – kostenlos für alle Hotelgäste.</p>
-    </div>
-
-    <div class="exp-item">
-      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 28l8-14 7 9 5-6 4 11H6z"/>
         <circle cx="22" cy="9" r="3"/>
       </svg>
       <span class="exp-name">Wandern am Rosskopf</span>
-      <p class="exp-desc">Aussichtsreiche Wanderungen rund um Sterzing, Rosskopf und Ratschings – direkt ab Hotel, mit geführten Touren in der Hochsaison.</p>
+      <p class="exp-desc">Aussichtsreiche Wanderungen, Almspaziergänge und Bergmomente rund um Sterzing, Rosskopf und Ratschings – direkt ab Hotel erreichbar.</p>
     </div>
 
     <div class="exp-item">
@@ -897,7 +900,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M25 20l2-2 2 1"/>
       </svg>
       <span class="exp-name">E-Bike-Touren</span>
-      <p class="exp-desc">Geführte E-Bike-Touren mit Gastgeber Gerhard durch die schönsten Täler Südtirols – Bikeverleih im Hotel verfügbar.</p>
+      <p class="exp-desc">Geführte E-Bike-Touren mit Gastgeber Gerhard durch die schönsten Täler Südtirols – E-Bike-Verleih im Hotel gegen Aufpreis.</p>
+    </div>
+
+    <div class="exp-item">
+      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="18" cy="24" rx="10" ry="5"/>
+        <path d="M8 24c0-5.5 4.5-10 10-10s10 4.5 10 10"/>
+        <path d="M18 14V8"/>
+      </svg>
+      <span class="exp-name">Panorama-Pool</span>
+      <p class="exp-desc">Der beheizte Außenpool schenkt Ihnen wohlig warme Wasserstunden und freien Blick in die Berge – einer der schönsten Plätze für entspannte Sommertage.</p>
     </div>
 
     <div class="exp-item">
@@ -905,8 +918,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M18 6c0 0-9 6-9 14a9 9 0 0018 0C27 12 18 6 18 6z"/>
         <path d="M18 14v8M14 18h8"/>
       </svg>
-      <span class="exp-name">Wellness &amp; Spa</span>
-      <p class="exp-desc">Finnische Sauna, Bio-Sauna, Ruheraum und beheizter Außenpool – nach dem Golf Südtirol-Tag einfach loslassen und regenerieren.</p>
+      <span class="exp-name">Wellness &amp; Sauna</span>
+      <p class="exp-desc">Finnische Sauna, Bio-Sauna und eleganter Ruheraum – ein kleines Wellnesshotel Südtirol für Gäste, die Wärme und Ruhe suchen.</p>
     </div>
 
     <div class="exp-item">
@@ -916,7 +929,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M18 10v3"/>
       </svg>
       <span class="exp-name">Panoramarestaurant</span>
-      <p class="exp-desc">Authentische Südtiroler Spezialitäten &amp; ein 4-Gänge-Genussmenü mit Blick über die Berge – der perfekte Abschluss nach dem Golftag.</p>
+      <p class="exp-desc">Südtiroler Spezialitäten, erlesene Weine und ein 4-Gänge-Genussmenü am Abend – Kulinarik mit Blick über Sterzing.</p>
     </div>
 
     <div class="exp-item">
@@ -927,7 +940,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <circle cx="22" cy="22" r="2"/>
       </svg>
       <span class="exp-name">activeCard Sterzing</span>
-      <p class="exp-desc">Kostenlose Nutzung aller Südtiroler Verkehrsmittel, freier Eintritt in 90+ Museen &amp; zahlreiche Ermäßigungen – inklusive für alle Gäste.</p>
+      <p class="exp-desc">Kostenlose Nutzung öffentlicher Verkehrsmittel in Südtirol, ausgewählte Seilbahnen, Museen und viele Vorteile – inklusive für Hotelgäste.</p>
     </div>
 
   </div>
@@ -936,44 +949,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── REVIEWS ── -->
 <section id="reviews" class="fade-up">
   <div class="section-header">
-    <span class="section-label">Gästestimmen · Golfurlaub Südtirol</span>
-    <h2 class="section-h2">Was Golfer über den Lahnerhof sagen</h2>
-    <p class="section-text">Tausende begeisterte Gäste kommen jedes Jahr für ihren Golf Urlaub in Sterzing zum Lahnerhof – das sagen unsere Golfer:</p>
+    <span class="section-label">Gästestimmen</span>
+    <h2 class="section-h2">Was Gäste am Lahnerhof schätzen</h2>
+    <p class="section-text">Viele Gäste schätzen am Lahnerhof die ruhige Lage oberhalb von Sterzing, den Blick in die Berge, die Küche und die entspannte Atmosphäre.</p>
   </div>
   <div class="reviews-grid">
 
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Perfekter Golfurlaub in Südtirol! Der Golfclub Sterzing ist wirklich nur wenige Minuten entfernt, das Panorama beim Spielen ist unbeschreiblich. Und nach der Runde wartet der Pool mit Bergblick. Wir kommen garantiert wieder!"</p>
+      <p class="review-text">„Ein sehr schönes Hotel in Sterzing mit traumhaftem Blick. Der Pool, die Sauna und das Essen waren genau das, was wir für unseren Sommerurlaub gesucht haben."</p>
       <div class="review-author">
         <div class="review-avatar">MK</div>
         <div>
           <p class="review-name">Markus K.</p>
-          <p class="review-meta">Google · Golfurlaub Südtirol</p>
+          <p class="review-meta">Google · Hotel Sterzing</p>
         </div>
       </div>
     </div>
 
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Als Golf-Fan ist der Lahnerhof mein absolutes Lieblingshotel in Südtirol. Kostenloser Golfzugang, tolles Essen, freundliches Team. Golf Sterzing ist ein echtes Highlight – ich habe den Kurs jetzt dreimal gespielt und lerne jedes Mal Neues."</p>
+      <p class="review-text">„Ein kleines, sehr persönliches Haus mit viel Ruhe, freundlichem Team und großartiger Halbpension. Perfekt für ein paar entspannte Tage oberhalb von Sterzing."</p>
       <div class="review-author">
         <div class="review-avatar">SR</div>
         <div>
           <p class="review-name">Sabine R.</p>
-          <p class="review-meta">Booking.com · Golfhotel Südtirol</p>
+          <p class="review-meta">Booking.com · Wellness &amp; Ruhe</p>
         </div>
       </div>
     </div>
 
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Wir haben die Golfwoche Südtirol im Lahnerhof gebucht und sind absolut begeistert. Frühstück, Abendessen, Wellness – alles auf Top-Niveau. Gastgeber Gerhard ist ein echter Mehrwert. Ein Golfhotel Südtirol wie aus dem Bilderbuch!"</p>
+      <p class="review-text">„Wir würden sofort wieder buchen. Panoramalage, Außenpool und die Nähe zu Rosskopf und Ratschings sind ideal für einen aktiven Sommer in Südtirol."</p>
       <div class="review-author">
         <div class="review-avatar">TH</div>
         <div>
           <p class="review-name">Thomas H.</p>
-          <p class="review-meta">TripAdvisor · Golf Urlaub Sterzing</p>
+          <p class="review-meta">TripAdvisor · Sommerurlaub</p>
         </div>
       </div>
     </div>
@@ -984,31 +997,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── GALLERY ── -->
 <section id="impressionen" class="fade-up">
   <div class="section-header">
-    <span class="section-label">Einblicke · Golfhotel Sterzing</span>
+    <span class="section-label">Einblicke · Lahnerhof Sterzing</span>
     <h2 class="section-h2">Impressionen aus dem Lahnerhof</h2>
-    <p class="section-text">Ihr Golfurlaub Südtirol in Bildern – Hotel, Natur und das Leben am Golfclub Sterzing.</p>
+    <p class="section-text">Einblicke in den Lahnerhof: Hotel, Pool, Wellness, Küche und Sommermomente in Südtirol.</p>
   </div>
   <div class="gallery-grid">
     <div class="gal-item">
-      <img src="Loch%204%20mit%20Reifenstein.jpg" alt="Golfclub Sterzing – Loch 4 mit Schloss Reifenstein Südtirol" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hero_hotel_au%C3%9Fen.jpg" alt="Hotel Lahnerhof außen – Hotel Sterzing mit Panoramalage" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="Teich%20Loch%206.jpg" alt="Golfclub Sterzing – Teich Loch 6 Golf Südtirol" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/pool_aussicht.jpg" alt="Pool im Hotel Lahnerhof – Hotel mit Pool Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="Golfen_Lahnerhof.png" alt="Golfen am Golfclub Sterzing Vipiteno – Golfurlaub Südtirol" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hotel_vorderansicht.jpg" alt="Hotel Vorderansicht Lahnerhof – 4 Sterne Hotel Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="Loch%202.jpg" alt="Golfclub Sterzing – Loch 2 Panorama Golf Südtirol" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/Penserjoch_lowres-27-6c--JuggP-QU8I_k05j-sA.jpg" alt="Sommerurlaub Sterzing – Südtiroler Berglandschaft nahe Lahnerhof" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="https://hotel.lahnerhof.it/images/576_4672x4672_1168_0/19254600/72-oeRF3-u0xVkDE1SWzD05-A.jpg" alt="Golf Callaway Ball – Golf Urlaub Sterzing Südtirol" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/essen.jpg" alt="Südtiroler Küche und Halbpension im Hotel Lahnerhof Sterzing" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="https://hotel.lahnerhof.it/images/676/22075126/Pool_3-8EwGCwO5Gm7ePosDrt7C_A.jpg" alt="Panoramapool Hotel Lahnerhof Golfhotel Südtirol" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/ruheraumkojen.jpg" alt="Ruheraum im Wellnesshotel Sterzing Lahnerhof" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="https://hotel.lahnerhof.it/images/1200/22075159/cHannesNiederkofler_WEB_032_DSC2347-OCewUkowqVKuOMWuuz_9EQ.jpg" alt="Hotel Lahnerhof Sterzing – Golfhotel Südtirol" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/sauna_lahner.jpg" alt="Sauna im Wellnesshotel Lahnerhof Sterzing" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/au%C3%9Fenpool.jpg" alt="Außenpool Hotel Lahnerhof – Hotel mit Pool in Sterzing" loading="lazy" />
+    </div>
+    <div class="gal-item">
+      <img src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/pool_aussicht.jpg" alt="Pool mit Aussicht im Hotel Sterzing Lahnerhof" loading="lazy" />
     </div>
   </div>
 </section>
@@ -1016,9 +1035,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ── FORM / ANFRAGE ── -->
 <section id="anfrage">
   <div class="cta-inner fade-up">
-    <span class="section-label">Golfurlaub Südtirol anfragen</span>
-    <h2 class="cta-h2">Jetzt Ihren Golfurlaub in Sterzing anfragen</h2>
-    <p class="cta-text">Bereit für Ihren <strong>Golf Urlaub Südtirol</strong> am Golfclub Sterzing? Senden Sie uns Ihre unverbindliche Anfrage – wir melden uns innerhalb von 24 Stunden mit einem persönlichen Angebot für Ihren <strong>Golfurlaub Südtirol</strong>.</p>
+    <span class="section-label">Urlaub in Sterzing anfragen</span>
+    <h2 class="cta-h2">Jetzt Ihren Urlaub im Lahnerhof anfragen</h2>
+    <p class="cta-text">Bereit für Ihren Urlaub im 4-Sterne-Hotel Lahnerhof bei Sterzing? Senden Sie uns Ihre unverbindliche Anfrage – wir melden uns innerhalb von 24 Stunden mit einem persönlichen Angebot.</p>
     <div class="cta-contact-bar">
       <div class="contact-method">
         <svg class="contact-icon-svg" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
@@ -1054,8 +1073,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="field-error" id="errAbreise">Bitte Abreisedatum wählen.</div>
         </div>
         <div class="full-width">
-          <label for="zimmer">Wunsch-Zimmer (optional)</label>
-          <select id="zimmer">
+          <label for="zimmerAuswahl">Wunsch-Zimmer (optional)</label>
+          <select id="zimmerAuswahl">
             <option value="">-- Bitte wählen --</option>
             <option value="Familiensuite Adrian">Familiensuite Adrian</option>
             <option value="Familiensuite Juri">Familiensuite Juri</option>
@@ -1114,9 +1133,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <label class="req">Telefon</label>
           <div class="phone-row">
             <select id="phonePrefix">
-              <option value="0039" selected="">🇮🇹 +39</option>
+              <option value="0039">🇮🇹 +39</option>
               <option value="0043">🇦🇹 +43</option>
-              <option value="0049">🇩🇪 +49</option>
+              <option value="0049" selected="">🇩🇪 +49</option>
               <option value="0041">🇨🇭 +41</option>
               <option value="0031">🇳🇱 +31</option>
               <option value="0032">🇧🇪 +32</option>
@@ -1135,18 +1154,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="full-width">
           <label for="nachricht">Nachricht (optional)</label>
-          <textarea id="nachricht" rows="3" placeholder="Z.B. gewünschter Zimmerwunsch, Golfpaket-Fragen, besondere Anlässe..."></textarea>
+          <textarea id="nachricht" rows="3" placeholder="Z.B. gewünschter Zimmerwunsch, Reisedaten, Wellnesswünsche, besondere Anlässe..."></textarea>
         </div>
         <div class="privacy-row">
           <input type="checkbox" id="privacy" required="">
           <label for="privacy">Ich habe die <a href="https://www.lahnerhof.it/datenschutz" target="_blank">Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
         </div>
         <div class="field-error full-width" id="errPrivacy" style="margin-top:-8px;">Bitte Datenschutzbestimmungen akzeptieren.</div>
-        <div class="success-msg" id="successMsg">✅ Vielen Dank! Ihre Golfurlaub-Anfrage wurde erfolgreich gesendet.<br>Wir melden uns so schnell wie möglich bei Ihnen – Ihr Team vom Hotel Lahnerhof.</div>
+        <div class="success-msg" id="successMsg">✅ Vielen Dank! Ihre Urlaubsanfrage wurde erfolgreich gesendet.<br>Wir melden uns so schnell wie möglich bei Ihnen – Ihr Team vom Hotel Lahnerhof.</div>
         <button type="submit" class="submit-btn" id="sBtn">Unverbindliche Anfrage senden</button>
       </form>
     </div>
 
+
+    <div id="direkt-buchen" class="booking-widget-section">
+      <span class="section-label">Online reservieren</span>
+      <h2 class="booking-widget-title">Direkt buchen</h2>
+      <p class="booking-widget-text">Prüfen Sie verfügbare Zimmer und buchen Sie Ihren Aufenthalt direkt online.</p>
+      <div class="booking-widget-shell">
+        <div id="Bs-BookingWidget"></div>
+      </div>
+    </div>
+    <script
+      id="booking-suedtirol-js"
+      src="https://widget.bookingsuedtirol.com/v2/bundle.js"
+      defer
+    ></script>
+    <script>
+    document
+      .querySelector("#booking-suedtirol-js")
+      .addEventListener("load", () => {
+        BookingSüdtirol.Widgets.Booking("#Bs-BookingWidget", {
+          id: "3933eeb1-82f7-48fe-b58b-0649ea7dbe55",
+          propertyId: 11591,
+          lang: "de",
+          privacyURL: "/path/to/privacy/page",
+          termsURL: "/path/to/terms/page",
+          onBookingSuccess: (reservation) => {
+            // Called after successful booking
+          },
+          onEnquirySuccess: (reservation) => {
+            // Called after successful enquiry
+          },
+        });
+      });
+    </script>
   </div>
 </section>
 
@@ -1156,21 +1208,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-top">
       <div>
         <div class="footer-logo-name">Hotel Lahnerhof</div>
-        <div class="footer-logo-sub">Golfhotel Südtirol · 4 Sterne · Sterzing</div>
-        <p class="footer-tagline">Ihr Golfhotel Südtirol für unvergesslichen Golf Urlaub Sterzing. Direkt am Golfclub Sterzing – Golfurlaub Südtirol mit Panoramablick, Halbpension und Wellness.</p>
+        <div class="footer-logo-sub">4 Sterne · Sterzing · Südtirol</div>
+        <p class="footer-tagline">Ihr Hotel bei Sterzing für Urlaub mit Panoramablick, beheiztem Außenpool, Wellness, Sauna, Halbpension und Sommeraktivitäten rund um Rosskopf und Ratschings.</p>
         <div class="footer-contact">
           <a href="tel:+390472764777">+39 0472 764 777</a>
           <a href="mailto:info@lahnerhof.it">info@lahnerhof.it</a>
           <span style="font-size:0.78rem;color:rgba(255,255,255,0.30)">Thuins Nr. 49 · 39049 Sterzing · Südtirol, Italien</span>
         </div>
-        <p class="seo-keywords">Golf Südtirol · Golfurlaub Südtirol · Golfhotel Südtirol · Golf Urlaub Sterzing · Golf Urlaub Südtirol · Golfclub Sterzing · Golfwoche Südtirol · Golf Hotel Sterzing · Golfreisen Südtirol · Golf Sterzing</p>
+        <p class="seo-keywords">Der Lahnerhof ist ein 4-Sterne-Hotel in Sterzing für Sommerurlaub, Wellness, Poolmomente und erholsame Tage in Südtirol.</p>
       </div>
       <div>
-        <p class="footer-col-title">Golfhotel Lahnerhof</p>
+        <p class="footer-col-title">Hotel Lahnerhof</p>
         <div class="footer-links">
           <a href="https://www.lahnerhof.it" target="_blank">Hotel Website</a>
           <a href="https://www.lahnerhof.it/hotel-sterzing/lage-anreise/" target="_blank">Anreise &amp; Lage</a>
-          <a href="#anfrage">Golfurlaub anfragen</a>
+          <a href="#anfrage">Urlaub anfragen</a>
           <a href="https://www.lahnerhof.it" target="_blank">Zimmer &amp; Preise</a>
         </div>
       </div>
@@ -1284,14 +1336,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var kinder=parseInt(document.getElementById("kCount").value)||0,ages=[];
     for(var i=1;i<=kinder;i++){var v=document.querySelector("[name='alter_k"+i+"']");if(v&&v.value!=="")ages.push(v.value);}
     var utm=getUtm();
-    var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmer").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
+    var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmerAuswahl").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
     fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
-    .then(function(r){return r.json();})
-    .then(function(data){
+    .then(function(r){return r.json().then(function(data){return{ok:r.ok,status:r.status,data:data};});})
+    .then(function(res){
+      var data=res.data||{};
       if(data&&data.success){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"form_lead_success",form_data:{room:payload.room_type,guests:payload.adults,lead_id:data.id,device:payload.device}});document.getElementById("successMsg").style.display="block";btn.style.display="none";try{localStorage.removeItem(UTM_KEY);}catch(e){}}
-      else{alert("Fehler beim Senden. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
+      else{console.error("Lead API error",res);alert((data.error==="Forbidden")?"Die Anfrage konnte von dieser Domain nicht gesendet werden. Bitte kontaktieren Sie uns direkt per E-Mail oder Telefon.":((data.error||data.message)||("Fehler beim Senden. Status: "+res.status)));btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;}
     })
-    .catch(function(){alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
+    .catch(function(err){console.error("Lead network error",err);alert("Netzwerkfehler. Bitte versuchen Sie es nochmals.");btn.innerText="Unverbindliche Anfrage senden";btn.disabled=false;});
   });
 });
 </script>
