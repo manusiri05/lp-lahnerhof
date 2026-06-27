@@ -85,6 +85,10 @@
     #site-header.scrolled .header-tel { color: var(--warm-gray); }
     .btn-avail { display: inline-flex; align-items: center; gap: 8px; padding: 11px 24px; background: var(--stone); color: var(--white); font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border: none; cursor: pointer; transition: background 0.25s, transform 0.2s; }
     .btn-avail:hover { background: var(--stone-dark); transform: translateY(-1px); }
+    .btn-direct-booking { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 22px; background: rgba(255,255,255,0.08); color: var(--white); font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.65); cursor: pointer; transition: background 0.25s, border-color 0.25s, color 0.25s, transform 0.2s; white-space: nowrap; }
+    .btn-direct-booking:hover { background: var(--white); border-color: var(--white); color: var(--forest); transform: translateY(-1px); }
+    #site-header.scrolled .btn-direct-booking { background: transparent; border-color: var(--stone); color: var(--forest); }
+    #site-header.scrolled .btn-direct-booking:hover { background: var(--stone); color: var(--white); }
 
     /* ── HERO ── */
     #hero { position: relative; height: 100vh; min-height: 620px; max-height: 1000px; overflow: hidden; display: flex; align-items: flex-end; }
@@ -260,6 +264,13 @@
     .contact-value { font-family: var(--font-serif); font-size: 1.15rem; color: var(--forest); }
     .contact-note { font-size: 0.75rem; color: var(--warm-gray); margin-top: 4px; }
 
+    /* Direct booking widget */
+    .booking-widget-section { margin-top: 56px; padding-top: 56px; border-top: 1px solid var(--cream-dark); scroll-margin-top: calc(var(--header-h) + 24px); }
+    .booking-widget-title { font-family: var(--font-serif); font-size: clamp(1.65rem, 3vw, 2.35rem); font-weight: 300; line-height: 1.2; color: var(--forest); margin-bottom: 12px; }
+    .booking-widget-text { max-width: 650px; margin: 0 auto 28px; font-size: 0.88rem; color: var(--warm-gray); line-height: 1.75; }
+    .booking-widget-shell { width: 100%; min-height: 140px; padding: 32px 24px; background: var(--white); box-shadow: 0 4px 40px rgba(0,0,0,0.06); text-align: left; }
+    #Bs-BookingWidget { width: 100%; }
+
     /* Override form styles to match LP design */
     .form-container { background-color: var(--white); padding: 40px 44px; border-radius: 0; box-shadow: 0 4px 40px rgba(0,0,0,0.06); max-width: 100%; margin: auto; font-family: var(--font-sans); }
     .custom-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -341,7 +352,7 @@
     }
     @media (max-width: 768px) {
       :root { --pad: 60px; }
-      .header-tel { display: none; }
+      .header-tel, .btn-direct-booking { display: none; }
       .hero-h1 { font-size: 2.3rem; }
       .usps-inner { grid-template-columns: repeat(2, 1fr); }
       .reviews-grid { grid-template-columns: 1fr; }
@@ -399,6 +410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="header-nav">
       <a href="tel:+390472764777" class="header-tel">+39 0472 764 777</a>
       <a href="#anfrage" class="btn-avail">Verfügbarkeit prüfen</a>
+      <a href="#direkt-buchen" class="btn-direct-booking">Direkt buchen</a>
     </nav>
   </div>
 </header>
@@ -1061,8 +1073,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="field-error" id="errAbreise">Bitte Abreisedatum wählen.</div>
         </div>
         <div class="full-width">
-          <label for="zimmer">Wunsch-Zimmer (optional)</label>
-          <select id="zimmer">
+          <label for="zimmerAuswahl">Wunsch-Zimmer (optional)</label>
+          <select id="zimmerAuswahl">
             <option value="">-- Bitte wählen --</option>
             <option value="Familiensuite Adrian">Familiensuite Adrian</option>
             <option value="Familiensuite Juri">Familiensuite Juri</option>
@@ -1154,6 +1166,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </form>
     </div>
 
+
+    <div id="direkt-buchen" class="booking-widget-section">
+      <span class="section-label">Online reservieren</span>
+      <h2 class="booking-widget-title">Direkt buchen</h2>
+      <p class="booking-widget-text">Prüfen Sie verfügbare Zimmer und buchen Sie Ihren Aufenthalt direkt online.</p>
+      <div class="booking-widget-shell">
+        <div id="Bs-BookingWidget"></div>
+      </div>
+    </div>
+    <script
+      id="booking-suedtirol-js"
+      src="https://widget.bookingsuedtirol.com/v2/bundle.js"
+      defer
+    ></script>
+    <script>
+    document
+      .querySelector("#booking-suedtirol-js")
+      .addEventListener("load", () => {
+        BookingSüdtirol.Widgets.Booking("#Bs-BookingWidget", {
+          id: "3933eeb1-82f7-48fe-b58b-0649ea7dbe55",
+          propertyId: 11591,
+          lang: "de",
+          privacyURL: "/path/to/privacy/page",
+          termsURL: "/path/to/terms/page",
+          onBookingSuccess: (reservation) => {
+            // Called after successful booking
+          },
+          onEnquirySuccess: (reservation) => {
+            // Called after successful enquiry
+          },
+        });
+      });
+    </script>
   </div>
 </section>
 
@@ -1291,7 +1336,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var kinder=parseInt(document.getElementById("kCount").value)||0,ages=[];
     for(var i=1;i<=kinder;i++){var v=document.querySelector("[name='alter_k"+i+"']");if(v&&v.value!=="")ages.push(v.value);}
     var utm=getUtm();
-    var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmer").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
+    var payload={hotel_slug:HOTEL_SLUG,firstname:document.getElementById("vorname").value.trim(),lastname:document.getElementById("nachname").value.trim(),email:document.getElementById("email").value.trim(),phone:buildPhone(),checkin:toIsoDate(document.getElementById("ankunft").value),checkout:toIsoDate(document.getElementById("abreise").value),adults:parseInt(document.getElementById("erwachsene").value)||2,children:kinder,children_ages:ages.join(", "),message:document.getElementById("nachricht").value.trim(),room_type:document.getElementById("zimmerAuswahl").value||"",language:"DE",utm_source:utm.utm_source||"",utm_medium:utm.utm_medium||"",utm_campaign:utm.utm_campaign||"",utm_term:utm.utm_term||"",utm_content:utm.utm_content||"",device:utm.device||"",gclid:utm.gclid||"",gad_source:utm.gad_source||"",gad_campaignid:utm.gad_campaignid||""};
     fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
     .then(function(r){return r.json().then(function(data){return{ok:r.ok,status:r.status,data:data};});})
     .then(function(res){
