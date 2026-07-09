@@ -170,6 +170,24 @@
     .btn-angebot { display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; background: var(--stone); color: var(--white); font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; border: none; cursor: pointer; transition: background 0.25s, transform 0.2s; white-space: nowrap; }
     .btn-angebot:hover { background: var(--stone-dark); transform: translateY(-2px); }
 
+    /* Angebote-Grid */
+    #angebote-liste { padding: var(--pad) 24px; background: var(--cream); }
+    .offers-grid { max-width: var(--max-w); margin: 52px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .offer-card { background: var(--white); display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 1px 0 rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
+    .offer-card:hover { transform: translateY(-5px); box-shadow: 0 16px 34px rgba(0,0,0,0.11); }
+    .offer-img { width: 100%; height: 210px; object-fit: cover; }
+    .offer-body { padding: 26px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+    .offer-season { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone-dark); margin-bottom: 10px; }
+    .offer-title { font-family: var(--font-serif); font-size: 1.14rem; font-weight: 400; color: var(--forest); line-height: 1.32; margin-bottom: 14px; }
+    .offer-meta { font-size: 0.78rem; color: var(--warm-gray); margin-bottom: 3px; }
+    .offer-dates { font-size: 0.78rem; color: var(--warm-gray); margin-bottom: 16px; }
+    .offer-price { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; color: var(--forest); margin-bottom: 20px; }
+    .offer-price span { font-size: 0.72rem; font-family: var(--font-sans); color: var(--warm-gray); }
+    .offer-cta { margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 20px; background: var(--forest); color: var(--white); font-size: 0.73rem; font-weight: 600; letter-spacing: 0.11em; text-transform: uppercase; transition: background 0.25s; }
+    .offer-cta:hover { background: var(--charcoal); }
+    @media (max-width: 900px) { .offers-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .offers-grid { grid-template-columns: 1fr; } }
+
     /* ── PHILOSOPHY ── */
     #philosophy { position: relative; padding: 110px 24px; overflow: hidden; }
     .philosophy-bg { position: absolute; inset: 0; background-image: url('https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/pool_aussicht.jpg'); background-size: cover; background-position: center; filter: brightness(0.32); }
@@ -424,7 +442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="hero-content">
     <span class="hero-badge">Sommerurlaub in Sterzing · Wellness · Pool</span>
     <h1 class="hero-h1">Sommerurlaub im Lahnerhof<br>bei Sterzing</h1>
-    <span class="hero-sub">Hoch über Sterzing liegt der Lahnerhof sonnig in Thuins: ein 4-Sterne-Hotel mit Panoramablick, beheiztem Außenpool, feinem Wellnessbereich und Südtiroler Halbpension. Ideal für alle, die Urlaub in Sterzing mit Ruhe, Natur und Genuss verbinden möchten.</span>
+    <span class="hero-sub">In sonniger Panoramalage oberhalb von Sterzing liegt der Lahnerhof mit weitem Blick über die Südtiroler Berge. Das 4-Sterne-Hotel in Südtirol verbindet beheizten Infinity Außenpool, feinen Wellnessbereich und Südtiroler Halbpension zu entspannten Urlaubstagen voller Natur, Genuss und Erholung. Ideal für alle, die ihren Urlaub in Sterzing naturnah und genussvoll verbringen möchten.</span>
     <div class="hero-cta-wrap">
       <a href="#anfrage" class="btn-primary">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
@@ -481,9 +499,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div>
       <span class="section-label">Lahnerhof bei Sterzing</span>
       <h2 class="intro-h2">Ihr 4-Sterne-Hotel<br>oberhalb von Sterzing</h2>
-      <p class="intro-text">Im Hotel Lahnerhof in Thuins verbinden sich Aktivurlaub, Romantik und Erholung zu einem entspannten Sommer in Südtirol. Eingebettet in die Bergwelt genießen Sie den Blick über Sterzing und Ratschings, starten direkt in Wander- und Bike-Erlebnisse und lassen den Tag im Wellnessbereich ausklingen.</p>
-      <div class="intro-highlight">„Ein Rückzugsort mit Wellness, Pool und Panoramablick: persönlich geführt, ruhig gelegen und gemacht für Gäste, die ihren Urlaub in Sterzing mit Natur, Genuss und Erholung füllen möchten."</div>
-      <p class="intro-text">Im Panoramarestaurant servieren wir regionale Spezialitäten und ausgewählte Weine. Ob Genussurlaub, romantische Auszeit oder aktive Tage am Rosskopf und in Ratschings: Der Lahnerhof ist ein Hotel in Sterzing, das Sommer, Wellness und Südtiroler Gastlichkeit angenehm unaufgeregt verbindet.</p>
+      <p class="intro-text">Im Hotel Lahnerhof in Thuins genießen Sie Ihren Sommerurlaub in Südtirol in sonniger Panoramalage oberhalb von Sterzing. Der Blick reicht über die Stadt Sterzing, Richtung Ratschings und in die umliegende Bergwelt. Am Fuße des Rosskopfs gelegen, ist der Lahnerhof ein idealer Ausgangspunkt für Wanderurlaub, Bike-Erlebnisse und aktive Tage in der Natur. Danach klingt der Tag im Wellnessbereich oder am beheizten Infinity Außenpool entspannt aus.</p>
+      <div class="intro-highlight">Ihr Sommer in Südtirol: Berge vor der Tür, Wellness mit Pool, feine Kulinarik und ein familiengeführtes Haus mit viel Ruhe und Ausblick.</div>
+      <p class="intro-text">Im Panoramarestaurant genießen Sie regionale Spezialitäten, Südtiroler Halbpension und ausgewählte Weine. Ob Genussurlaub, romantische Auszeit oder aktiver Familienurlaub: Der Lahnerhof verbindet Natur, Wellness, Kulinarik und Südtiroler Gastlichkeit auf stilvolle Weise.</p>
       <div class="intro-meta">
         <div>
           <span class="meta-num">4★</span>
@@ -508,7 +526,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         src="https://raw.githubusercontent.com/manusiri05/lp-lahnerhof/main/hotel_vorderansicht.jpg"
         alt="Hotel Lahnerhof in Sterzing – 4 Sterne Hotel Südtirol" />
       <div class="intro-image-badge">
-        <p class="badge-text">Oben in Thuins: ruhige Lage über Sterzing – mit Blick auf Berge, Täler und den Sommer in Südtirol.</p>
+        <p class="badge-text">Ihr Sommer in Südtirol: entspannte Urlaubstage in Sterzing mit Wellness, Genuss und Panoramablick.</p>
       </div>
     </div>
   </div>
@@ -524,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M7 10c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/>
       </svg>
       <span class="usp-name">Panoramalage</span>
-      <p class="usp-desc">Ruhige Lage über der Stadt, mit Blick nach Sterzing, Ratschings und in die Südtiroler Bergwelt.</p>
+      <p class="usp-desc">Ruhige Lage – mit Blick über die Stadt Sterzing, Ratschings und in die Südtiroler Bergwelt.</p>
     </div>
 
     <div class="usp-item">
@@ -535,7 +553,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M12 8l5-4 5 4"/>
       </svg>
       <span class="usp-name">Hotel mit Pool</span>
-      <p class="usp-desc">Beheizter Außenpool mit Bergblick – ideal für Sommerurlaub und entspannte Tage in Sterzing.</p>
+      <p class="usp-desc">Der beheizte Infinity Außenpool im Lahnerhof eröffnet einen weiten Blick über Sterzing und die Berge. Ideal für alle, die ihren Sommerurlaub in Südtirol mit besonderen Wellnessmomenten verbinden möchten.</p>
     </div>
 
     <div class="usp-item">
@@ -564,7 +582,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <path d="M15 26h6M11 22l2-10h10l2 10M13 12h10M18 8v4"/>
       </svg>
       <span class="usp-name">Sommer aktiv</span>
-      <p class="usp-desc">Wandern, E-Biken, Rosskopf, Ratschings und activeCard Sterzing inklusive.</p>
+      <p class="usp-desc">Wandern, Biken, Golfen und ausgewählte Vorteile mit der activeCARD Sterzing inklusive.</p>
     </div>
 
   </div>
@@ -574,8 +592,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="sommer">
   <div class="section-header fade-up">
     <span class="section-label">Sommer in Südtirol</span>
-    <h2 class="section-h2">Sommer im Lahnerhof –<br>Drei gute Gründe für Ihre Auszeit</h2>
-    <p class="section-text">Der Lahnerhof verbindet die Vorzüge eines 4-Sterne-Hotels in Sterzing mit viel Ruhe, einem starken Blick in die Berge, feiner Küche und kurzen Wegen zu Wanderungen, Bike-Touren und Ausflugszielen.</p>
+    <h2 class="section-h2">Ihr Sommer im Lahnerhof –<br>Gute Gründe für Ihre Auszeit in den Südtiroler Bergen</h2>
+    <p class="section-text">Im Lahnerhof wird Ihr Sommerurlaub in Südtirol angenehm vielseitig. Spazierwege und Wanderungen, Bike-Erlebnisse, Golfen in Sterzing oder ein Ausflug in die Altstadt lassen sich flexibel miteinander verbinden. Rund um den Lahnerhof warten zudem abwechslungsreiche Ausflugsziele für die ganze Familie: Themenwege, Spiel und Spaß am Rosskopf oder die Sommerrodelbahn bringen besondere Momente in den Urlaub. Die activeCARD Sterzing ergänzt den Aufenthalt mit attraktiven Vorteilen, etwa Ermäßigungen auf Bergbahnen im Sommer.</p>
   </div>
   <div class="accordion-grid">
     <div class="acc-tile">
@@ -585,7 +603,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="acc-tag">Panorama &amp; Lage</span>
         <div class="acc-num">01</div>
         <h3 class="acc-title">Wohnen mit Bergblick</h3>
-        <p class="acc-body">Der Lahnerhof liegt oberhalb von Sterzing auf rund 1.000 m Seehöhe. Von hier blicken Sie über die Stadt, Ratschings und die Südtiroler Alpen – ideal für ruhige Tage mit viel Natur.</p>
+        <p class="acc-body">Der Lahnerhof liegt oberhalb von Sterzing auf rund 1.000 m Seehöhe. Von hier blicken Sie über die Stadt, ins Ratschings Tal und in die Südtiroler Alpen – ideal für ruhige Tage in der Natur.</p>
       </div>
     </div>
     <div class="acc-tile">
@@ -604,8 +622,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="acc-content">
         <span class="acc-tag">Sommer aktiv</span>
         <div class="acc-num">03</div>
-        <h3 class="acc-title">Wandern, E-Bike &amp; Genuss</h3>
-        <p class="acc-body">Rosskopf und Ratschings sind nur wenige Minuten entfernt. Freuen Sie sich auf Wanderungen, geführte E-Bike-Touren, die activeCard Sterzing und Südtiroler Küche im Panoramarestaurant.</p>
+        <h3 class="acc-title">Wandern, Biken &amp; Sommeraktivitäten</h3>
+        <p class="acc-body">Vom Frühling bis in den goldenen Herbst lädt die Region rund um Sterzing und das Wipptal zu vielseitigen Outdoor-Erlebnissen ein. Spazierwege, Almwanderungen, Bike-Routen und geführte E-Bike-Touren mit dem Gastgeber verbinden Bewegung in der Natur mit besonderen Momenten in der Südtiroler Bergwelt. Mit der activeCARD Sterzing profitieren Sie zusätzlich von vielen Vorteilen.</p>
       </div>
     </div>
   </div>
@@ -624,13 +642,108 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Beheizter Außenpool mit Panoramablick über Sterzing</li>
         <li>Nutzung Wellnessbereich mit Finnischer Sauna, Bio-Sauna &amp; Ruheraum</li>
         <li>Geführte Wanderungen und E-Bike-Touren mit Gastgeber Gerhard</li>
-        <li>activeCard Sterzing mit öffentlichen Verkehrsmitteln, Museen &amp; Vorteilen</li>
+        <li>activeCard Sterzing mit öffentlichen Verkehrsmitteln, Seilbahnen &amp; Vorteilen</li>
       </ul>
     </div>
     <a href="#anfrage" class="btn-angebot">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
       Sommerurlaub anfragen
     </a>
+  </div>
+</section>
+
+<!-- ── ANGEBOTE LISTE ── -->
+<section id="angebote-liste" class="fade-up">
+  <div class="section-header">
+    <span class="section-label">Unsere Angebote</span>
+    <h2 class="section-h2">Angebote &amp; Pauschalen im Lahnerhof</h2>
+    <p class="section-text">Von Sommermomenten über den goldenen Herbst bis zu Sonnenskitagen im Frühling: Sichern Sie sich Ihr Wunschpaket für den Urlaub in Sterzing – inklusive Halbpension, Wellness und activeCard Sterzing.</p>
+  </div>
+  <div class="offers-grid">
+    <div class="offer-card">
+      <img class="offer-img" src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/2560x1440/offerhotel/e2fd25d7ade65ba56bd71db513b4af44" alt="Sommermomente im Lahnerhof – Zeit für Berge, Sonne und Genuss – Hotel Lahnerhof Sterzing" loading="lazy" />
+      <div class="offer-body">
+        <span class="offer-season">Sommer</span>
+        <h3 class="offer-title">Sommermomente im Lahnerhof – Zeit für Berge, Sonne und Genuss</h3>
+        <p class="offer-meta">5 Übernachtungen inkl. Halbpension</p>
+        <p class="offer-dates">13.06.–06.09.2026</p>
+        <p class="offer-price">ab 590 € <span>pro Person</span></p>
+        <a href="#anfrage" class="offer-cta">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+          Anfragen
+        </a>
+      </div>
+    </div>
+    <div class="offer-card">
+      <img class="offer-img" src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/2560x1440/offerhotel/616f33ab3d8b3eab5101e2fa080e357c" alt="Goldener Herbst im Lahnerhof – Zeit für Farben, Ruhe und Kulinarik – Hotel Lahnerhof Sterzing" loading="lazy" />
+      <div class="offer-body">
+        <span class="offer-season">Herbst</span>
+        <h3 class="offer-title">Goldener Herbst im Lahnerhof – Zeit für Farben, Ruhe und Kulinarik</h3>
+        <p class="offer-meta">5 Übernachtungen inkl. Halbpension</p>
+        <p class="offer-dates">01.09.–04.10.2026</p>
+        <p class="offer-price">ab 590 € <span>pro Person</span></p>
+        <a href="#anfrage" class="offer-cta">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+          Anfragen
+        </a>
+      </div>
+    </div>
+    <div class="offer-card">
+      <img class="offer-img" src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/2560x1440/offerhotel/dfb8ebc329353224f68d3cef3a9caa4c" alt="Herbstgenuss im Lahnerhof – 1 Nacht geschenkt und Törggelespecial – Hotel Lahnerhof Sterzing" loading="lazy" />
+      <div class="offer-body">
+        <span class="offer-season">Herbst · Törggelen</span>
+        <h3 class="offer-title">Herbstgenuss im Lahnerhof – 1 Nacht geschenkt &amp; Törggelespecial</h3>
+        <p class="offer-meta">4 Übernachtungen inkl. Halbpension</p>
+        <p class="offer-dates">11.10.–05.11.2026</p>
+        <p class="offer-price">ab 354 € <span>pro Person</span></p>
+        <a href="#anfrage" class="offer-cta">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+          Anfragen
+        </a>
+      </div>
+    </div>
+    <div class="offer-card">
+      <img class="offer-img" src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/2560x1440/offerhotel/0d44b9e0d9b8abd12b38ade7f51affb9" alt="4 = 3 Nächte zur Sterzinger Glockenweihnacht – Adventzauber im Lahnerhof – Hotel Lahnerhof Sterzing" loading="lazy" />
+      <div class="offer-body">
+        <span class="offer-season">Advent</span>
+        <h3 class="offer-title">4 = 3 Nächte zur Sterzinger Glockenweihnacht – Adventzauber im Lahnerhof</h3>
+        <p class="offer-meta">4 Übernachtungen inkl. Halbpension</p>
+        <p class="offer-dates">29.11.–20.12.2026</p>
+        <p class="offer-price">ab 380 € <span>pro Person</span></p>
+        <a href="#anfrage" class="offer-cta">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+          Anfragen
+        </a>
+      </div>
+    </div>
+    <div class="offer-card">
+      <img class="offer-img" src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/2560x1440/offerhotel/799bd20d278b7208d1151a9e5b27b3dd" alt="7 = 6 Nächte – Wintergenuss im Lahnerhof – Hotel Lahnerhof Sterzing" loading="lazy" />
+      <div class="offer-body">
+        <span class="offer-season">Winter</span>
+        <h3 class="offer-title">7 = 6 Nächte – Wintergenuss im Lahnerhof</h3>
+        <p class="offer-meta">7 Übernachtungen inkl. Halbpension</p>
+        <p class="offer-dates">06.01.–22.01.2027</p>
+        <p class="offer-price">ab 760 € <span>pro Person</span></p>
+        <a href="#anfrage" class="offer-cta">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+          Anfragen
+        </a>
+      </div>
+    </div>
+    <div class="offer-card">
+      <img class="offer-img" src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/2560x1440/offerhotel/48630e3f008045cec6b1a3e25ff64cc5" alt="4 = 3 Sonnenskitage im Lahnerhof – Hotel Lahnerhof Sterzing" loading="lazy" />
+      <div class="offer-body">
+        <span class="offer-season">Winter · Ski</span>
+        <h3 class="offer-title">4 = 3 Sonnenskitage im Lahnerhof</h3>
+        <p class="offer-meta">4 Übernachtungen inkl. Halbpension</p>
+        <p class="offer-dates">01.03.–31.03.2027</p>
+        <p class="offer-price">ab 345 € <span>pro Person</span></p>
+        <a href="#anfrage" class="offer-cta">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="11" rx="1"/><path d="M1 6h14"/><path d="M5 1v4M11 1v4"/></svg>
+          Anfragen
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -649,7 +762,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="section-header fade-up">
     <span class="section-label">Zimmer &amp; Suiten</span>
     <h2 class="section-h2">Zimmer &amp; Suiten im Lahnerhof</h2>
-    <p class="section-text">Ihr Rückzugsort im Hotel Lahnerhof: Zimmer und Suiten mit Südtiroler Gemütlichkeit, modernem Komfort und Panoramablick über Sterzing und die Alpen.</p>
+    <p class="section-text">Im Lahnerhof erwarten Sie gemütliche Zimmer und großzügige Familiensuiten für Ihren Urlaub in den Südtiroler Bergen. Helle Räume, natürliche Materialien und viel Komfort schaffen eine Atmosphäre zum Ankommen und Wohlfühlen. Ob zu zweit oder mit der Familie: Entdecken Sie Ihr Urlaubszuhause nahe Sterzing.</p>
   </div>
   <div class="slider-wrap">
     <div class="slider-track" id="sliderTrack">
@@ -845,7 +958,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
-          <p class="inklusive-text">activeCard Sterzing mit öffentlichen Verkehrsmitteln, ausgewählten Seilbahnen, Museen und Ermäßigungen inklusive</p>
+          <p class="inklusive-text">activeCard Sterzing mit öffentlichen Verkehrsmitteln, ausgewählten Seilbahnen und Ermäßigungen inklusive</p>
         </div>
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
@@ -873,79 +986,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ── EXPERIENCES ── -->
-<section id="erlebnisse" class="fade-up">
-  <div class="section-header">
-    <span class="section-label">Erlebnisse · Sterzing Urlaub</span>
-    <h2 class="section-h2">Sommerurlaub in Sterzing –<br>Natur, Wellness &amp; Genuss</h2>
-    <p class="section-text">Ein Urlaub im Lahnerhof verbindet die schönsten Seiten Südtirols: Berge, Pool, Sauna, Küche und die Nähe zu Sterzing, Rosskopf und Ratschings.</p>
-  </div>
-  <div class="exp-grid">
-
-    <div class="exp-item featured">
-      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 28l8-14 7 9 5-6 4 11H6z"/>
-        <circle cx="22" cy="9" r="3"/>
-      </svg>
-      <span class="exp-name">Wandern am Rosskopf</span>
-      <p class="exp-desc">Aussichtsreiche Wanderungen, Almspaziergänge und Bergmomente rund um Sterzing, Rosskopf und Ratschings – direkt ab Hotel erreichbar.</p>
-    </div>
-
-    <div class="exp-item">
-      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="11" cy="28" r="4"/>
-        <circle cx="25" cy="28" r="4"/>
-        <path d="M15 28h6M11 24l2-10h10l2 10"/>
-        <path d="M13 14h10M18 10v4"/>
-        <path d="M25 20l2-2 2 1"/>
-      </svg>
-      <span class="exp-name">E-Bike-Touren</span>
-      <p class="exp-desc">Geführte E-Bike-Touren mit Gastgeber Gerhard durch die schönsten Täler Südtirols – E-Bike-Verleih im Hotel gegen Aufpreis.</p>
-    </div>
-
-    <div class="exp-item">
-      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="18" cy="24" rx="10" ry="5"/>
-        <path d="M8 24c0-5.5 4.5-10 10-10s10 4.5 10 10"/>
-        <path d="M18 14V8"/>
-      </svg>
-      <span class="exp-name">Panorama-Pool</span>
-      <p class="exp-desc">Der beheizte Außenpool schenkt Ihnen wohlig warme Wasserstunden und freien Blick in die Berge – einer der schönsten Plätze für entspannte Sommertage.</p>
-    </div>
-
-    <div class="exp-item">
-      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 6c0 0-9 6-9 14a9 9 0 0018 0C27 12 18 6 18 6z"/>
-        <path d="M18 14v8M14 18h8"/>
-      </svg>
-      <span class="exp-name">Wellness &amp; Sauna</span>
-      <p class="exp-desc">Finnische Sauna, Bio-Sauna und eleganter Ruheraum – ein kleines Wellnesshotel Südtirol für Gäste, die Wärme und Ruhe suchen.</p>
-    </div>
-
-    <div class="exp-item">
-      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7 28V16l11-9 11 9v12H7z"/>
-        <path d="M13 28v-8h10v8"/>
-        <path d="M18 10v3"/>
-      </svg>
-      <span class="exp-name">Panoramarestaurant</span>
-      <p class="exp-desc">Südtiroler Spezialitäten, erlesene Weine und ein 4-Gänge-Genussmenü am Abend – Kulinarik mit Blick über Sterzing.</p>
-    </div>
-
-    <div class="exp-item">
-      <svg class="exp-icon-wrap" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="8" width="26" height="20" rx="2"/>
-        <path d="M5 14h26"/>
-        <circle cx="14" cy="22" r="2"/>
-        <circle cx="22" cy="22" r="2"/>
-      </svg>
-      <span class="exp-name">activeCard Sterzing</span>
-      <p class="exp-desc">Kostenlose Nutzung öffentlicher Verkehrsmittel in Südtirol, ausgewählte Seilbahnen, Museen und viele Vorteile – inklusive für Hotelgäste.</p>
-    </div>
-
-  </div>
-</section>
-
 <!-- ── REVIEWS ── -->
 <section id="reviews" class="fade-up">
   <div class="section-header">
@@ -957,42 +997,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Ein sehr schönes Hotel in Sterzing mit traumhaftem Blick. Der Pool, die Sauna und das Essen waren genau das, was wir für unseren Sommerurlaub gesucht haben."</p>
+      <p class="review-text">„Super Aufenthalt. Wir waren zwei Nächte hier und hatten ein Baby dabei. Das Personal war super freundlich und hilfsbereit. Wir haben die empfohlene Tageswanderung gemacht und sehr genossen. Das Restaurant war auch super lecker. Top Preis-Leistung. Gerne wieder."</p>
       <div class="review-author">
-        <div class="review-avatar">MK</div>
+        <div class="review-avatar">MM</div>
         <div>
-          <p class="review-name">Markus K.</p>
-          <p class="review-meta">Google · Hotel Sterzing</p>
+          <p class="review-name">Michèle Müller</p>
+          <p class="review-meta">Google · 5/5 · Familienurlaub</p>
         </div>
       </div>
     </div>
 
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Ein kleines, sehr persönliches Haus mit viel Ruhe, freundlichem Team und großartiger Halbpension. Perfekt für ein paar entspannte Tage oberhalb von Sterzing."</p>
+      <p class="review-text">„Sehr schön am Berghang gelegenes Hotel, mit guter Speisekarte, ansprechender Ausstattung und sehr freundlichem und bemühtem Personal."</p>
       <div class="review-author">
-        <div class="review-avatar">SR</div>
+        <div class="review-avatar">T</div>
         <div>
-          <p class="review-name">Sabine R.</p>
-          <p class="review-meta">Booking.com · Wellness &amp; Ruhe</p>
+          <p class="review-name">Thomas</p>
+          <p class="review-meta">Booking.com · 9,0 · Hervorragend</p>
         </div>
       </div>
     </div>
 
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Wir würden sofort wieder buchen. Panoramalage, Außenpool und die Nähe zu Rosskopf und Ratschings sind ideal für einen aktiven Sommer in Südtirol."</p>
+      <p class="review-text">„Der Lahnerhof ist ein familiär geführtes Hotel mit herzlichem Service, traumhaftem Bergpanorama und einem sehr angenehmen Wellness-Bereich. Die Südtiroler Küche vereint das Beste aus Österreich und Italien. Ein Hotel zum Ausspannen, Erholen und für Sport wie Wandern oder Skifahren – sehr empfehlenswert!"</p>
       <div class="review-author">
-        <div class="review-avatar">TH</div>
+        <div class="review-avatar">TA</div>
         <div>
-          <p class="review-name">Thomas H.</p>
-          <p class="review-meta">TripAdvisor · Sommerurlaub</p>
+          <p class="review-name">Verifizierter Gast</p>
+          <p class="review-meta">TripAdvisor · 5/5 · Alpen-Urlaub als Paar</p>
         </div>
       </div>
     </div>
 
-  </div>
-</section>
+  </section>
 
 <!-- ── GALLERY ── -->
 <section id="impressionen" class="fade-up">
