@@ -51,6 +51,7 @@
     }
 
     html { scroll-behavior: smooth; }
+    html, body { overflow-x: hidden; max-width: 100%; }
     body { font-family: var(--font-sans); color: var(--charcoal); background: var(--cream); line-height: 1.7; -webkit-font-smoothing: antialiased; }
     img  { display: block; max-width: 100%; }
     a    { color: inherit; text-decoration: none; }
@@ -155,7 +156,7 @@
     .acc-num { font-family: var(--font-serif); font-size: 3rem; font-weight: 300; color: var(--stone); opacity: 0.7; line-height: 1; margin-bottom: 8px; }
     .acc-title { font-family: var(--font-serif); font-size: 1.45rem; font-weight: 400; line-height: 1.25; margin-bottom: 14px; }
     .acc-body { font-size: 0.84rem; font-weight: 300; line-height: 1.72; color: rgba(255,255,255,0.82); max-height: 0; overflow: hidden; transition: max-height 0.5s ease, opacity 0.4s; opacity: 0; }
-    .acc-tile:hover .acc-body, .acc-tile.active .acc-body { max-height: 180px; opacity: 1; }
+    .acc-tile:hover .acc-body, .acc-tile.active .acc-body { max-height: 360px; opacity: 1; }
     .acc-tag { display: inline-block; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stone); border: 1px solid rgba(166,138,86,0.5); padding: 4px 10px; margin-bottom: 16px; }
 
     /* ── OFFER BANNER ── */
@@ -354,8 +355,17 @@
       .intro-inner { grid-template-columns: 1fr; gap: 40px; }
       .intro-image-wrap { display: none; }
       .accordion-grid { grid-template-columns: 1fr; }
-      .acc-tile { height: 360px; }
-      .acc-body { max-height: 140px !important; opacity: 1 !important; }
+      .acc-tile { height: auto; cursor: pointer; }
+      .acc-bg { position: relative; inset: auto; height: 210px; }
+      .acc-overlay { height: 210px; bottom: auto; }
+      .acc-content { position: static; padding: 22px 24px 24px; background: var(--forest); }
+      .acc-tag { margin-bottom: 12px; }
+      .acc-num { margin-bottom: 2px; }
+      .acc-title { margin-bottom: 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+      .acc-title::after { content: '+'; font-family: var(--font-sans); font-weight: 300; font-size: 1.7rem; color: var(--stone); line-height: 1; }
+      .acc-tile.active .acc-title::after { content: '\2013'; }
+      .acc-body { max-height: 0 !important; opacity: 0 !important; }
+      .acc-tile.active .acc-body { max-height: 460px !important; opacity: 1 !important; margin-top: 12px; }
       .exp-grid { grid-template-columns: repeat(2, 1fr); }
       .reviews-grid { grid-template-columns: 1fr 1fr; }
       .slide { grid-template-columns: 1fr; min-height: auto; }
@@ -371,6 +381,7 @@
     @media (max-width: 768px) {
       :root { --pad: 60px; }
       .header-tel, .btn-direct-booking { display: none; }
+      .hero-cta-wrap { display: none; }
       .hero-h1 { font-size: 2.3rem; }
       .usps-inner { grid-template-columns: repeat(2, 1fr); }
       .reviews-grid { grid-template-columns: 1fr; }
@@ -502,24 +513,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="intro-text">Im Hotel Lahnerhof in Thuins genießen Sie Ihren Sommerurlaub in Südtirol in sonniger Panoramalage oberhalb von Sterzing. Der Blick reicht über die Stadt Sterzing, Richtung Ratschings und in die umliegende Bergwelt. Am Fuße des Rosskopfs gelegen, ist der Lahnerhof ein idealer Ausgangspunkt für Wanderurlaub, Bike-Erlebnisse und aktive Tage in der Natur. Danach klingt der Tag im Wellnessbereich oder am beheizten Infinity Außenpool entspannt aus.</p>
       <div class="intro-highlight">Ihr Sommer in Südtirol: Berge vor der Tür, Wellness mit Pool, feine Kulinarik und ein familiengeführtes Haus mit viel Ruhe und Ausblick.</div>
       <p class="intro-text">Im Panoramarestaurant genießen Sie regionale Spezialitäten, Südtiroler Halbpension und ausgewählte Weine. Ob Genussurlaub, romantische Auszeit oder aktiver Familienurlaub: Der Lahnerhof verbindet Natur, Wellness, Kulinarik und Südtiroler Gastlichkeit auf stilvolle Weise.</p>
-      <div class="intro-meta">
-        <div>
-          <span class="meta-num">4★</span>
-          <span class="meta-label">Hotelkategorie</span>
-        </div>
-        <div>
-          <span class="meta-num">1.000 m</span>
-          <span class="meta-label">Seehöhe</span>
-        </div>
-        <div>
-          <span class="meta-num">Pool</span>
-          <span class="meta-label">Beheizt</span>
-        </div>
-        <div>
-          <span class="meta-num">HP</span>
-          <span class="meta-label">Halbpension</span>
-        </div>
-      </div>
     </div>
     <div class="intro-image-wrap">
       <img class="intro-image-main"
@@ -941,8 +934,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="inklusive-inner">
     <div>
       <span class="section-label">Inklusivleistungen</span>
-      <h2 class="section-h2">Alles dabei –<br>für entspannte Tage im Lahnerhof</h2>
-      <p class="section-text">Im Lahnerhof genießen Sie viele Leistungen, die Ihren Aufenthalt angenehm, unkompliziert und rundum erholsam machen:</p>
+      <h2 class="section-h2">Ihre Vorteile auf einen Blick</h2>
+      <p class="section-text">Ausgewählte Inklusivleistungen machen Ihren Urlaub im Lahnerhof besonders angenehm: von feiner Kulinarik bis zu Wellness und Aktivmöglichkeiten rund um Sterzing.</p>
       <div class="inklusive-list">
         <div class="inklusive-item">
           <div class="inklusive-dot"></div>
@@ -997,6 +990,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Sehr schön am Berghang gelegenes Hotel, mit guter Speisekarte, ansprechender Ausstattung und sehr freundlichem und bemühtem Personal."</p>
+      <div class="review-author">
+        <div class="review-avatar">T</div>
+        <div>
+          <p class="review-name">Thomas</p>
+          <p class="review-meta">Booking.com · 9,0 · „Hervorragend"</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Wir waren auf der Durchreise und nur für eine Nacht im Hotel. Für uns hat alles super gepasst. Wir haben uns sehr wohlgefühlt in dieser kurzen Zeit. Besonders hat uns das Schwimmbad gefallen – klein aber schön. Wir könnten uns gut vorstellen, einen längeren Aufenthalt hier zu verbringen."</p>
+      <div class="review-author">
+        <div class="review-avatar">J</div>
+        <div>
+          <p class="review-name">Jürgen</p>
+          <p class="review-meta">Booking.com · 8,0 · „Sehr gut"</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
       <p class="review-text">„Super Aufenthalt. Wir waren zwei Nächte hier und hatten ein Baby dabei. Das Personal war super freundlich und hilfsbereit. Wir haben die empfohlene Tageswanderung gemacht und sehr genossen. Das Restaurant war auch super lecker. Top Preis-Leistung. Gerne wieder."</p>
       <div class="review-author">
         <div class="review-avatar">MM</div>
@@ -1007,31 +1024,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Sehr schön am Berghang gelegenes Hotel, mit guter Speisekarte, ansprechender Ausstattung und sehr freundlichem und bemühtem Personal."</p>
-      <div class="review-author">
-        <div class="review-avatar">T</div>
-        <div>
-          <p class="review-name">Thomas</p>
-          <p class="review-meta">Booking.com · 9,0 · Hervorragend</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">„Der Lahnerhof ist ein familiär geführtes Hotel mit herzlichem Service, traumhaftem Bergpanorama und einem sehr angenehmen Wellness-Bereich. Die Südtiroler Küche vereint das Beste aus Österreich und Italien. Ein Hotel zum Ausspannen, Erholen und für Sport wie Wandern oder Skifahren – sehr empfehlenswert!"</p>
-      <div class="review-author">
-        <div class="review-avatar">TA</div>
-        <div>
-          <p class="review-name">Verifizierter Gast</p>
-          <p class="review-meta">TripAdvisor · 5/5 · Alpen-Urlaub als Paar</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
+  </div>
+</section>
 
 <!-- ── GALLERY ── -->
 <section id="impressionen" class="fade-up">
@@ -1332,6 +1326,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   track.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, { passive: true });
   track.addEventListener('touchend', function(e){ var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 44) go(dx < 0 ? cur+1 : cur-1); }, { passive: true });
   go(0);
+})();
+
+// ── ACCORDION TILES (Klick-Dropdown, v.a. mobil) ──
+(function(){
+  var tiles = document.querySelectorAll('.acc-tile');
+  tiles.forEach(function(t){
+    t.addEventListener('click', function(){ t.classList.toggle('active'); });
+  });
 })();
 
 // ── BOOKING FORM ──
