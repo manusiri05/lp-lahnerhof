@@ -1067,7 +1067,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ── FORM / ANFRAGE ── -->
 <section id="anfrage">
-  <div class="cta-inner fade-up">
+  <div class="cta-inner">
     <span class="section-label">Urlaub in Sterzing anfragen</span>
     <h2 class="cta-h2">Jetzt Ihren Urlaub im Lahnerhof anfragen</h2>
     <p class="cta-text">Bereit für Ihren Urlaub im 4-Sterne-Hotel Lahnerhof bei Sterzing? Senden Sie uns Ihre unverbindliche Anfrage – wir melden uns innerhalb von 24 Stunden mit einem persönlichen Angebot.</p>
@@ -1293,7 +1293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   if (!window.IntersectionObserver) { els.forEach(function(e){ e.classList.add('visible'); }); return; }
   var obs = new IntersectionObserver(function(entries){
     entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('visible'); obs.unobserve(en.target); } });
-  }, { threshold: 0.12 });
+  }, { threshold: 0, rootMargin: "0px 0px -8% 0px" });
   els.forEach(function(e){ obs.observe(e); });
 })();
 
