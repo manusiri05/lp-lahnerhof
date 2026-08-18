@@ -126,7 +126,7 @@
     .meta-num { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 300; color: var(--stone); line-height: 1; display: block; white-space: nowrap; }
     .meta-label { font-size: 0.70rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--warm-gray); }
     .intro-image-wrap { position: relative; }
-    .intro-image-main { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .intro-image-main { display: block; width: 100%; height: clamp(480px, 50vw, 640px); object-fit: cover; object-position: center 62%; }
     .intro-image-badge { position: absolute; bottom: -24px; left: -24px; background: var(--forest); color: var(--white); padding: 18px 22px; max-width: 230px; }
     .badge-text { font-size: 0.72rem; font-weight: 300; letter-spacing: 0.08em; line-height: 1.55; }
     .badge-text strong { font-weight: 600; color: var(--stone); }
@@ -262,7 +262,9 @@
     .gallery-grid { max-width: var(--max-w); margin-inline: auto; margin-top: 52px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; }
     .gal-item { overflow: hidden; position: relative; }
     .gal-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .gal-item img.rotate-ccw { image-orientation: none; transform: rotate(-90deg); }
     .gal-item:hover img { transform: scale(1.05); }
+    .gal-item:hover img.rotate-ccw { transform: rotate(-90deg) scale(1.05); }
     .gal-item:nth-child(1) { grid-column: span 7; aspect-ratio: 16/9; }
     .gal-item:nth-child(2) { grid-column: span 5; }
     .gal-item:nth-child(3) { grid-column: span 4; aspect-ratio: 4/3; }
@@ -328,7 +330,7 @@
     .inklusive-text { font-size: 0.87rem; color: var(--charcoal); line-height: 1.6; }
     .inklusive-text strong { font-weight: 600; color: var(--forest); }
     .inklusive-img-wrap { position: relative; }
-    .inklusive-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+    .inklusive-img { display: block; width: 100%; height: clamp(480px, 48vw, 620px); object-fit: cover; object-position: center 48%; }
     .inklusive-img-tag { position: absolute; top: 24px; right: -16px; background: var(--forest); color: var(--white); padding: 12px 18px; }
     .inklusive-tag-label { font-size: 0.60rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.5); display: block; margin-bottom: 4px; }
     .inklusive-tag-val { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 400; color: var(--stone); }
@@ -768,7 +770,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075519/cHannesNiederkofler_WEB_017_DSC2246-TixZHHP0qPlSFzXjQyY0wQ.jpg" alt="Familiensuite Adrian – Hotel Lahnerhof Sterzing Südtirol" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/bdc50e9b06dc7b2b8896dd66fd5e83ac" alt="Familiensuite Adrian – Hotel Lahnerhof Sterzing Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Lahnerhof</span>
@@ -785,7 +787,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075522/cHannesNiederkofler_WEB_069_DSC2683-7OreEXsTrCDAhDVupB_EJw.jpg" alt="Familiensuite Juri – Hotel Sterzing Südtirol" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/7be2626207a0c6cfc9993909a7b43ae7" alt="Familiensuite Juri – Hotel Sterzing Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Familienzeit</span>
@@ -802,7 +804,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075531/cHannesNiederkofler_WEB_052_DSC2554-iuawA33MmFatDT-4Wy2LDA.jpg" alt="Doppelzimmer Komfort – Hotel Lahnerhof Sterzing" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/2c41f628c4a584d54e2a5096acb5a908" alt="Doppelzimmer Komfort – Hotel Lahnerhof Sterzing" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer · Lahnerhof</span>
@@ -819,7 +821,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075533/cHannesNiederkofler_WEB_071_DSC2730-DIp8PZkrEH4hii74EOPtQw.jpg" alt="Doppelzimmer Deluxe – Hotel Lahnerhof Südtirol" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/01bb2bcf84610a9db3693491ddd7bd07" alt="Doppelzimmer Deluxe – Hotel Lahnerhof Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer · Urlaub Südtirol</span>
@@ -836,7 +838,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22074814/cHannesNiederkofler_WEB_073_DSC2761-FKGHjMeIIWuKZ4pQl5Fxmg.jpg" alt="Familienzimmer Komfort ohne Balkon – Hotel Sterzing Urlaub" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/c0cf310ec2b4c8a4c394e1439ea5891a" alt="Familienzimmer Komfort ohne Balkon – Hotel Sterzing Urlaub" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer · Familienurlaub</span>
@@ -853,7 +855,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/576/22075421/cHannesNiederkofler_WEB_049_DSC2518-zFJJIpk9sdGMEysp91CVHQ.jpg" alt="Familiensuite Lahnerhof – 4 Sterne Hotel Sterzing" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/5085f71d2405da2b8d0d42f8029dbd16" alt="Familiensuite Lahnerhof – 4 Sterne Hotel Sterzing" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Panoramablick</span>
@@ -870,7 +872,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1066/22614469/cHannesNiederkofler_WEB_037_DSC2386-7TrqcLe28_jVMCtx3rt0jg.jpg" alt="Familiensuite Anna – Hotel Lahnerhof Südtirol" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/be96025543d0d7000000b46be8bcb853" alt="Familiensuite Anna – Hotel Lahnerhof Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Lahnerhof</span>
@@ -887,7 +889,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1066/22614687/cHannesNiederkofler_WEB_032_DSC2347-3R43jH6dC2VtDYlKYJZaag.jpg" alt="Familienzimmer Deluxe – Sterzing Hotel Südtirol" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/596cf7141f6b1738e2877e77ccd39b30" alt="Familienzimmer Deluxe – Sterzing Hotel Südtirol" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Zimmer · Familienzeit</span>
@@ -904,7 +906,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="slide">
         <div class="slide-img">
-          <img src="https://hotel.lahnerhof.it/images/1066/22614777/cHannesNiederkofler_WEB_046_DSC2477-z5oAM08cpMyS3sKgxkNBMg.jpg" alt="Familiensuite Superior – Lahnerhof Hotel Sterzing" />
+          <img src="https://admin.ehotelier.it/bnlocalproxy.php?path=thumbnails/crop/1066x800/roomtype/9a3203656ca4d55217c4f3203e809c1a" alt="Familiensuite Superior – Lahnerhof Hotel Sterzing" />
         </div>
         <div class="slide-body">
           <span class="slide-tag">Suite · Rückzugsort</span>
@@ -1043,7 +1045,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="gallery-grid">
     <div class="gal-item">
-      <img src="../../assets/herbst/01012937.jpeg" alt="Herzlicher Empfang auf der Panoramaterrasse des Hotel Lahnerhof bei Sterzing" width="6000" height="4000" loading="lazy" style="object-position: center 36%;" />
+      <img src="../../assets/herbst/Wandern.jpg" alt="Wandern im goldenen Herbst bei Sterzing in Südtirol" width="1920" height="1282" loading="lazy" />
     </div>
     <div class="gal-item">
       <img src="../../assets/herbst/33%20-%20DSC05810.jpg" alt="Südtiroler Genussmoment auf dem Balkon mit Bergblick bei Sterzing" width="1920" height="1280" loading="lazy" />
@@ -1064,7 +1066,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <img src="../../assets/herbst/Sohn%20Irina.png" alt="Musikalischer Südtiroler Genussmoment im familiengeführten Hotel Lahnerhof" width="1632" height="2395" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/herbst/Wandern.jpg" alt="Wandern im goldenen Herbst bei Sterzing in Südtirol" width="1920" height="1282" loading="lazy" />
+      <img class="rotate-ccw" src="../../assets/herbst/01012937.jpeg" alt="Genussmoment auf der Panoramaterrasse des Hotel Lahnerhof bei Sterzing" width="6000" height="4000" loading="lazy" />
     </div>
     <div class="gal-item">
       <img src="../../assets/herbst/103%20-%20DSC06411.jpg" alt="Herbstlicher Panoramablick vom Balkon des Hotel Lahnerhof über das Wipptal" width="1067" height="1600" loading="lazy" />
@@ -1399,4 +1401,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </body>
 </html>
-
