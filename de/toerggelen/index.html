@@ -363,7 +363,8 @@
     @media (max-width: 1024px) {
       .usps-inner { grid-template-columns: repeat(3, 1fr); }
       .intro-inner { grid-template-columns: 1fr; gap: 40px; }
-      .intro-image-wrap { display: none; }
+      .intro-image-wrap { display: block; max-width: 680px; width: 100%; margin-inline: auto; }
+      .intro-image-main { height: clamp(360px, 75vw, 520px); }
       .accordion-grid { grid-template-columns: 1fr; }
       .acc-tile { height: auto; cursor: pointer; }
       .acc-bg { position: relative; inset: auto; height: 210px; }
@@ -384,7 +385,8 @@
       .gal-item { grid-column: span 1 !important; grid-row: auto !important; aspect-ratio: 4/3 !important; }
       .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
       .inklusive-inner { grid-template-columns: 1fr; }
-      .inklusive-img-wrap { display: none; }
+      .inklusive-img-wrap { display: block; max-width: 680px; width: 100%; margin-inline: auto; }
+      .inklusive-img { height: clamp(360px, 75vw, 520px); }
       .angebot-inner { grid-template-columns: 1fr; gap: 28px; }
       .trust-inner { gap: 24px; }
     }
@@ -530,9 +532,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="intro-image-wrap">
       <img class="intro-image-main"
-        src="../../assets/toerggelen/toerggelen-genuss-03.jpg"
-        alt="Wein, Äpfel und Kastanien beim Törggelen in Südtirol"
-        width="1335" height="2000" />
+        src="../../assets/toerggelen/toerggelen-intro-lahnerhof.jpg"
+        alt="Gemütlicher Innenbereich im Hotel Lahnerhof für Ihren Törggelenurlaub bei Sterzing"
+        width="1067" height="1600" />
       <div class="intro-image-badge">
         <p class="badge-text">Törggelen &amp; Übernachtung: Genuss, Wellness und Panoramablick bei Sterzing.</p>
       </div>
@@ -984,9 +986,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="inklusive-img-wrap">
       <img class="inklusive-img"
-        src="../../assets/toerggelen/toerggelen-genuss-03.jpg"
-        alt="Wein, Äpfel und Kastanien beim Törggelen in Südtirol"
-        width="1335" height="2000" />
+        src="../../assets/toerggelen/toerggelen-lahnerhof-aussenansicht.jpg"
+        alt="Außenansicht des Hotel Lahnerhof oberhalb von Sterzing"
+        width="1333" height="2000" />
       <div class="inklusive-img-tag">
         <span class="inklusive-tag-label">Herbstgenuss</span>
         <span class="inklusive-tag-val">Törggelen</span>
@@ -1047,36 +1049,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="impressionen" class="fade-up">
   <div class="section-header">
     <span class="section-label">Einblicke · Törggelen Südtirol</span>
-    <h2 class="section-h2">Impressionen vom Törggelen</h2>
-    <p class="section-text">Kastanien, Wein, Knödel, Marende und Musik: Bilder für die Vorfreude auf Ihren Törggelen-Urlaub in Südtirol.</p>
+    <h2 class="section-h2">Herbstmomente rund um den Lahnerhof</h2>
+    <p class="section-text">Goldene Berglandschaften, klare Luft und entspannte Stunden im Hotel: Bilder für die Vorfreude auf Ihren Törggelenurlaub in Südtirol.</p>
   </div>
   <div class="gallery-grid">
     <div class="gal-item">
-      <img src="../../assets/toerggelen/toerggelen-genuss-01.jpg" alt="Südtiroler Marende mit Speck, Käse, Wein und Kastanien beim Törggelen" width="2000" height="1335" loading="lazy" />
+      <img src="../../assets/toerggelen/toerggelen-herbst-rosskopf.jpg" alt="Goldene Herbstlandschaft am Rosskopf bei Sterzing" width="2000" height="1564" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/kastanien-wein-idm.jpg" alt="Geröstete Kastanien und Südtiroler Wein beim Törggelen" width="2000" height="1333" loading="lazy" />
+      <img src="../../assets/toerggelen/toerggelen-herbst-kapelle-radweg.jpg" alt="Herbstlicher Radweg mit Kapelle im Wipptal" width="2000" height="1334" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/suedtiroler-knoedel.jpg" alt="Frisch servierte Südtiroler Knödel beim Törggelenurlaub" width="2000" height="1333" loading="lazy" />
+      <img src="../../assets/toerggelen/toerggelen-herbst-wandern.jpg" alt="Wanderpaar auf einem Herbstweg in Südtirol" width="2000" height="1331" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/toerggelen-tisch-lahnerhof.jpg" alt="Traditionelle Törggelen-Platte mit Wein und Kastanien in Südtirol" width="2000" height="1331" loading="lazy" />
+      <img src="../../assets/toerggelen/toerggelen-herbst-panorama.jpg" alt="Herbstpanorama über den Bergen bei Sterzing" width="1920" height="1281" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/toerggelen-genuss-idm-02.jpg" alt="Kastanien über offenem Feuer als Törggelen-Tradition in Südtirol" width="2000" height="1333" loading="lazy" />
+      <img src="../../assets/toerggelen/toerggelen-pool-wellness.jpg" alt="Beheizter Infinitypool mit Bergblick am Hotel Lahnerhof" width="2000" height="1499" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/toerggelen-genuss-03.jpg" alt="Wein, Äpfel und Kastanien für genussvolle Herbsttage in Südtirol" width="1335" height="2000" loading="lazy" style="object-position: center 48%;" />
+      <img src="../../assets/herbst/Wandern.jpg" alt="Wanderweg durch die goldene Herbstlandschaft in Südtirol" width="1920" height="1282" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/musik-lahnerhof.jpg" alt="Südtiroler Musik und herzliche Gastlichkeit im Hotel Lahnerhof" width="1363" height="2000" loading="lazy" style="object-position: center 38%;" />
+      <img src="../../assets/herbst/Hausbild%20noch%20in%20Gallerie.jpg" alt="Hotel Lahnerhof mit Panoramablick über das Wipptal" width="5363" height="3575" loading="lazy" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/kastanien-frisch.jpg" alt="Frische Kastanien als Symbol für Törggelen in Südtirol" width="1920" height="1280" loading="lazy" />
+      <img src="../../assets/herbst/image00025.jpeg" alt="Entspannte Auszeit in der Sauna des Hotel Lahnerhof" width="3033" height="5393" loading="lazy" style="object-position: center 42%;" />
     </div>
     <div class="gal-item">
-      <img src="../../assets/toerggelen/krapfen.jpg" alt="Süße Krapfen als traditioneller Abschluss beim Törggelen" width="1920" height="1280" loading="lazy" />
+      <img src="../../assets/herbst/in%20Gallerie%20anstatt%20Gipfel%20Bild.jpg" alt="Zimmer mit Blick auf die Südtiroler Berglandschaft" width="1920" height="1280" loading="lazy" />
     </div>
   </div>
 </section>
@@ -1408,5 +1410,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </body>
 </html>
-
-
